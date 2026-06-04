@@ -256,7 +256,7 @@ This is an academic project. For issues or suggestions, contact the development 
 **Institution**: University of Mianwali
 
 ## License
-Educational Use Only - University of Mianwali © 2024
+Educational Use Only - University of Mianwali © 2026
 
 ## Version
-1.0.0 - Initial Release (November 2024)
+1.0.0 - Initial Release (November 2026)

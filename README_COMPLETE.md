@@ -417,20 +417,5 @@ This is a **production-ready** system with:
 - Professional code quality
 - Comprehensive documentation
 
-**Everything works out of the box!**
-
----
-
-## 📄 LICENSE
-
-Educational Use - University of Mianwali © 2024
-
----
-
-**Version:** 2.0.0 - Complete Working Release
-**Last Updated:** February 15, 2026
-**Status:** ✅ PRODUCTION READY
-
----
 
 For the complete source code with all files, please extract the provided archive or contact the development team.
