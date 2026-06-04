@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+
+{% block title %}My Profile - Vocal View{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Page Header -->
+    <div class="page-header mb-4">
+        <h1 class="mb-2">
+            <i class="fas fa-user-circle"></i> My Profile
+        </h1>
+        <p class="mb-0 opacity-75">
+            Manage your account information and preferences
+        </p>
+    </div>
+
+    <div class="row">
+        <!-- Profile Form -->
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-user-edit"></i> Profile Information
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <form method="post" action="{% url 'user_profile' %}">
+                        {% csrf_token %}
+                        
+                        <!-- Username (readonly) -->
+                        <div class="mb-3">
+                            <label for="username" class="form-label fw-bold">
+                                <i class="fas fa-user"></i> Username
+                            </label>
+                            <input type="text" 
+                                   class="form-control" 
+                                   id="username" 
+                                   value="{{ user.username }}" 
+                                   readonly
+                                   disabled>
+                            <small class="text-muted">Username cannot be changed</small>
+                        </div>
+
+                        <!-- Full Name -->
+                        <div class="mb-3">
+                            <label for="full_name" class="form-label fw-bold">
+                                <i class="fas fa-id-card"></i> Full Name
+                            </label>
+                            <input type="text" 
+                                   class="form-control" 
+                                   id="full_name" 
+                                   name="full_name"
+                                   value="{{ profile.full_name }}"
+                                   placeholder="Enter your full name">
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold">
+                                <i class="fas fa-envelope"></i> Email Address
+                            </label>
+                            <input type="email" 
+                                   class="form-control" 
+                                   id="email" 
+                                   name="email"
+                                   value="{{ user.email }}"
+                                   placeholder="your.email@example.com">
+                        </div>
+
+                        <!-- Experience Level -->
+                        <div class="mb-3">
+                            <label for="experience_level" class="form-label fw-bold">
+                                <i class="fas fa-chart-line"></i> Experience Level
+                            </label>
+                            <select class="form-select" id="experience_level" name="experience_level">
+                                <option value="beginner" {% if profile.experience_level == 'beginner' %}selected{% endif %}>
+                                    Beginner (0-2 years)
+                                </option>
+                                <option value="intermediate" {% if profile.experience_level == 'intermediate' %}selected{% endif %}>
+                                    Intermediate (2-5 years)
+                                </option>
+                                <option value="advanced" {% if profile.experience_level == 'advanced' %}selected{% endif %}>
+                                    Advanced (5+ years)
+                                </option>
+                                <option value="expert" {% if profile.experience_level == 'expert' %}selected{% endif %}>
+                                    Expert (10+ years)
+                                </option>
+                            </select>
+                        </div>
+
+                        <!-- Target Role -->
+                        <div class="mb-3">
+                            <label for="target_role" class="form-label fw-bold">
+                                <i class="fas fa-bullseye"></i> Target Role
+                            </label>
+                            <select class="form-select" id="target_role" name="target_role">
+                                <option value="">Select your target role...</option>
+                                {% for role in job_roles %}
+                                <option value="{{ role.role_id }}" 
+                                        {% if profile.target_role and profile.target_role.role_id == role.role_id %}selected{% endif %}>
+                                    {{ role.role_name }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                            <small class="text-muted">What position are you preparing for?</small>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Save Changes
+                            </button>
+                            <a href="{% url 'dashboard' %}" class="btn btn-outline-secondary">
+                                <i class="fas fa-times"></i> Cancel
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Sidebar -->
+        <div class="col-lg-4">
+            <!-- Account Stats -->
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">
+                    <h6 class="mb-0">
+                        <i class="fas fa-chart-bar"></i> Your Statistics
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3 pb-3 border-bottom">
+                        <div class="d-flex justify-content-between">
+                            <span class="text-muted">Total Interviews</span>
+                            <strong>{{ profile.total_interviews }}</strong>
+                        </div>
+                    </div>
+                    <div class="mb-3 pb-3 border-bottom">
+                        <div class="d-flex justify-content-between">
+                            <span class="text-muted">Average Score</span>
+                            <strong>{{ profile.average_score|floatformat:1 }}%</strong>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-muted">Member Since</span>
+                            <strong>{{ user.date_joined|date:"M Y" }}</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h6 class="mb-0">
+                        <i class="fas fa-bolt"></i> Quick Actions
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <a href="{% url 'interview_config' %}" class="btn btn-primary">
+                            <i class="fas fa-video"></i> New Interview
+                        </a>
+                        <a href="{% url 'interview_history' %}" class="btn btn-outline-primary">
+                            <i class="fas fa-history"></i> View History
+                        </a>
+                        <a href="{% url 'user_settings' %}" class="btn btn-outline-secondary">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

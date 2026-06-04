@@ -1,0 +1,4133 @@
+[
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a computer network?",
+    "expected_answer": "A computer network is a collection of interconnected devices that share resources and communicate using protocols.",
+    "keywords": [
+      "network",
+      "devices",
+      "communication",
+      "protocols"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is an IP address?",
+    "expected_answer": "An IP address is a numerical label assigned to each device on a network used for identification and routing.",
+    "keywords": [
+      "IP address",
+      "network",
+      "routing",
+      "identification"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the difference between IPv4 and IPv6?",
+    "expected_answer": "IPv4 uses 32-bit addresses supporting about 4 billion addresses; IPv6 uses 128-bit addresses supporting vastly more devices.",
+    "keywords": [
+      "IPv4",
+      "IPv6",
+      "32-bit",
+      "128-bit",
+      "addresses"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a MAC address?",
+    "expected_answer": "A MAC (Media Access Control) address is a unique hardware identifier assigned to a network interface card at Layer 2.",
+    "keywords": [
+      "MAC address",
+      "hardware",
+      "NIC",
+      "identifier",
+      "Layer 2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the OSI model?",
+    "expected_answer": "The OSI model is a 7-layer framework: Physical, Data Link, Network, Transport, Session, Presentation, and Application.",
+    "keywords": [
+      "OSI",
+      "7 layers",
+      "Physical",
+      "Network",
+      "Application"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the TCP/IP model?",
+    "expected_answer": "The TCP/IP model has 4 layers: Network Access, Internet, Transport, and Application, and is the basis for internet communication.",
+    "keywords": [
+      "TCP/IP",
+      "4 layers",
+      "Internet",
+      "Transport",
+      "Application"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is DNS?",
+    "expected_answer": "DNS (Domain Name System) translates human-readable domain names like google.com into IP addresses that computers use to communicate.",
+    "keywords": [
+      "DNS",
+      "domain",
+      "IP address",
+      "resolution",
+      "name server"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is DHCP?",
+    "expected_answer": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses and network settings to devices on a network.",
+    "keywords": [
+      "DHCP",
+      "dynamic",
+      "IP assignment",
+      "configuration",
+      "lease"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a router?",
+    "expected_answer": "A router is a networking device that forwards data packets between different networks based on IP addresses using a routing table.",
+    "keywords": [
+      "router",
+      "forwarding",
+      "packets",
+      "IP",
+      "gateway"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a switch?",
+    "expected_answer": "A switch is a Layer 2 network device that connects devices within a LAN and forwards frames based on MAC addresses.",
+    "keywords": [
+      "switch",
+      "LAN",
+      "MAC address",
+      "Layer 2",
+      "frame"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the difference between a hub and a switch?",
+    "expected_answer": "A hub broadcasts incoming data to all ports; a switch forwards data only to the specific destination MAC address port, reducing collisions.",
+    "keywords": [
+      "hub",
+      "switch",
+      "broadcast",
+      "MAC",
+      "collision"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a LAN?",
+    "expected_answer": "A LAN (Local Area Network) is a network confined to a small geographic area like a home, office, or building.",
+    "keywords": [
+      "LAN",
+      "local area network",
+      "building",
+      "office"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a WAN?",
+    "expected_answer": "A WAN (Wide Area Network) spans large geographic areas, connecting multiple LANs over long distances, such as the internet.",
+    "keywords": [
+      "WAN",
+      "wide area",
+      "geographic",
+      "internet",
+      "LAN"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a VLAN?",
+    "expected_answer": "A VLAN (Virtual LAN) logically segments a physical network into separate broadcast domains on the same physical switch.",
+    "keywords": [
+      "VLAN",
+      "virtual",
+      "segmentation",
+      "broadcast",
+      "switch"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a subnet?",
+    "expected_answer": "A subnet is a logical subdivision of an IP network created by applying a subnet mask to divide it into smaller networks.",
+    "keywords": [
+      "subnet",
+      "subnet mask",
+      "CIDR",
+      "IP",
+      "segmentation"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a subnet mask?",
+    "expected_answer": "A subnet mask is a 32-bit number that separates an IP address into its network and host portions.",
+    "keywords": [
+      "subnet mask",
+      "network",
+      "host",
+      "32-bit",
+      "IP"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is CIDR notation?",
+    "expected_answer": "CIDR (Classless Inter-Domain Routing) expresses IP addresses with a prefix length to indicate the subnet, e.g., 192.168.1.0/24.",
+    "keywords": [
+      "CIDR",
+      "prefix",
+      "subnet",
+      "notation",
+      "routing"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a default gateway?",
+    "expected_answer": "A default gateway is the router's IP address that a device uses to send traffic destined for outside its local network.",
+    "keywords": [
+      "default gateway",
+      "router",
+      "IP",
+      "forwarding"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is NAT?",
+    "expected_answer": "NAT (Network Address Translation) maps private IP addresses to a public IP address, allowing multiple devices to share one public IP.",
+    "keywords": [
+      "NAT",
+      "private IP",
+      "public IP",
+      "translation",
+      "router"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a firewall?",
+    "expected_answer": "A firewall is a security device or software that monitors and controls incoming and outgoing network traffic based on predefined rules.",
+    "keywords": [
+      "firewall",
+      "security",
+      "rules",
+      "traffic",
+      "filtering"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is HTTP?",
+    "expected_answer": "HTTP (HyperText Transfer Protocol) is the protocol used for transferring web pages over the internet on port 80.",
+    "keywords": [
+      "HTTP",
+      "protocol",
+      "web",
+      "port 80",
+      "transfer"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is HTTPS?",
+    "expected_answer": "HTTPS is HTTP with TLS/SSL encryption providing secure communication between client and server on port 443.",
+    "keywords": [
+      "HTTPS",
+      "TLS",
+      "SSL",
+      "encryption",
+      "port 443"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is FTP?",
+    "expected_answer": "FTP (File Transfer Protocol) is used for transferring files between a client and server over a network, using ports 20 and 21.",
+    "keywords": [
+      "FTP",
+      "file transfer",
+      "protocol",
+      "port 21",
+      "server"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is SSH?",
+    "expected_answer": "SSH (Secure Shell) is a cryptographic protocol that provides secure remote login and command execution over an unsecured network on port 22.",
+    "keywords": [
+      "SSH",
+      "Secure Shell",
+      "remote",
+      "port 22",
+      "encryption"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is SMTP?",
+    "expected_answer": "SMTP (Simple Mail Transfer Protocol) is the protocol used to send email messages between servers, using port 25 or 587.",
+    "keywords": [
+      "SMTP",
+      "email",
+      "port 25",
+      "mail server",
+      "protocol"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the difference between TCP and UDP?",
+    "expected_answer": "TCP is connection-oriented and reliable with error checking; UDP is connectionless and faster but does not guarantee delivery.",
+    "keywords": [
+      "TCP",
+      "UDP",
+      "connection-oriented",
+      "reliable",
+      "connectionless"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a port number?",
+    "expected_answer": "A port number is a 16-bit integer that identifies a specific process or service on a device, ranging from 0 to 65535.",
+    "keywords": [
+      "port",
+      "16-bit",
+      "service",
+      "process",
+      "transport layer"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a ping command?",
+    "expected_answer": "Ping uses ICMP Echo Request/Reply to test network connectivity and measure round-trip time between two hosts.",
+    "keywords": [
+      "ping",
+      "ICMP",
+      "connectivity",
+      "round-trip",
+      "latency"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a loopback address?",
+    "expected_answer": "The loopback address 127.0.0.1 refers to the local machine itself and is used to test the network stack.",
+    "keywords": [
+      "loopback",
+      "127.0.0.1",
+      "localhost",
+      "testing",
+      "network stack"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is bandwidth?",
+    "expected_answer": "Bandwidth is the maximum amount of data that can be transmitted over a network connection in a given time, measured in bps.",
+    "keywords": [
+      "bandwidth",
+      "data rate",
+      "bps",
+      "throughput",
+      "capacity"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is latency?",
+    "expected_answer": "Latency is the time delay for a data packet to travel from source to destination, measured in milliseconds.",
+    "keywords": [
+      "latency",
+      "delay",
+      "milliseconds",
+      "packet",
+      "round-trip"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network topology?",
+    "expected_answer": "Network topology describes the physical or logical arrangement of nodes and connections in a network, e.g., star, bus, ring, mesh.",
+    "keywords": [
+      "topology",
+      "star",
+      "bus",
+      "ring",
+      "mesh",
+      "network"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a star topology?",
+    "expected_answer": "In a star topology all devices connect to a central hub or switch; failure of one device does not affect others.",
+    "keywords": [
+      "star topology",
+      "hub",
+      "switch",
+      "central",
+      "failure"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a mesh topology?",
+    "expected_answer": "In a mesh topology every device is connected to every other device, providing high redundancy and fault tolerance.",
+    "keywords": [
+      "mesh topology",
+      "redundancy",
+      "fault tolerance",
+      "connections"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a private IP address?",
+    "expected_answer": "Private IP addresses are reserved for internal use within a network and not routable on the internet: 10.x, 172.16-31.x, 192.168.x.",
+    "keywords": [
+      "private IP",
+      "10.0.0.0",
+      "192.168",
+      "172.16",
+      "internal"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a public IP address?",
+    "expected_answer": "A public IP address is a globally unique IP address assigned by an ISP that is routable on the internet.",
+    "keywords": [
+      "public IP",
+      "ISP",
+      "routable",
+      "internet",
+      "unique"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is an ISP?",
+    "expected_answer": "An ISP (Internet Service Provider) is a company that provides customers with internet access and related services.",
+    "keywords": [
+      "ISP",
+      "internet",
+      "service provider",
+      "access",
+      "connectivity"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network protocol?",
+    "expected_answer": "A network protocol is a set of rules governing how data is formatted, transmitted, and received between devices on a network.",
+    "keywords": [
+      "protocol",
+      "rules",
+      "data",
+      "transmission",
+      "communication"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is ARP?",
+    "expected_answer": "ARP (Address Resolution Protocol) maps a known IP address to a MAC address within a local network.",
+    "keywords": [
+      "ARP",
+      "Address Resolution",
+      "IP",
+      "MAC",
+      "mapping"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is ICMP?",
+    "expected_answer": "ICMP (Internet Control Message Protocol) is used by network devices to send error messages and operational information, e.g., ping.",
+    "keywords": [
+      "ICMP",
+      "ping",
+      "error",
+      "control",
+      "network layer"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network packet?",
+    "expected_answer": "A network packet is a unit of data formatted for transmission across a network, containing header, payload, and trailer.",
+    "keywords": [
+      "packet",
+      "header",
+      "payload",
+      "data",
+      "transmission"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a broadcast address?",
+    "expected_answer": "A broadcast address is a special IP address used to send data to all devices on a subnet simultaneously.",
+    "keywords": [
+      "broadcast",
+      "subnet",
+      "255",
+      "all devices",
+      "IP"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network interface card (NIC)?",
+    "expected_answer": "A NIC is hardware that connects a computer to a network, handling data transmission and reception at the hardware level.",
+    "keywords": [
+      "NIC",
+      "network interface",
+      "hardware",
+      "transmission",
+      "MAC"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is Ethernet?",
+    "expected_answer": "Ethernet is a family of wired networking technologies defined by IEEE 802.3, commonly used in LANs.",
+    "keywords": [
+      "Ethernet",
+      "IEEE 802.3",
+      "wired",
+      "LAN",
+      "protocol"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is Wi-Fi?",
+    "expected_answer": "Wi-Fi is a wireless networking technology based on IEEE 802.11 standards that allows devices to connect to a network wirelessly.",
+    "keywords": [
+      "Wi-Fi",
+      "wireless",
+      "IEEE 802.11",
+      "WLAN",
+      "access point"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a VPN?",
+    "expected_answer": "A VPN (Virtual Private Network) creates an encrypted tunnel over a public network allowing secure remote access to private resources.",
+    "keywords": [
+      "VPN",
+      "tunnel",
+      "encryption",
+      "remote",
+      "secure"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a proxy server?",
+    "expected_answer": "A proxy server acts as an intermediary between clients and the internet, providing caching, filtering, and anonymity.",
+    "keywords": [
+      "proxy",
+      "intermediary",
+      "cache",
+      "filter",
+      "anonymity"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network address space?",
+    "expected_answer": "Network address space is the range of IP addresses available for allocation within a particular network or address block.",
+    "keywords": [
+      "address space",
+      "IP range",
+      "allocation",
+      "network",
+      "CIDR"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is traceroute?",
+    "expected_answer": "Traceroute is a diagnostic tool that shows the path packets take from source to destination, displaying each hop and latency.",
+    "keywords": [
+      "traceroute",
+      "hops",
+      "path",
+      "diagnostic",
+      "latency"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network gateway?",
+    "expected_answer": "A gateway is a node that connects two different networks, often performing protocol conversion or routing between them.",
+    "keywords": [
+      "gateway",
+      "router",
+      "protocol conversion",
+      "routing",
+      "node"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is full-duplex communication?",
+    "expected_answer": "Full-duplex allows simultaneous two-way communication between devices, unlike half-duplex which allows only one direction at a time.",
+    "keywords": [
+      "full-duplex",
+      "half-duplex",
+      "bidirectional",
+      "communication",
+      "simultaneous"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is collision domain?",
+    "expected_answer": "A collision domain is a network segment where data packets can collide with each other; switches reduce collision domains per port.",
+    "keywords": [
+      "collision domain",
+      "switch",
+      "hub",
+      "CSMA/CD",
+      "segment"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a broadcast domain?",
+    "expected_answer": "A broadcast domain is a network segment where a broadcast packet is delivered to all devices; routers and VLANs separate broadcast domains.",
+    "keywords": [
+      "broadcast domain",
+      "VLAN",
+      "router",
+      "segment",
+      "broadcast"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is SNMP?",
+    "expected_answer": "SNMP (Simple Network Management Protocol) is used to monitor and manage network devices like routers, switches, and servers.",
+    "keywords": [
+      "SNMP",
+      "monitoring",
+      "management",
+      "network devices",
+      "MIB"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network cable?",
+    "expected_answer": "A network cable physically connects devices in a network; common types include Cat5e, Cat6, and Cat6a for Ethernet.",
+    "keywords": [
+      "network cable",
+      "Cat5e",
+      "Cat6",
+      "Ethernet",
+      "physical"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is an access point?",
+    "expected_answer": "A wireless access point (WAP) connects wireless devices to a wired network, extending Wi-Fi coverage.",
+    "keywords": [
+      "access point",
+      "WAP",
+      "wireless",
+      "Wi-Fi",
+      "coverage"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network segmentation?",
+    "expected_answer": "Network segmentation divides a network into smaller segments to improve performance, security, and management.",
+    "keywords": [
+      "segmentation",
+      "VLAN",
+      "subnet",
+      "security",
+      "performance"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network backbone?",
+    "expected_answer": "A network backbone is the high-speed central infrastructure that interconnects different parts of a network or multiple networks.",
+    "keywords": [
+      "backbone",
+      "core",
+      "high-speed",
+      "infrastructure",
+      "network"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is encapsulation in networking?",
+    "expected_answer": "Encapsulation is the process of wrapping data with protocol-specific headers and trailers as it passes through each OSI layer.",
+    "keywords": [
+      "encapsulation",
+      "OSI",
+      "header",
+      "protocol",
+      "layers"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is NTP?",
+    "expected_answer": "NTP (Network Time Protocol) synchronizes the clocks of computers over a network to a reference time source.",
+    "keywords": [
+      "NTP",
+      "time synchronization",
+      "clock",
+      "server",
+      "protocol"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is TFTP?",
+    "expected_answer": "TFTP (Trivial File Transfer Protocol) is a simple, lightweight file transfer protocol using UDP, often used for network device booting.",
+    "keywords": [
+      "TFTP",
+      "file transfer",
+      "UDP",
+      "booting",
+      "lightweight"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the purpose of the TTL field in IP packets?",
+    "expected_answer": "TTL (Time to Live) is a value decremented at each hop; when it reaches zero, the packet is discarded, preventing infinite loops.",
+    "keywords": [
+      "TTL",
+      "Time to Live",
+      "hop",
+      "IP",
+      "loop prevention"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a routing table?",
+    "expected_answer": "A routing table is a data table stored in a router listing routes to network destinations and the metrics associated with them.",
+    "keywords": [
+      "routing table",
+      "router",
+      "routes",
+      "destination",
+      "metric"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network congestion?",
+    "expected_answer": "Network congestion occurs when the volume of traffic exceeds the network's capacity, causing packet loss and increased latency.",
+    "keywords": [
+      "congestion",
+      "traffic",
+      "packet loss",
+      "latency",
+      "capacity"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is QoS?",
+    "expected_answer": "QoS (Quality of Service) prioritizes certain types of network traffic to ensure performance for critical applications like VoIP or video.",
+    "keywords": [
+      "QoS",
+      "Quality of Service",
+      "prioritization",
+      "traffic",
+      "VoIP"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network diagram?",
+    "expected_answer": "A network diagram is a visual representation of the devices, connections, and architecture of a network.",
+    "keywords": [
+      "network diagram",
+      "visual",
+      "topology",
+      "devices",
+      "connections"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is IMAP?",
+    "expected_answer": "IMAP (Internet Message Access Protocol) is an email protocol that retrieves messages from a server while keeping them stored server-side.",
+    "keywords": [
+      "IMAP",
+      "email",
+      "protocol",
+      "server",
+      "messages"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is POP3?",
+    "expected_answer": "POP3 (Post Office Protocol 3) downloads email from the server to the local client and typically deletes it from the server.",
+    "keywords": [
+      "POP3",
+      "email",
+      "download",
+      "protocol",
+      "client"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network node?",
+    "expected_answer": "A network node is any device connected to a network, including computers, routers, switches, and printers.",
+    "keywords": [
+      "node",
+      "device",
+      "network",
+      "connection",
+      "host"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is half-duplex communication?",
+    "expected_answer": "Half-duplex allows communication in both directions but only one direction at a time, like a walkie-talkie.",
+    "keywords": [
+      "half-duplex",
+      "one direction",
+      "walkie-talkie",
+      "communication",
+      "shared"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a modem?",
+    "expected_answer": "A modem modulates and demodulates signals to connect a network to an ISP over telephone, cable, or fiber lines.",
+    "keywords": [
+      "modem",
+      "modulate",
+      "demodulate",
+      "ISP",
+      "internet"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a Class A IP address?",
+    "expected_answer": "Class A IP addresses range from 1.0.0.0 to 126.0.0.0 and support large networks with millions of hosts.",
+    "keywords": [
+      "Class A",
+      "IP",
+      "1.0.0.0",
+      "large network",
+      "hosts"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a Class C IP address?",
+    "expected_answer": "Class C IP addresses range from 192.0.0.0 to 223.255.255.0 and support small networks with up to 254 hosts.",
+    "keywords": [
+      "Class C",
+      "IP",
+      "192.168",
+      "small network",
+      "254 hosts"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a well-known port?",
+    "expected_answer": "Well-known ports range from 0 to 1023 and are reserved for standard services like HTTP (80), HTTPS (443), SSH (22).",
+    "keywords": [
+      "well-known ports",
+      "0-1023",
+      "HTTP",
+      "HTTPS",
+      "SSH"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network switch's forwarding table?",
+    "expected_answer": "A switch's MAC address table (forwarding table) maps MAC addresses to switch ports, allowing it to forward frames directly.",
+    "keywords": [
+      "MAC table",
+      "forwarding table",
+      "switch",
+      "port",
+      "MAC address"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is an uplink port on a switch?",
+    "expected_answer": "An uplink port connects a switch to another switch or router at a higher level in the network hierarchy.",
+    "keywords": [
+      "uplink",
+      "switch",
+      "router",
+      "hierarchy",
+      "connection"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the purpose of a DMZ?",
+    "expected_answer": "A DMZ (Demilitarized Zone) is a network segment that hosts public-facing services (like web servers) isolated from the internal network.",
+    "keywords": [
+      "DMZ",
+      "Demilitarized Zone",
+      "security",
+      "web server",
+      "isolated"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network host?",
+    "expected_answer": "A network host is a device connected to a network that can communicate with other devices using an IP address.",
+    "keywords": [
+      "host",
+      "device",
+      "IP address",
+      "communication",
+      "network"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is jitter in networking?",
+    "expected_answer": "Jitter is the variation in packet arrival times, which can cause issues in real-time applications like VoIP or video conferencing.",
+    "keywords": [
+      "jitter",
+      "variation",
+      "packet delay",
+      "VoIP",
+      "real-time"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is packet loss?",
+    "expected_answer": "Packet loss occurs when one or more data packets fail to reach their destination, usually due to congestion or hardware failure.",
+    "keywords": [
+      "packet loss",
+      "congestion",
+      "reliability",
+      "TCP",
+      "retransmission"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the difference between LAN and WAN?",
+    "expected_answer": "LAN covers a small area like an office; WAN covers large geographic areas connecting multiple LANs, such as the internet.",
+    "keywords": [
+      "LAN",
+      "WAN",
+      "geographic",
+      "area",
+      "internet"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a hostname?",
+    "expected_answer": "A hostname is a human-readable label assigned to a device on a network that identifies it within a domain.",
+    "keywords": [
+      "hostname",
+      "label",
+      "domain",
+      "device",
+      "DNS"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network redundancy?",
+    "expected_answer": "Network redundancy is the use of multiple network components or paths so that if one fails, the network remains operational.",
+    "keywords": [
+      "redundancy",
+      "failover",
+      "backup",
+      "availability",
+      "fault tolerance"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a data frame?",
+    "expected_answer": "A data frame is a Layer 2 packet with MAC address header and trailer used to transmit data within a LAN segment.",
+    "keywords": [
+      "frame",
+      "Layer 2",
+      "MAC",
+      "LAN",
+      "data link"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is throughput?",
+    "expected_answer": "Throughput is the actual rate of successful data transfer over a network connection, which may be lower than the maximum bandwidth.",
+    "keywords": [
+      "throughput",
+      "data rate",
+      "bandwidth",
+      "actual",
+      "transfer"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "Explain how subnetting works with an example.",
+    "expected_answer": "Subnetting divides a network into smaller subnets using a subnet mask. For 192.168.1.0/24 split into /25: two subnets 192.168.1.0/25 (hosts .1-.126) and 192.168.1.128/25 (hosts .129-.254).",
+    "keywords": [
+      "subnetting",
+      "subnet mask",
+      "CIDR",
+      "/24",
+      "/25",
+      "hosts"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the difference between static and dynamic routing?",
+    "expected_answer": "Static routing uses manually configured routes that don't change; dynamic routing uses protocols (OSPF, RIP, BGP) to automatically discover and update routes.",
+    "keywords": [
+      "static routing",
+      "dynamic routing",
+      "OSPF",
+      "RIP",
+      "BGP"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is OSPF and how does it work?",
+    "expected_answer": "OSPF (Open Shortest Path First) is a link-state routing protocol that uses Dijkstra's algorithm to compute the shortest path tree, exchanging LSAs to build a complete topology map.",
+    "keywords": [
+      "OSPF",
+      "link-state",
+      "Dijkstra",
+      "LSA",
+      "routing protocol"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is BGP and when is it used?",
+    "expected_answer": "BGP (Border Gateway Protocol) is an exterior gateway protocol used to exchange routing information between autonomous systems on the internet.",
+    "keywords": [
+      "BGP",
+      "Border Gateway Protocol",
+      "autonomous system",
+      "exterior",
+      "internet routing"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is EIGRP?",
+    "expected_answer": "EIGRP (Enhanced Interior Gateway Routing Protocol) is a Cisco advanced distance-vector protocol using DUAL algorithm for fast convergence.",
+    "keywords": [
+      "EIGRP",
+      "Cisco",
+      "distance-vector",
+      "DUAL",
+      "convergence"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is RIP and its limitations?",
+    "expected_answer": "RIP (Routing Information Protocol) is a distance-vector protocol using hop count as metric with a max of 15 hops, slow convergence and not scalable.",
+    "keywords": [
+      "RIP",
+      "hop count",
+      "15 hops",
+      "distance-vector",
+      "convergence"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "Explain how the three-way TCP handshake works.",
+    "expected_answer": "TCP handshake: client sends SYN, server responds with SYN-ACK, client responds with ACK. This establishes a reliable connection before data transfer.",
+    "keywords": [
+      "TCP",
+      "three-way handshake",
+      "SYN",
+      "SYN-ACK",
+      "ACK"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the difference between a routed and routing protocol?",
+    "expected_answer": "A routed protocol carries user data between networks (e.g., IP); a routing protocol determines the best path for that data (e.g., OSPF, BGP).",
+    "keywords": [
+      "routed protocol",
+      "routing protocol",
+      "IP",
+      "OSPF",
+      "path determination"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is STP (Spanning Tree Protocol)?",
+    "expected_answer": "STP prevents Layer 2 loops in networks with redundant paths by electing a root bridge and blocking redundant ports.",
+    "keywords": [
+      "STP",
+      "Spanning Tree",
+      "loop prevention",
+      "root bridge",
+      "blocked port"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is RSTP and how does it improve STP?",
+    "expected_answer": "RSTP (Rapid Spanning Tree Protocol) IEEE 802.1w improves STP by providing faster convergence (seconds vs minutes) through port roles and states.",
+    "keywords": [
+      "RSTP",
+      "802.1w",
+      "rapid convergence",
+      "port roles",
+      "STP"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is VLAN trunking?",
+    "expected_answer": "VLAN trunking carries multiple VLANs over a single link using IEEE 802.1Q tags to identify which VLAN each frame belongs to.",
+    "keywords": [
+      "VLAN trunk",
+      "802.1Q",
+      "tagging",
+      "inter-switch",
+      "multiple VLANs"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the difference between access and trunk ports on a switch?",
+    "expected_answer": "Access ports carry traffic for a single VLAN (untagged); trunk ports carry traffic for multiple VLANs using 802.1Q tagging.",
+    "keywords": [
+      "access port",
+      "trunk port",
+      "VLAN",
+      "802.1Q",
+      "tagging"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is inter-VLAN routing?",
+    "expected_answer": "Inter-VLAN routing enables communication between different VLANs using a router or Layer 3 switch with subinterfaces or SVIs.",
+    "keywords": [
+      "inter-VLAN",
+      "routing",
+      "Layer 3 switch",
+      "subinterface",
+      "SVI"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a Layer 3 switch?",
+    "expected_answer": "A Layer 3 switch combines switching and routing capabilities, able to route packets between subnets at wire speed.",
+    "keywords": [
+      "Layer 3 switch",
+      "routing",
+      "switching",
+      "SVI",
+      "inter-VLAN"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is DHCP snooping?",
+    "expected_answer": "DHCP snooping is a security feature that validates DHCP messages and blocks rogue DHCP servers by only trusting designated trusted ports.",
+    "keywords": [
+      "DHCP snooping",
+      "security",
+      "rogue DHCP",
+      "trusted port",
+      "binding table"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is dynamic ARP inspection (DAI)?",
+    "expected_answer": "DAI validates ARP packets using the DHCP snooping binding table to prevent ARP spoofing attacks.",
+    "keywords": [
+      "DAI",
+      "ARP inspection",
+      "ARP spoofing",
+      "security",
+      "DHCP snooping"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is port security on a switch?",
+    "expected_answer": "Port security limits the number of MAC addresses on a switch port and takes action (shutdown, restrict) when violated.",
+    "keywords": [
+      "port security",
+      "MAC address",
+      "switch port",
+      "violation",
+      "shutdown"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is NAT overload (PAT)?",
+    "expected_answer": "PAT (Port Address Translation) maps multiple private IPs to a single public IP using unique port numbers to distinguish sessions.",
+    "keywords": [
+      "PAT",
+      "NAT overload",
+      "port",
+      "many-to-one",
+      "translation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the difference between NAT and PAT?",
+    "expected_answer": "NAT maps one private IP to one public IP (one-to-one); PAT maps many private IPs to one public IP using different ports.",
+    "keywords": [
+      "NAT",
+      "PAT",
+      "one-to-one",
+      "many-to-one",
+      "port translation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is an ACL (Access Control List)?",
+    "expected_answer": "An ACL is a set of rules on a router or firewall that permits or denies traffic based on source/destination IP, port, and protocol.",
+    "keywords": [
+      "ACL",
+      "access control list",
+      "permit",
+      "deny",
+      "rules"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the difference between standard and extended ACLs?",
+    "expected_answer": "Standard ACLs filter traffic based on source IP only; extended ACLs filter based on source, destination, protocol, and port.",
+    "keywords": [
+      "standard ACL",
+      "extended ACL",
+      "source",
+      "destination",
+      "port"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a wildcard mask?",
+    "expected_answer": "A wildcard mask is used in ACLs and OSPF to specify which bits of an IP address to match; 0 means match, 1 means ignore.",
+    "keywords": [
+      "wildcard mask",
+      "ACL",
+      "OSPF",
+      "match",
+      "bits"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is HSRP?",
+    "expected_answer": "HSRP (Hot Standby Router Protocol) is a Cisco proprietary protocol providing gateway redundancy by having standby routers take over if the active router fails.",
+    "keywords": [
+      "HSRP",
+      "Hot Standby",
+      "gateway redundancy",
+      "active",
+      "standby"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is VRRP?",
+    "expected_answer": "VRRP (Virtual Router Redundancy Protocol) is an open standard for router redundancy, similar to HSRP but vendor-neutral.",
+    "keywords": [
+      "VRRP",
+      "Virtual Router Redundancy",
+      "open standard",
+      "failover",
+      "gateway"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is GLBP?",
+    "expected_answer": "GLBP (Gateway Load Balancing Protocol) is a Cisco protocol providing both gateway redundancy and load balancing across multiple routers.",
+    "keywords": [
+      "GLBP",
+      "load balancing",
+      "redundancy",
+      "Cisco",
+      "active virtual forwarder"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network address translation and how does it conserve IPv4 addresses?",
+    "expected_answer": "NAT allows multiple devices with private IPs to share a single public IP, drastically reducing the number of public IPs needed.",
+    "keywords": [
+      "NAT",
+      "IPv4",
+      "address conservation",
+      "private IP",
+      "public IP"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the DNS resolution process?",
+    "expected_answer": "DNS resolution: browser checks cache, then OS cache, then queries recursive resolver, which queries root, TLD, then authoritative DNS server for the answer.",
+    "keywords": [
+      "DNS resolution",
+      "recursive resolver",
+      "authoritative",
+      "TLD",
+      "root server"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a DNS A record?",
+    "expected_answer": "A DNS A record maps a domain name to an IPv4 address, e.g., example.com \u2192 93.184.216.34.",
+    "keywords": [
+      "A record",
+      "DNS",
+      "IPv4",
+      "domain",
+      "mapping"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a DNS MX record?",
+    "expected_answer": "A DNS MX (Mail Exchange) record specifies the mail server responsible for receiving email for a domain.",
+    "keywords": [
+      "MX record",
+      "DNS",
+      "mail server",
+      "email",
+      "domain"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a DNS CNAME record?",
+    "expected_answer": "A CNAME (Canonical Name) record maps an alias domain name to the canonical (real) domain name.",
+    "keywords": [
+      "CNAME",
+      "DNS",
+      "alias",
+      "canonical",
+      "domain"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is DNSSEC?",
+    "expected_answer": "DNSSEC (DNS Security Extensions) adds cryptographic signatures to DNS records to protect against DNS spoofing and cache poisoning.",
+    "keywords": [
+      "DNSSEC",
+      "DNS security",
+      "signatures",
+      "spoofing",
+      "cache poisoning"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is DNS cache poisoning?",
+    "expected_answer": "DNS cache poisoning injects fraudulent DNS records into a resolver's cache, redirecting users to malicious sites.",
+    "keywords": [
+      "cache poisoning",
+      "DNS",
+      "spoofing",
+      "fraudulent",
+      "redirect"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is split DNS?",
+    "expected_answer": "Split DNS uses different DNS responses for internal and external queries, returning private IPs internally and public IPs externally.",
+    "keywords": [
+      "split DNS",
+      "internal",
+      "external",
+      "private IP",
+      "public IP"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How does DHCP lease process work?",
+    "expected_answer": "DHCP uses DORA: Discover (client broadcasts), Offer (server offers IP), Request (client requests), Acknowledge (server confirms lease).",
+    "keywords": [
+      "DHCP",
+      "DORA",
+      "Discover",
+      "Offer",
+      "Request",
+      "Acknowledge"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is DHCP relay agent?",
+    "expected_answer": "A DHCP relay agent forwards DHCP broadcasts across subnets to a DHCP server on a different network segment.",
+    "keywords": [
+      "DHCP relay",
+      "ip helper-address",
+      "broadcast",
+      "subnet",
+      "forwarding"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the difference between symmetric and asymmetric encryption?",
+    "expected_answer": "Symmetric encryption uses the same key for encryption and decryption (AES); asymmetric uses a key pair \u2014 public key to encrypt and private key to decrypt (RSA).",
+    "keywords": [
+      "symmetric",
+      "asymmetric",
+      "AES",
+      "RSA",
+      "key pair"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is SSL/TLS handshake?",
+    "expected_answer": "The TLS handshake negotiates cipher suites, authenticates the server certificate, and establishes a shared session key for encrypted communication.",
+    "keywords": [
+      "TLS handshake",
+      "certificate",
+      "cipher suite",
+      "session key",
+      "encryption"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a digital certificate?",
+    "expected_answer": "A digital certificate is an electronic document issued by a CA that binds a public key to an identity, enabling trust in TLS.",
+    "keywords": [
+      "digital certificate",
+      "CA",
+      "public key",
+      "identity",
+      "TLS"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a Certificate Authority (CA)?",
+    "expected_answer": "A CA is a trusted entity that issues digital certificates, verifying the identity of certificate holders.",
+    "keywords": [
+      "CA",
+      "Certificate Authority",
+      "trust",
+      "certificates",
+      "PKI"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is IPSec?",
+    "expected_answer": "IPSec is a suite of protocols providing authentication and encryption at the IP layer, commonly used in VPN tunnels.",
+    "keywords": [
+      "IPSec",
+      "VPN",
+      "encryption",
+      "authentication",
+      "tunnel"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What are the two IPSec modes?",
+    "expected_answer": "Transport mode encrypts only the payload; tunnel mode encrypts the entire original IP packet and adds a new header.",
+    "keywords": [
+      "IPSec",
+      "transport mode",
+      "tunnel mode",
+      "payload",
+      "VPN"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is IKE in IPSec?",
+    "expected_answer": "IKE (Internet Key Exchange) is the protocol used to negotiate IPSec security associations and exchange keys.",
+    "keywords": [
+      "IKE",
+      "IPSec",
+      "key exchange",
+      "security association",
+      "negotiation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is site-to-site VPN?",
+    "expected_answer": "A site-to-site VPN creates a permanent encrypted tunnel between two networks over the internet, connecting remote offices.",
+    "keywords": [
+      "site-to-site VPN",
+      "tunnel",
+      "IPSec",
+      "offices",
+      "encryption"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is remote access VPN?",
+    "expected_answer": "A remote access VPN allows individual users to securely connect to a corporate network from anywhere using a VPN client.",
+    "keywords": [
+      "remote access VPN",
+      "client",
+      "SSL VPN",
+      "user",
+      "corporate"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a DMZ in network security?",
+    "expected_answer": "A DMZ is an isolated network segment hosting public-facing servers (web, mail) between the internet and the internal network using two firewalls.",
+    "keywords": [
+      "DMZ",
+      "isolated",
+      "web server",
+      "firewall",
+      "public-facing"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is stateful vs stateless firewall?",
+    "expected_answer": "Stateful firewalls track connection state and context; stateless firewalls inspect each packet independently without tracking sessions.",
+    "keywords": [
+      "stateful",
+      "stateless",
+      "firewall",
+      "connection state",
+      "session"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a next-generation firewall (NGFW)?",
+    "expected_answer": "NGFW combines traditional firewall with DPI, application awareness, IPS, and user identity tracking for advanced threat prevention.",
+    "keywords": [
+      "NGFW",
+      "next-generation",
+      "DPI",
+      "application awareness",
+      "IPS"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is an IDS vs IPS?",
+    "expected_answer": "IDS (Intrusion Detection System) monitors and alerts on threats; IPS (Intrusion Prevention System) actively blocks detected threats in real time.",
+    "keywords": [
+      "IDS",
+      "IPS",
+      "intrusion detection",
+      "intrusion prevention",
+      "inline"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is deep packet inspection (DPI)?",
+    "expected_answer": "DPI examines the full content of packets (not just headers) to detect, filter, or block malicious traffic or specific applications.",
+    "keywords": [
+      "DPI",
+      "deep packet inspection",
+      "payload",
+      "content filtering",
+      "threat detection"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a DDoS attack?",
+    "expected_answer": "A DDoS (Distributed Denial of Service) attack floods a target with traffic from many sources, overwhelming resources and causing downtime.",
+    "keywords": [
+      "DDoS",
+      "distributed",
+      "denial of service",
+      "flood",
+      "botnet"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a man-in-the-middle attack?",
+    "expected_answer": "A MITM attack intercepts communication between two parties, allowing an attacker to eavesdrop or alter the data.",
+    "keywords": [
+      "MITM",
+      "man-in-the-middle",
+      "eavesdrop",
+      "intercept",
+      "ARP spoofing"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is ARP spoofing?",
+    "expected_answer": "ARP spoofing sends fake ARP replies to associate the attacker's MAC address with a legitimate IP address, enabling MITM attacks.",
+    "keywords": [
+      "ARP spoofing",
+      "ARP poisoning",
+      "MAC",
+      "MITM",
+      "LAN"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a smurf attack?",
+    "expected_answer": "A smurf attack sends ICMP echo requests with a spoofed source IP to a broadcast address, causing all hosts to flood the victim.",
+    "keywords": [
+      "smurf attack",
+      "ICMP",
+      "broadcast",
+      "spoofed",
+      "amplification"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network monitoring?",
+    "expected_answer": "Network monitoring continuously tracks network performance, availability, and health using tools like Nagios, PRTG, or Zabbix.",
+    "keywords": [
+      "monitoring",
+      "Nagios",
+      "PRTG",
+      "Zabbix",
+      "SNMP"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is NetFlow?",
+    "expected_answer": "NetFlow is a Cisco protocol that collects IP traffic metadata (source, destination, bytes, packets) for traffic analysis and capacity planning.",
+    "keywords": [
+      "NetFlow",
+      "traffic analysis",
+      "Cisco",
+      "flow",
+      "metadata"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a packet analyzer (sniffer)?",
+    "expected_answer": "A packet analyzer (e.g., Wireshark) captures and analyzes network packets in real time for troubleshooting and security analysis.",
+    "keywords": [
+      "packet analyzer",
+      "Wireshark",
+      "sniffer",
+      "capture",
+      "protocol analysis"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is SNMP v3 and how does it differ from v1/v2?",
+    "expected_answer": "SNMPv3 adds authentication (MD5/SHA) and encryption (DES/AES) unlike v1/v2c which use community strings with no encryption.",
+    "keywords": [
+      "SNMPv3",
+      "authentication",
+      "encryption",
+      "community string",
+      "security"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is syslog?",
+    "expected_answer": "Syslog is a standard protocol for sending system log messages to a centralized log server for monitoring and analysis.",
+    "keywords": [
+      "syslog",
+      "logging",
+      "centralized",
+      "monitoring",
+      "severity"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is LACP and link aggregation?",
+    "expected_answer": "LACP (Link Aggregation Control Protocol) bundles multiple physical links into one logical link for increased bandwidth and redundancy.",
+    "keywords": [
+      "LACP",
+      "link aggregation",
+      "EtherChannel",
+      "bandwidth",
+      "redundancy"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is PoE (Power over Ethernet)?",
+    "expected_answer": "PoE delivers electrical power over Ethernet cables to devices like IP phones, cameras, and access points alongside data.",
+    "keywords": [
+      "PoE",
+      "Power over Ethernet",
+      "IP phone",
+      "access point",
+      "IEEE 802.3af"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is SFP?",
+    "expected_answer": "SFP (Small Form-factor Pluggable) is a compact transceiver used in network switches and routers for fiber or copper connections.",
+    "keywords": [
+      "SFP",
+      "transceiver",
+      "fiber",
+      "switch",
+      "pluggable"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a trunk line in telephony vs networking?",
+    "expected_answer": "In networking, a trunk carries multiple VLANs on one link. In telephony, a trunk carries multiple voice channels between exchanges.",
+    "keywords": [
+      "trunk",
+      "VLAN",
+      "telephony",
+      "voice",
+      "networking"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is MPLS?",
+    "expected_answer": "MPLS (Multiprotocol Label Switching) routes traffic using short labels rather than IP addresses for fast, scalable WAN routing.",
+    "keywords": [
+      "MPLS",
+      "label switching",
+      "WAN",
+      "routing",
+      "traffic engineering"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is SD-WAN?",
+    "expected_answer": "SD-WAN (Software-Defined WAN) uses software to centrally manage and optimize WAN connections including internet, MPLS, and LTE.",
+    "keywords": [
+      "SD-WAN",
+      "software-defined",
+      "WAN",
+      "centralized",
+      "optimization"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network virtualization?",
+    "expected_answer": "Network virtualization abstracts physical network resources into virtual networks, allowing multiple virtual networks on shared physical infrastructure.",
+    "keywords": [
+      "network virtualization",
+      "SDN",
+      "overlay",
+      "VXLAN",
+      "abstraction"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is SDN (Software-Defined Networking)?",
+    "expected_answer": "SDN separates the control plane from the data plane, centralizing network management and enabling programmable network configuration.",
+    "keywords": [
+      "SDN",
+      "control plane",
+      "data plane",
+      "centralized",
+      "programmable"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is VXLAN?",
+    "expected_answer": "VXLAN (Virtual Extensible LAN) extends Layer 2 networks over a Layer 3 infrastructure by encapsulating Ethernet frames in UDP packets.",
+    "keywords": [
+      "VXLAN",
+      "overlay",
+      "Layer 2",
+      "UDP",
+      "encapsulation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is GRE tunneling?",
+    "expected_answer": "GRE (Generic Routing Encapsulation) encapsulates packets of one protocol inside another, creating point-to-point tunnels across IP networks.",
+    "keywords": [
+      "GRE",
+      "tunneling",
+      "encapsulation",
+      "point-to-point",
+      "VPN"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network convergence?",
+    "expected_answer": "Network convergence is the process by which all routers in a network reach a consistent view of the topology after a change.",
+    "keywords": [
+      "convergence",
+      "routing",
+      "topology",
+      "consistent",
+      "stable"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is BGP route reflector?",
+    "expected_answer": "A BGP route reflector eliminates the need for full mesh iBGP by reflecting routes to iBGP peers, reducing connections needed.",
+    "keywords": [
+      "BGP",
+      "route reflector",
+      "iBGP",
+      "full mesh",
+      "scalability"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is an autonomous system in BGP?",
+    "expected_answer": "An autonomous system (AS) is a collection of IP networks under a single administrative control sharing a common routing policy, identified by ASN.",
+    "keywords": [
+      "autonomous system",
+      "AS",
+      "ASN",
+      "BGP",
+      "routing policy"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is route summarization?",
+    "expected_answer": "Route summarization combines multiple specific routes into a single summarized route to reduce routing table size.",
+    "keywords": [
+      "route summarization",
+      "aggregation",
+      "supernet",
+      "routing table",
+      "scalability"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the difference between iBGP and eBGP?",
+    "expected_answer": "iBGP exchanges routes within the same autonomous system; eBGP exchanges routes between different autonomous systems.",
+    "keywords": [
+      "iBGP",
+      "eBGP",
+      "autonomous system",
+      "internal",
+      "external"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is OSPF area and why is it used?",
+    "expected_answer": "OSPF areas segment the network to limit LSA flooding and reduce routing table size; Area 0 is the backbone all areas must connect to.",
+    "keywords": [
+      "OSPF",
+      "area",
+      "Area 0",
+      "backbone",
+      "LSA flooding"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network load balancing?",
+    "expected_answer": "Load balancing distributes incoming network traffic across multiple servers to ensure no single server becomes overloaded.",
+    "keywords": [
+      "load balancing",
+      "distribution",
+      "servers",
+      "availability",
+      "traffic"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a content delivery network (CDN)?",
+    "expected_answer": "A CDN is a distributed network of servers that delivers content to users from the nearest location, reducing latency.",
+    "keywords": [
+      "CDN",
+      "content delivery",
+      "geographically distributed",
+      "latency",
+      "cache"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network flow control?",
+    "expected_answer": "Flow control prevents a fast sender from overwhelming a slow receiver using mechanisms like TCP windowing and buffering.",
+    "keywords": [
+      "flow control",
+      "TCP windowing",
+      "buffer",
+      "congestion",
+      "receiver"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is TCP congestion control?",
+    "expected_answer": "TCP congestion control adjusts transmission rate using algorithms like slow start, congestion avoidance, fast retransmit, and fast recovery.",
+    "keywords": [
+      "TCP",
+      "congestion control",
+      "slow start",
+      "congestion avoidance",
+      "window"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is ICMP redirect?",
+    "expected_answer": "An ICMP redirect message informs a host that a better route exists, asking it to update its routing for that destination.",
+    "keywords": [
+      "ICMP redirect",
+      "routing",
+      "better route",
+      "host",
+      "update"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a routing loop and how is it prevented?",
+    "expected_answer": "A routing loop occurs when packets circulate endlessly. Prevention methods include split horizon, route poisoning, and TTL.",
+    "keywords": [
+      "routing loop",
+      "split horizon",
+      "route poisoning",
+      "TTL",
+      "prevention"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is split horizon?",
+    "expected_answer": "Split horizon prevents routing loops by not advertising a route back to the interface from which it was learned.",
+    "keywords": [
+      "split horizon",
+      "routing loop",
+      "interface",
+      "distance-vector",
+      "RIP"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network Time-to-Live (TTL) in routing?",
+    "expected_answer": "TTL is decremented by 1 at each hop; when it reaches 0, the packet is dropped and an ICMP Time Exceeded message is sent to the source.",
+    "keywords": [
+      "TTL",
+      "hop",
+      "ICMP",
+      "time exceeded",
+      "routing"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a tunnel interface?",
+    "expected_answer": "A tunnel interface is a virtual interface that encapsulates packets for transmission across a different protocol network, e.g., GRE, IPSec.",
+    "keywords": [
+      "tunnel interface",
+      "virtual",
+      "encapsulation",
+      "GRE",
+      "IPSec"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is Wireshark and how is it used?",
+    "expected_answer": "Wireshark is a packet capture and analysis tool that captures network traffic in real time and decodes protocols for troubleshooting.",
+    "keywords": [
+      "Wireshark",
+      "packet capture",
+      "analysis",
+      "protocol",
+      "troubleshooting"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network baseline?",
+    "expected_answer": "A network baseline records normal network performance metrics so deviations can be identified as potential problems.",
+    "keywords": [
+      "baseline",
+      "performance",
+      "metrics",
+      "deviation",
+      "monitoring"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is zero-trust networking?",
+    "expected_answer": "Zero-trust networking assumes no device or user is trusted by default, requiring continuous verification regardless of network location.",
+    "keywords": [
+      "zero trust",
+      "continuous verification",
+      "identity",
+      "microsegmentation",
+      "security"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network microsegmentation?",
+    "expected_answer": "Microsegmentation divides a network into very small zones with independent access controls to limit lateral movement of threats.",
+    "keywords": [
+      "microsegmentation",
+      "zero trust",
+      "lateral movement",
+      "access control",
+      "security"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is 802.1X authentication?",
+    "expected_answer": "802.1X is a port-based network access control standard requiring devices to authenticate before gaining network access, using RADIUS.",
+    "keywords": [
+      "802.1X",
+      "authentication",
+      "RADIUS",
+      "port-based",
+      "NAC"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is RADIUS?",
+    "expected_answer": "RADIUS (Remote Authentication Dial-In User Service) provides centralized authentication, authorization, and accounting for network access.",
+    "keywords": [
+      "RADIUS",
+      "AAA",
+      "authentication",
+      "authorization",
+      "accounting"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is TACACS+?",
+    "expected_answer": "TACACS+ is a Cisco AAA protocol that separates authentication, authorization, and accounting and encrypts the entire body of the packet.",
+    "keywords": [
+      "TACACS+",
+      "AAA",
+      "Cisco",
+      "encryption",
+      "authorization"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is NAC (Network Access Control)?",
+    "expected_answer": "NAC enforces security policies on devices before granting network access, checking compliance like patch level and antivirus status.",
+    "keywords": [
+      "NAC",
+      "network access control",
+      "compliance",
+      "policy",
+      "endpoint"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the difference between unicast, multicast, and broadcast?",
+    "expected_answer": "Unicast sends to one recipient; multicast sends to a group of recipients; broadcast sends to all devices on a network segment.",
+    "keywords": [
+      "unicast",
+      "multicast",
+      "broadcast",
+      "one-to-one",
+      "one-to-many"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is IGMP?",
+    "expected_answer": "IGMP (Internet Group Management Protocol) is used by hosts to report multicast group membership to routers.",
+    "keywords": [
+      "IGMP",
+      "multicast",
+      "group membership",
+      "router",
+      "Layer 3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is PIM (Protocol Independent Multicast)?",
+    "expected_answer": "PIM is a routing protocol for building multicast distribution trees, independent of the unicast routing protocol used.",
+    "keywords": [
+      "PIM",
+      "multicast",
+      "distribution tree",
+      "sparse mode",
+      "dense mode"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is EtherChannel?",
+    "expected_answer": "EtherChannel bundles multiple physical Ethernet links between switches into one logical link for increased bandwidth and redundancy.",
+    "keywords": [
+      "EtherChannel",
+      "LACP",
+      "PAgP",
+      "link aggregation",
+      "redundancy"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the difference between fiber optic and copper Ethernet cables?",
+    "expected_answer": "Fiber optic uses light to transmit data over longer distances with higher bandwidth and immunity to EMI; copper uses electrical signals and is cheaper for short distances.",
+    "keywords": [
+      "fiber optic",
+      "copper",
+      "EMI",
+      "distance",
+      "bandwidth"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is Cat6a cable?",
+    "expected_answer": "Cat6a is an augmented Category 6 cable supporting 10 Gbps up to 100 meters with improved crosstalk shielding.",
+    "keywords": [
+      "Cat6a",
+      "10 Gbps",
+      "100 meters",
+      "crosstalk",
+      "Ethernet"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a patch panel?",
+    "expected_answer": "A patch panel is a mounted hardware unit with ports for cable management, connecting endpoints to network equipment in a structured way.",
+    "keywords": [
+      "patch panel",
+      "cable management",
+      "structured cabling",
+      "port",
+      "rack"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network rack?",
+    "expected_answer": "A network rack is a standardized frame for mounting servers, switches, patch panels, and other network hardware.",
+    "keywords": [
+      "rack",
+      "server",
+      "switch",
+      "mounting",
+      "data center"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is SNMP trap?",
+    "expected_answer": "An SNMP trap is an asynchronous alert sent by a managed device to the SNMP manager when a significant event occurs.",
+    "keywords": [
+      "SNMP trap",
+      "alert",
+      "asynchronous",
+      "event",
+      "manager"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is bandwidth throttling?",
+    "expected_answer": "Bandwidth throttling intentionally limits the rate of network traffic on an interface using traffic shaping or policing.",
+    "keywords": [
+      "throttling",
+      "shaping",
+      "policing",
+      "rate limiting",
+      "QoS"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is traffic shaping vs traffic policing?",
+    "expected_answer": "Traffic shaping buffers excess traffic to smooth bursts; traffic policing drops or marks excess traffic without buffering.",
+    "keywords": [
+      "traffic shaping",
+      "traffic policing",
+      "buffer",
+      "drop",
+      "QoS"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is DSCP?",
+    "expected_answer": "DSCP (Differentiated Services Code Point) marks IP packets with a QoS class to prioritize traffic at Layer 3.",
+    "keywords": [
+      "DSCP",
+      "QoS",
+      "DiffServ",
+      "marking",
+      "priority"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is 802.11ac Wi-Fi?",
+    "expected_answer": "802.11ac (Wi-Fi 5) operates on 5 GHz with MU-MIMO and wide channels, supporting up to 3.5 Gbps theoretical throughput.",
+    "keywords": [
+      "802.11ac",
+      "Wi-Fi 5",
+      "5 GHz",
+      "MU-MIMO",
+      "throughput"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is 802.11ax (Wi-Fi 6)?",
+    "expected_answer": "Wi-Fi 6 improves efficiency in dense environments using OFDMA, MU-MIMO, and 1024-QAM modulation for higher throughput.",
+    "keywords": [
+      "Wi-Fi 6",
+      "802.11ax",
+      "OFDMA",
+      "MU-MIMO",
+      "dense environments"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a wireless controller?",
+    "expected_answer": "A wireless controller centrally manages multiple access points, handling configuration, roaming, and security policies.",
+    "keywords": [
+      "wireless controller",
+      "access point",
+      "centralized",
+      "roaming",
+      "management"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is SSID?",
+    "expected_answer": "An SSID (Service Set Identifier) is the name of a wireless network broadcast by an access point.",
+    "keywords": [
+      "SSID",
+      "wireless",
+      "Wi-Fi",
+      "access point",
+      "network name"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is WPA3?",
+    "expected_answer": "WPA3 is the latest Wi-Fi security protocol providing stronger encryption (SAE), individualized data encryption, and protection against brute-force attacks.",
+    "keywords": [
+      "WPA3",
+      "SAE",
+      "Wi-Fi security",
+      "encryption",
+      "brute force"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is CSMA/CD?",
+    "expected_answer": "CSMA/CD (Carrier Sense Multiple Access with Collision Detection) is the media access method used in Ethernet to detect and handle collisions.",
+    "keywords": [
+      "CSMA/CD",
+      "Ethernet",
+      "collision",
+      "detection",
+      "media access"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is CSMA/CA?",
+    "expected_answer": "CSMA/CA (Collision Avoidance) is used in Wi-Fi to avoid collisions by waiting and using backoff timers before transmitting.",
+    "keywords": [
+      "CSMA/CA",
+      "Wi-Fi",
+      "collision avoidance",
+      "backoff",
+      "wireless"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is IPv6 autoconfiguration (SLAAC)?",
+    "expected_answer": "SLAAC (Stateless Address Autoconfiguration) allows IPv6 devices to generate their own addresses using the network prefix from router advertisements.",
+    "keywords": [
+      "SLAAC",
+      "IPv6",
+      "autoconfiguration",
+      "router advertisement",
+      "stateless"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is IPv6 link-local address?",
+    "expected_answer": "A link-local address (prefix FE80::/10) is automatically assigned to IPv6 interfaces and is only valid within a single network link.",
+    "keywords": [
+      "link-local",
+      "FE80",
+      "IPv6",
+      "automatic",
+      "local"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is IPv6 dual stack?",
+    "expected_answer": "Dual stack runs IPv4 and IPv6 simultaneously on the same device, allowing communication with both IPv4 and IPv6 networks.",
+    "keywords": [
+      "dual stack",
+      "IPv4",
+      "IPv6",
+      "transition",
+      "simultaneous"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network change management process?",
+    "expected_answer": "Change management is a formal process for planning, approving, testing, and documenting network changes to minimize risk.",
+    "keywords": [
+      "change management",
+      "planning",
+      "approval",
+      "testing",
+      "documentation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network disaster recovery plan?",
+    "expected_answer": "A disaster recovery plan defines procedures to restore network services after a failure, including backups, failover, and RTO/RPO targets.",
+    "keywords": [
+      "disaster recovery",
+      "RTO",
+      "RPO",
+      "failover",
+      "backup"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is high availability in networking?",
+    "expected_answer": "High availability ensures network services remain operational despite failures through redundancy, failover, and load balancing.",
+    "keywords": [
+      "high availability",
+      "redundancy",
+      "failover",
+      "uptime",
+      "SLA"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is SLA in networking?",
+    "expected_answer": "An SLA (Service Level Agreement) defines the expected network performance metrics (uptime, latency, bandwidth) between a provider and customer.",
+    "keywords": [
+      "SLA",
+      "uptime",
+      "latency",
+      "bandwidth",
+      "agreement"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network documentation?",
+    "expected_answer": "Network documentation records the network topology, IP scheme, device configurations, and procedures to support management and troubleshooting.",
+    "keywords": [
+      "documentation",
+      "topology",
+      "IP scheme",
+      "configuration",
+      "management"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a logical vs physical network diagram?",
+    "expected_answer": "A physical diagram shows physical connections and hardware locations; a logical diagram shows IP addressing, VLANs, and routing paths.",
+    "keywords": [
+      "logical diagram",
+      "physical diagram",
+      "topology",
+      "IP",
+      "VLAN"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is nmap?",
+    "expected_answer": "Nmap is an open-source network scanner used for host discovery, port scanning, and service detection.",
+    "keywords": [
+      "nmap",
+      "port scan",
+      "host discovery",
+      "security",
+      "reconnaissance"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a SIEM?",
+    "expected_answer": "SIEM (Security Information and Event Management) collects and correlates logs from across the network to detect and respond to threats.",
+    "keywords": [
+      "SIEM",
+      "logs",
+      "correlation",
+      "threat detection",
+      "security"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network segmentation for security?",
+    "expected_answer": "Segmenting a network into zones limits the blast radius of breaches, preventing lateral movement of attackers between systems.",
+    "keywords": [
+      "segmentation",
+      "security",
+      "lateral movement",
+      "zones",
+      "firewall"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is Ansible used for in network administration?",
+    "expected_answer": "Ansible automates network device configuration, provisioning, and management using YAML playbooks over SSH or API.",
+    "keywords": [
+      "Ansible",
+      "automation",
+      "YAML",
+      "playbooks",
+      "network configuration"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network automation?",
+    "expected_answer": "Network automation uses software to automate repetitive network tasks like configuration, monitoring, and provisioning, reducing errors.",
+    "keywords": [
+      "network automation",
+      "Ansible",
+      "Python",
+      "configuration",
+      "provisioning"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is Python used for in network administration?",
+    "expected_answer": "Python scripts automate network tasks using libraries like Netmiko, NAPALM, and Paramiko for device configuration and monitoring.",
+    "keywords": [
+      "Python",
+      "Netmiko",
+      "NAPALM",
+      "automation",
+      "network scripting"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is Netmiko?",
+    "expected_answer": "Netmiko is a Python library that simplifies SSH connections to network devices for automated configuration and data collection.",
+    "keywords": [
+      "Netmiko",
+      "Python",
+      "SSH",
+      "automation",
+      "network devices"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is NAPALM in network automation?",
+    "expected_answer": "NAPALM (Network Automation and Programmability Abstraction Layer with Multivendor support) is a Python library for managing network devices across vendors.",
+    "keywords": [
+      "NAPALM",
+      "Python",
+      "multi-vendor",
+      "automation",
+      "configuration"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is REST API in network management?",
+    "expected_answer": "Modern network devices expose REST APIs allowing programmatic configuration and monitoring using HTTP methods and JSON payloads.",
+    "keywords": [
+      "REST API",
+      "network management",
+      "JSON",
+      "HTTP",
+      "automation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is NETCONF?",
+    "expected_answer": "NETCONF is a network management protocol using XML over SSH to install, manipulate, and delete configurations on network devices.",
+    "keywords": [
+      "NETCONF",
+      "XML",
+      "SSH",
+      "configuration",
+      "management"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is YANG in network automation?",
+    "expected_answer": "YANG is a data modeling language used with NETCONF and RESTCONF to define the structure of network configuration and state data.",
+    "keywords": [
+      "YANG",
+      "data model",
+      "NETCONF",
+      "RESTCONF",
+      "configuration"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is OpenFlow?",
+    "expected_answer": "OpenFlow is a communication protocol for SDN that allows the control plane to program the forwarding table of network devices.",
+    "keywords": [
+      "OpenFlow",
+      "SDN",
+      "control plane",
+      "forwarding table",
+      "programmable"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the difference between SONET and SDH?",
+    "expected_answer": "SONET is the North American fiber optic transmission standard; SDH is the international equivalent. Both synchronize high-speed optical transmission.",
+    "keywords": [
+      "SONET",
+      "SDH",
+      "fiber optic",
+      "synchronous",
+      "optical"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is BGP path selection?",
+    "expected_answer": "BGP selects the best path using attributes in order: Weight, Local Preference, Originate, AS Path length, Origin, MED, eBGP over iBGP, IGP metric.",
+    "keywords": [
+      "BGP",
+      "path selection",
+      "Weight",
+      "Local Preference",
+      "AS Path"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is OSPF DR and BDR election?",
+    "expected_answer": "On multi-access networks OSPF elects a Designated Router (DR) and Backup DR (BDR) to reduce LSA flooding, based on priority then Router ID.",
+    "keywords": [
+      "OSPF",
+      "DR",
+      "BDR",
+      "election",
+      "multi-access"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is BFD (Bidirectional Forwarding Detection)?",
+    "expected_answer": "BFD is a fast failure detection protocol that provides sub-second detection of link or path failures independent of routing protocols.",
+    "keywords": [
+      "BFD",
+      "failure detection",
+      "sub-second",
+      "routing",
+      "fast convergence"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a stub area in OSPF?",
+    "expected_answer": "An OSPF stub area does not receive external LSAs, reducing routing table size by using a default route to reach external networks.",
+    "keywords": [
+      "stub area",
+      "OSPF",
+      "LSA",
+      "external routes",
+      "default route"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a totally stubby area in OSPF?",
+    "expected_answer": "A totally stubby area blocks both external LSAs and inter-area LSAs, receiving only a default route, simplifying smaller sites.",
+    "keywords": [
+      "totally stubby",
+      "OSPF",
+      "inter-area",
+      "external",
+      "default route"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is ECMP (Equal-Cost Multi-Path)?",
+    "expected_answer": "ECMP load-balances traffic across multiple paths of equal cost simultaneously, improving bandwidth utilization and redundancy.",
+    "keywords": [
+      "ECMP",
+      "load balancing",
+      "equal cost",
+      "multiple paths",
+      "routing"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the purpose of a loopback interface on a router?",
+    "expected_answer": "A loopback interface on a router is a virtual always-up interface used as a stable router ID for protocols like OSPF and BGP.",
+    "keywords": [
+      "loopback interface",
+      "router ID",
+      "OSPF",
+      "BGP",
+      "stable"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a floating static route?",
+    "expected_answer": "A floating static route has a higher administrative distance than the primary route, acting as a backup route that activates only on primary failure.",
+    "keywords": [
+      "floating static route",
+      "administrative distance",
+      "backup",
+      "failover",
+      "static"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is administrative distance?",
+    "expected_answer": "Administrative distance is a measure of trustworthiness of a routing information source; lower is preferred. Static=1, OSPF=110, RIP=120.",
+    "keywords": [
+      "administrative distance",
+      "trustworthiness",
+      "OSPF",
+      "static",
+      "RIP"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is passive interface in OSPF?",
+    "expected_answer": "A passive interface in OSPF stops sending Hello packets on that interface, preventing neighbor formation while still advertising the network.",
+    "keywords": [
+      "passive interface",
+      "OSPF",
+      "Hello",
+      "neighbor",
+      "advertisement"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is IPv6 neighbor discovery?",
+    "expected_answer": "IPv6 Neighbor Discovery Protocol (NDP) replaces ARP, using ICMPv6 messages for address resolution, router discovery, and SLAAC.",
+    "keywords": [
+      "NDP",
+      "Neighbor Discovery",
+      "ICMPv6",
+      "ARP replacement",
+      "IPv6"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a proxy ARP?",
+    "expected_answer": "Proxy ARP allows a router to respond to ARP requests on behalf of hosts in other subnets, enabling communication without configuring a gateway.",
+    "keywords": [
+      "proxy ARP",
+      "router",
+      "ARP reply",
+      "subnet",
+      "gateway"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is SPAN (port mirroring)?",
+    "expected_answer": "SPAN (Switched Port Analyzer) copies traffic from one or more source ports to a destination port for analysis with a sniffer.",
+    "keywords": [
+      "SPAN",
+      "port mirroring",
+      "analysis",
+      "Wireshark",
+      "traffic copy"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is CDP (Cisco Discovery Protocol)?",
+    "expected_answer": "CDP is a Cisco proprietary Layer 2 protocol that discovers directly connected Cisco devices and shares device information.",
+    "keywords": [
+      "CDP",
+      "Cisco",
+      "discovery",
+      "Layer 2",
+      "neighbor"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is LLDP?",
+    "expected_answer": "LLDP (Link Layer Discovery Protocol) is the vendor-neutral alternative to CDP, allowing network devices to advertise themselves to neighbors.",
+    "keywords": [
+      "LLDP",
+      "Link Layer Discovery",
+      "vendor-neutral",
+      "neighbor",
+      "discovery"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the purpose of network address planning?",
+    "expected_answer": "Network address planning allocates IP address ranges to network segments in a structured, scalable way to enable efficient routing and management.",
+    "keywords": [
+      "address planning",
+      "IP allocation",
+      "subnet",
+      "scalability",
+      "routing"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is an IPAM system?",
+    "expected_answer": "IPAM (IP Address Management) is a tool for planning, tracking, and managing IP address allocation and DNS/DHCP services.",
+    "keywords": [
+      "IPAM",
+      "IP address management",
+      "DNS",
+      "DHCP",
+      "inventory"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is GNS3 used for?",
+    "expected_answer": "GNS3 is a network simulation tool allowing administrators to design, test, and troubleshoot virtual network topologies.",
+    "keywords": [
+      "GNS3",
+      "simulation",
+      "virtual",
+      "topology",
+      "lab"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How would you design a highly available data center network?",
+    "expected_answer": "Use a spine-leaf architecture with redundant spine switches, ECMP for load balancing, dual-homed servers, MLAG for link aggregation, and out-of-band management.",
+    "keywords": [
+      "spine-leaf",
+      "ECMP",
+      "MLAG",
+      "redundant",
+      "data center"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "Explain BGP route hijacking and how to prevent it.",
+    "expected_answer": "BGP hijacking occurs when an AS falsely announces ownership of IP prefixes. Prevention includes RPKI, prefix filtering, IRR, and monitoring with services like BGPmon.",
+    "keywords": [
+      "BGP hijacking",
+      "RPKI",
+      "prefix filter",
+      "IRR",
+      "security"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is RPKI and how does it secure BGP routing?",
+    "expected_answer": "RPKI (Resource Public Key Infrastructure) cryptographically validates BGP route origins using Route Origin Authorizations (ROAs), preventing prefix hijacking.",
+    "keywords": [
+      "RPKI",
+      "ROA",
+      "BGP",
+      "cryptographic",
+      "prefix hijacking"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "Explain the concept of MPLS traffic engineering.",
+    "expected_answer": "MPLS-TE uses RSVP-TE to signal explicit label-switched paths (LSPs) that bypass shortest-path routing, optimizing utilization and enabling fast reroute.",
+    "keywords": [
+      "MPLS-TE",
+      "RSVP-TE",
+      "LSP",
+      "traffic engineering",
+      "fast reroute"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is MPLS fast reroute (FRR)?",
+    "expected_answer": "MPLS FRR pre-computes backup paths for LSPs, enabling sub-50ms failover to a backup path when a link or node fails.",
+    "keywords": [
+      "MPLS FRR",
+      "sub-50ms",
+      "backup path",
+      "LSP",
+      "failover"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How does BGP EVPN work in data center networking?",
+    "expected_answer": "BGP EVPN uses BGP to distribute Layer 2 MAC and Layer 3 IP reachability across VXLAN tunnels, replacing traditional STP-based designs.",
+    "keywords": [
+      "BGP EVPN",
+      "VXLAN",
+      "MAC distribution",
+      "Layer 2",
+      "data center"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a spine-leaf architecture and why is it preferred in modern data centers?",
+    "expected_answer": "Spine-leaf uses a two-tier Clos topology with every leaf connected to every spine, providing predictable latency, ECMP, and easy horizontal scaling.",
+    "keywords": [
+      "spine-leaf",
+      "Clos",
+      "ECMP",
+      "latency",
+      "scalability"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "Explain how MLAG works.",
+    "expected_answer": "MLAG (Multi-chassis Link Aggregation) presents two physical switches as one logical switch to a connected device, providing redundancy without STP blocking.",
+    "keywords": [
+      "MLAG",
+      "multi-chassis",
+      "LAG",
+      "redundancy",
+      "STP-free"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is BGP graceful restart?",
+    "expected_answer": "BGP graceful restart allows a restarting router to maintain forwarding during BGP session re-establishment, minimizing traffic disruption.",
+    "keywords": [
+      "BGP graceful restart",
+      "session",
+      "forwarding",
+      "non-stop",
+      "convergence"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How do you implement QoS end-to-end in an enterprise network?",
+    "expected_answer": "Classify and mark traffic at ingress (DSCP), enforce policies at WAN edges using queuing (CBWFQ, LLQ), and ensure DSCP remarking is consistent end-to-end.",
+    "keywords": [
+      "QoS",
+      "DSCP",
+      "CBWFQ",
+      "LLQ",
+      "classification",
+      "end-to-end"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is IS-IS and how does it differ from OSPF?",
+    "expected_answer": "IS-IS is a link-state IGP running directly over Layer 2, not IP. It scales better than OSPF, uses NET addresses, and is preferred by ISPs.",
+    "keywords": [
+      "IS-IS",
+      "OSPF",
+      "link-state",
+      "Layer 2",
+      "ISP"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How would you troubleshoot a network that is experiencing intermittent packet loss?",
+    "expected_answer": "Use ping with extended options, traceroute, MTR, packet captures (Wireshark), check interface error counters, duplex mismatches, SFP health, and CPU/memory on devices.",
+    "keywords": [
+      "packet loss",
+      "MTR",
+      "Wireshark",
+      "interface errors",
+      "duplex mismatch"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a BGP community attribute and how is it used?",
+    "expected_answer": "BGP communities are tags attached to routes (e.g., 65001:100) used to apply routing policies like local preference or filtering across ASes.",
+    "keywords": [
+      "BGP community",
+      "tagging",
+      "routing policy",
+      "local preference",
+      "filtering"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is route redistribution between OSPF and BGP?",
+    "expected_answer": "Route redistribution imports routes from one protocol into another. Care must be taken to filter, summarize, and set metrics to prevent loops.",
+    "keywords": [
+      "redistribution",
+      "OSPF",
+      "BGP",
+      "mutual redistribution",
+      "loop prevention"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "Explain how OSPF LSA types work.",
+    "expected_answer": "OSPF has 7 LSA types: Type 1 (router), Type 2 (network), Type 3 (summary), Type 4 (ASBR summary), Type 5 (external), Type 7 (NSSA external), Type 9-11 (opaque).",
+    "keywords": [
+      "OSPF LSA",
+      "Type 1",
+      "Type 5",
+      "Type 3",
+      "NSSA"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network security audit and how do you perform one?",
+    "expected_answer": "A security audit reviews configurations, ACLs, firmware versions, open ports (nmap), user access, patch levels, and compliance against standards like CIS.",
+    "keywords": [
+      "security audit",
+      "ACL",
+      "nmap",
+      "compliance",
+      "CIS",
+      "vulnerability"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How do you secure a BGP session?",
+    "expected_answer": "Use MD5 authentication on BGP sessions, configure TTL security (GTSM), apply prefix-lists and route-maps to filter received routes, and use RPKI.",
+    "keywords": [
+      "BGP security",
+      "MD5",
+      "GTSM",
+      "prefix-list",
+      "RPKI"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is BFD and how is it used with OSPF?",
+    "expected_answer": "BFD provides fast failure detection in milliseconds; when a BFD session fails it notifies OSPF to withdraw routes immediately, speeding up convergence.",
+    "keywords": [
+      "BFD",
+      "OSPF",
+      "failure detection",
+      "convergence",
+      "sub-second"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "Explain how SR (Segment Routing) works.",
+    "expected_answer": "Segment Routing encodes the path through the network as an ordered list of segments in the packet header, eliminating the need for LDP or RSVP-TE.",
+    "keywords": [
+      "Segment Routing",
+      "SR-MPLS",
+      "SRv6",
+      "segments",
+      "MPLS"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network telemetry and how does it differ from SNMP?",
+    "expected_answer": "Network telemetry pushes data continuously using streaming (gRPC/gNMI) rather than polling like SNMP, providing real-time, high-frequency data.",
+    "keywords": [
+      "telemetry",
+      "streaming",
+      "gRPC",
+      "gNMI",
+      "SNMP",
+      "real-time"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is gNMI and how is it used?",
+    "expected_answer": "gNMI (gRPC Network Management Interface) is a protocol for streaming telemetry and model-driven configuration of network devices using gRPC.",
+    "keywords": [
+      "gNMI",
+      "gRPC",
+      "telemetry",
+      "configuration",
+      "model-driven"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How do you implement network automation with Ansible for multi-vendor environments?",
+    "expected_answer": "Use Ansible with vendor-specific network modules (ios_config, nxos_config, junos_config), group_vars for device-specific variables, and roles for reusable tasks.",
+    "keywords": [
+      "Ansible",
+      "multi-vendor",
+      "ios_config",
+      "junos",
+      "network modules"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is intent-based networking (IBN)?",
+    "expected_answer": "IBN translates high-level business intent into network policies and continuously verifies the network delivers that intent using AI/ML and closed-loop automation.",
+    "keywords": [
+      "intent-based networking",
+      "IBN",
+      "automation",
+      "AI",
+      "closed-loop"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How do you design a network for PCI DSS compliance?",
+    "expected_answer": "Segment cardholder data environment (CDE) with firewalls, restrict inbound/outbound traffic, encrypt data in transit (TLS), log all access, and perform quarterly scans.",
+    "keywords": [
+      "PCI DSS",
+      "CDE",
+      "segmentation",
+      "encryption",
+      "compliance"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a network fabric architecture?",
+    "expected_answer": "A network fabric is a highly interconnected mesh of switches creating a flat Layer 2/3 network fabric, common in data centers using VXLAN/EVPN.",
+    "keywords": [
+      "network fabric",
+      "mesh",
+      "VXLAN",
+      "EVPN",
+      "data center"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How does OSPF fast convergence work?",
+    "expected_answer": "OSPF fast convergence uses BFD for link failure detection, tuned Hello/Dead intervals, fast LSA flooding, and SPF throttling timers to minimize reconvergence time.",
+    "keywords": [
+      "OSPF",
+      "fast convergence",
+      "BFD",
+      "SPF throttle",
+      "Hello timer"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a route policy and how is it implemented in BGP?",
+    "expected_answer": "A route policy filters or modifies BGP attributes using route-maps applied to neighbors with match conditions (prefix-list, community) and set actions.",
+    "keywords": [
+      "route policy",
+      "route-map",
+      "BGP",
+      "prefix-list",
+      "community"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is DNS over HTTPS (DoH) and its network implications?",
+    "expected_answer": "DoH encrypts DNS queries over HTTPS (port 443), bypassing traditional DNS monitoring and filtering, complicating enterprise security visibility.",
+    "keywords": [
+      "DoH",
+      "DNS over HTTPS",
+      "encrypted DNS",
+      "security",
+      "port 443"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How do you prevent BGP route leaks?",
+    "expected_answer": "Prevent leaks using strict prefix filters on eBGP sessions, RPKI, BGP communities, max-prefix limits, and monitoring with Routeviews/RIPE.",
+    "keywords": [
+      "BGP route leak",
+      "prefix filter",
+      "RPKI",
+      "community",
+      "max-prefix"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network slicing in 5G?",
+    "expected_answer": "Network slicing creates multiple virtual networks on shared physical infrastructure, each with dedicated resources and policies tailored for specific use cases.",
+    "keywords": [
+      "network slicing",
+      "5G",
+      "virtualization",
+      "NFV",
+      "dedicated resources"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "Explain how VXLAN flood-and-learn mode works.",
+    "expected_answer": "In flood-and-learn VXLAN, unknown MAC traffic is flooded to all tunnel endpoints (VTEPs). VTEPs learn remote MACs from incoming encapsulated frames.",
+    "keywords": [
+      "VXLAN",
+      "flood-and-learn",
+      "VTEP",
+      "MAC learning",
+      "multicast"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the difference between VXLAN control plane modes?",
+    "expected_answer": "Flood-and-learn uses multicast or head-end replication. BGP EVPN control plane distributes MAC/IP via BGP, eliminating flooding for known destinations.",
+    "keywords": [
+      "VXLAN",
+      "BGP EVPN",
+      "flood-and-learn",
+      "control plane",
+      "VTEP"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How do you implement a zero-trust network architecture?",
+    "expected_answer": "Implement micro-segmentation, identity-based access (802.1X), device posture checks, east-west traffic inspection, and continuous monitoring with SIEM.",
+    "keywords": [
+      "zero trust",
+      "micro-segmentation",
+      "identity",
+      "east-west",
+      "SIEM"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is SRv6 and how does it differ from SR-MPLS?",
+    "expected_answer": "SRv6 implements segment routing using IPv6 extension headers instead of MPLS labels, enabling programmable functions directly in the IPv6 header.",
+    "keywords": [
+      "SRv6",
+      "SR-MPLS",
+      "IPv6",
+      "segment routing",
+      "extension header"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How does ECMP load balancing work in IP routing?",
+    "expected_answer": "ECMP distributes flows across equal-cost paths using a hash of packet headers (src/dst IP, ports). Each flow takes one path ensuring per-flow ordering.",
+    "keywords": [
+      "ECMP",
+      "load balancing",
+      "hash",
+      "flows",
+      "equal cost"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network function virtualization (NFV)?",
+    "expected_answer": "NFV replaces hardware network appliances (firewalls, load balancers) with software running on commodity servers, enabling flexible, scalable deployment.",
+    "keywords": [
+      "NFV",
+      "virtualization",
+      "VNF",
+      "software",
+      "commodity hardware"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a virtual network function (VNF)?",
+    "expected_answer": "A VNF is a software implementation of a network function (e.g., virtual firewall, virtual router) deployed on a VM or container in an NFV architecture.",
+    "keywords": [
+      "VNF",
+      "virtual network function",
+      "NFV",
+      "VM",
+      "software"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How would you design a network for IoT devices?",
+    "expected_answer": "Isolate IoT devices in dedicated VLANs, use 802.1X or MAC-based auth, apply strict ACLs, segment from critical systems, and monitor with anomaly detection.",
+    "keywords": [
+      "IoT",
+      "VLAN",
+      "segmentation",
+      "ACL",
+      "security"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is IPFIX and how does it differ from NetFlow?",
+    "expected_answer": "IPFIX (IP Flow Information Export) is the IETF standardization of Cisco's NetFlow v9, providing extensible flow export across vendors.",
+    "keywords": [
+      "IPFIX",
+      "NetFlow",
+      "flow export",
+      "IETF",
+      "vendor-neutral"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How do you design a scalable DNS infrastructure?",
+    "expected_answer": "Deploy primary/secondary authoritative servers with TSIG for zone transfer security, Anycast for resilience, DNSSEC for integrity, and recursive resolvers with rate limiting.",
+    "keywords": [
+      "DNS infrastructure",
+      "authoritative",
+      "TSIG",
+      "Anycast",
+      "DNSSEC"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a DHCP failover configuration?",
+    "expected_answer": "DHCP failover pairs two servers that share a pool, synchronizing lease information so if one fails the other continues issuing addresses seamlessly.",
+    "keywords": [
+      "DHCP failover",
+      "load balancing",
+      "high availability",
+      "pool",
+      "lease sync"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How do you implement route filtering to prevent unwanted prefixes from being advertised?",
+    "expected_answer": "Use prefix-lists to match specific IP ranges, apply to BGP or OSPF with distribute-lists or route-maps, and use 'no ip route-cache' on critical interfaces.",
+    "keywords": [
+      "route filtering",
+      "prefix-list",
+      "distribute-list",
+      "route-map",
+      "BGP"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is recursive routing and how does it cause problems?",
+    "expected_answer": "Recursive routing occurs when a next-hop cannot be resolved (black hole) because the route to the next-hop is missing or withdrawn, dropping traffic silently.",
+    "keywords": [
+      "recursive routing",
+      "black hole",
+      "next-hop",
+      "BGP",
+      "resolution"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "Explain the BGP 4-byte ASN and its significance.",
+    "expected_answer": "4-byte ASNs expand the ASN pool from 65535 to over 4 billion, encoded as ASPLAIN (e.g., 131072) or ASDOT (e.g., 2.0) format.",
+    "keywords": [
+      "4-byte ASN",
+      "BGP",
+      "ASN expansion",
+      "ASPLAIN",
+      "ASDOT"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is IS-IS multi-topology routing?",
+    "expected_answer": "IS-IS multi-topology separates IPv4 and IPv6 topology calculations, allowing independent SPF computation and supporting networks not running both protocols everywhere.",
+    "keywords": [
+      "IS-IS",
+      "multi-topology",
+      "IPv4",
+      "IPv6",
+      "SPF"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How do you implement OSPF authentication?",
+    "expected_answer": "OSPF supports plaintext and MD5 authentication per interface/area using 'ip ospf authentication' and 'ip ospf authentication-key'.",
+    "keywords": [
+      "OSPF authentication",
+      "MD5",
+      "plaintext",
+      "key",
+      "secure"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is the role of route distinguishers and route targets in MPLS VPN?",
+    "expected_answer": "Route distinguishers (RD) make VPNv4 prefixes unique across VRFs; route targets (RT) control which prefixes are imported/exported between VRFs.",
+    "keywords": [
+      "route distinguisher",
+      "route target",
+      "MPLS VPN",
+      "VRF",
+      "VPNv4"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a VRF (Virtual Routing and Forwarding)?",
+    "expected_answer": "VRF creates multiple virtual routing tables on a single router, allowing traffic separation for different customers or departments without separate hardware.",
+    "keywords": [
+      "VRF",
+      "virtual routing",
+      "table",
+      "MPLS VPN",
+      "segmentation"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How does MPLS Layer 3 VPN work?",
+    "expected_answer": "Provider Edge (PE) routers maintain per-customer VRFs, using MP-BGP to distribute VPNv4 routes and MPLS labels to forward customer traffic across the provider backbone.",
+    "keywords": [
+      "MPLS L3 VPN",
+      "PE router",
+      "VRF",
+      "MP-BGP",
+      "VPNv4"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a control plane vs data plane separation in SDN?",
+    "expected_answer": "In SDN, the control plane (network OS/controller) makes forwarding decisions; the data plane (switches) forwards packets based on rules pushed by the controller.",
+    "keywords": [
+      "control plane",
+      "data plane",
+      "SDN",
+      "controller",
+      "OpenFlow"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How would you respond to a network security breach?",
+    "expected_answer": "Isolate affected segments, capture traffic for forensics, identify the vector, patch/remediate, reset credentials, review logs, notify stakeholders, and update IDS signatures.",
+    "keywords": [
+      "incident response",
+      "isolation",
+      "forensics",
+      "remediation",
+      "SIEM"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is BGP NEXT_HOP handling in iBGP?",
+    "expected_answer": "In iBGP, the NEXT_HOP attribute is not changed by default. Peers must reachable via IGP. 'next-hop-self' command changes the next-hop to the advertising router.",
+    "keywords": [
+      "BGP NEXT_HOP",
+      "iBGP",
+      "next-hop-self",
+      "IGP",
+      "reachability"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "Explain BGP synchronization rule and why it is disabled today.",
+    "expected_answer": "BGP synchronization required iBGP routes to be in the IGP before advertising to eBGP peers, preventing black holes. Disabled today since MPLS ensures consistent forwarding.",
+    "keywords": [
+      "BGP synchronization",
+      "iBGP",
+      "IGP",
+      "black hole",
+      "MPLS"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is network capacity planning?",
+    "expected_answer": "Capacity planning analyzes current traffic trends (NetFlow, SNMP), forecasts growth, and proactively upgrades links, devices, and services before bottlenecks occur.",
+    "keywords": [
+      "capacity planning",
+      "NetFlow",
+      "SNMP",
+      "growth",
+      "bottleneck"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a SOAR platform and how does it relate to network security?",
+    "expected_answer": "SOAR (Security Orchestration, Automation and Response) integrates security tools and automates incident response playbooks, reducing detection-to-response time.",
+    "keywords": [
+      "SOAR",
+      "orchestration",
+      "automation",
+      "incident response",
+      "playbook"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How does OSPF handle topology changes?",
+    "expected_answer": "On a topology change, OSPF generates new LSAs, floods them through the area, and all routers run SPF to recompute the routing table.",
+    "keywords": [
+      "OSPF",
+      "topology change",
+      "LSA flooding",
+      "SPF",
+      "reconvergence"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a BGP confederation?",
+    "expected_answer": "A BGP confederation splits a large AS into sub-ASes to reduce iBGP full-mesh requirements, with sub-ASes appearing as a single AS externally.",
+    "keywords": [
+      "BGP confederation",
+      "sub-AS",
+      "iBGP",
+      "full mesh",
+      "scalability"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How do you implement network observability at scale?",
+    "expected_answer": "Collect streaming telemetry (gNMI), NetFlow, syslog, and SNMP into a time-series database (Prometheus/InfluxDB), visualize with Grafana, and alert on anomalies.",
+    "keywords": [
+      "observability",
+      "gNMI",
+      "Prometheus",
+      "Grafana",
+      "telemetry"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "What is a BGP flowspec and how is it used for DDoS mitigation?",
+    "expected_answer": "BGP Flowspec (RFC 5575) distributes traffic filtering rules (match src/dst IP, port, protocol) to routers via BGP, enabling distributed DDoS mitigation.",
+    "keywords": [
+      "BGP Flowspec",
+      "DDoS",
+      "RFC 5575",
+      "traffic filtering",
+      "mitigation"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 6,
+    "role_name": "Network administrator",
+    "question_text": "How would you troubleshoot an OSPF adjacency that is stuck in EXSTART/EXCHANGE state?",
+    "expected_answer": "This is caused by MTU mismatch between neighbors. Fix with 'ip ospf mtu-ignore' or match MTU values on both interfaces.",
+    "keywords": [
+      "OSPF EXSTART",
+      "MTU mismatch",
+      "adjacency",
+      "ip ospf mtu-ignore",
+      "EXCHANGE"
+    ],
+    "difficulty": "hard"
+  }
+]

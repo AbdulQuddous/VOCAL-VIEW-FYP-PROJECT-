@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+{% block title %}Configure Interview - Vocal View{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-lg">
+                <div class="card-header bg-gradient-primary text-white text-center py-4">
+                    <h2 class="mb-0">
+                        <i class="fas fa-clipboard-list"></i> Configure Your Interview
+                    </h2>
+                    <p class="mb-0 mt-2 opacity-75">Powered by Advanced AI Question Generation</p>
+                </div>
+                
+                <div class="card-body p-5">
+                    <form method="post" action="{% url 'interview_config' %}">
+                        {% csrf_token %}
+                        
+                        <!-- Job Role Selection -->
+                       <div class="mb-4">
+                            <label for="job_role" class="form-label fw-bold">
+                                <i class="fas fa-briefcase text-primary"></i> Target Job Role
+                            </label>
+                            <select class="form-select form-select-lg" id="job_role" name="job_role" required>
+                                <option value="">Select a job role...</option>
+                                {% for role in job_roles %}
+                                    <!-- FIXED: Use role.role_id -->
+                                    <option value="{{ role.role_id }}">{{ role.role_name }}</option>
+                                {% endfor %}
+                            </select>
+                            <small class="text-muted">
+                                <i class="fas fa-info-circle"></i> 
+                                Questions will be tailored to this role
+                            </small>
+                        </div>
+                        
+                        
+                        <!-- Number of Questions -->
+                        <div class="mb-4">
+                            <label for="num_questions" class="form-label fw-bold">
+                                <i class="fas fa-list-ol text-success"></i> Number of Questions
+                            </label>
+                            <select class="form-select" id="question_count" name="question_count" required>
+                                <option value="3">3 Questions (Quick Practice)</option>
+                                <option value="5" selected>5 Questions (Standard)</option>
+                                <option value="7">7 Questions (Comprehensive)</option>
+                                <option value="10">10 Questions (Full Interview)</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Difficulty Level -->
+                        <div class="mb-4">
+                            <label for="difficulty" class="form-label fw-bold">
+                                <i class="fas fa-chart-line text-warning"></i> Difficulty Level
+                            </label>
+                            <select class="form-select" id="difficulty" name="difficulty" required>
+                                <option value="easy">Easy - Entry Level</option>
+                                <option value="medium" selected>Medium - Intermediate</option>
+                                <option value="hard">Hard - Expert Level</option>
+                            </select>
+                            <small class="text-muted">
+                                Choose based on your experience level
+                            </small>
+                        </div>
+                        
+                        <!-- AI Quality Info -->
+                        <div class="alert alert-info mb-4">
+                            <h6 class="alert-heading">
+                                <i class="fas fa-robot"></i> Advanced Question Generation
+                            </h6>
+                            <p class="mb-0">
+                                Our system gives:
+                                <br>• <strong></strong> - Proven interview questions
+                                <br>• <strong></strong> - Creative, role-specific questions
+                                <br>• <strong></strong> - Real-world questions
+                            </p>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-rocket"></i> Generate Interview Questions
+                            </button>
+                            <a href="{% url 'dashboard' %}" class="btn btn-outline-secondary">
+                                <i class="fas fa-arrow-left"></i> Back to Dashboard
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+                        <!-- Features Info -->
+            <div class="row mt-4 g-3 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card border-0 bg-light h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-bullseye text-success" style="font-size: 2.5rem;"></i>
+                            <h6 class="mt-3 mb-2">Role-Specific</h6>
+                            <p class="small text-muted mb-0">
+                                Questions tailored to your target role
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 bg-light h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-check-double text-info" style="font-size: 2.5rem;"></i>
+                            <h6 class="mt-3 mb-2">Quality Assured</h6>
+                            <p class="small text-muted mb-0">
+                                Multi-layer validation & deduplication
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+</style>
+{% endblock %}

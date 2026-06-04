@@ -1,0 +1,808 @@
+{% extends 'base.html' %}
+{% load score_filters %}
+
+{% block title %}Feedback Report - Vocal View{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Report Header -->
+    <div class="page-header mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h1 class="mb-2">
+                    <i class="fas fa-chart-line"></i> Interview Feedback Report
+                </h1>
+                <p class="mb-0 opacity-75">
+                    {{ session.job_role.role_name }} - {{ session.created_at|date:"F d, Y" }}
+                </p>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <div class="btn-group">
+                    <a href="{% url 'api_export_pdf' session.session_id %}" 
+                       class="btn btn-success"
+                       download>
+                        <i class="fas fa-file-pdf"></i> Download PDF
+                    </a>
+                    <a href="{% url 'api_export_json' session.session_id %}" 
+                       class="btn btn-outline-primary" 
+                       download>
+                        <i class="fas fa-file-code"></i> Export JSON
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overall Score Card -->
+    <div class="card mb-4 border-0 shadow-lg" style="background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);">
+        <div class="card-body p-5 text-white">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center border-end border-white border-opacity-25">
+                    <div class="display-1 fw-bold mb-2">{{ report.overall_score|floatformat:0 }}%</div>
+                    <h5 class="mb-0 opacity-75">Overall Score</h5>
+                    <div class="mt-3">
+                        {% if report.overall_score >= 80 %}
+                            <span class="badge bg-success bg-opacity-25 text-white px-3 py-2">
+                                <i class="fas fa-star"></i> Excellent
+                            </span>
+                        {% elif report.overall_score >= 60 %}
+                            <span class="badge bg-warning bg-opacity-25 text-white px-3 py-2">
+                                <i class="fas fa-thumbs-up"></i> Good
+                            </span>
+                        {% else %}
+                            <span class="badge bg-danger bg-opacity-25 text-white px-3 py-2">
+                                <i class="fas fa-chart-line"></i> Keep Practicing
+                            </span>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row g-4">
+                        <div class="col-4">
+                            <div class="text-center">
+                                <div class="h2 mb-2">{{ report.content_score|floatformat:0 }}%</div>
+                                <div class="opacity-75">
+                                    <i class="fas fa-comment-alt me-2"></i>Content
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="text-center">
+                                <div class="h2 mb-2">{{ report.delivery_score|floatformat:0 }}%</div>
+                                <div class="opacity-75">
+                                    <i class="fas fa-microphone me-2"></i>Delivery
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="text-center">
+                                <div class="h2 mb-2">{{ report.confidence_score|floatformat:0 }}%</div>
+                                <div class="opacity-75">
+                                    <i class="fas fa-smile me-2"></i>Confidence
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- Strengths & Improvements -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-lightbulb"></i> Key Insights
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="text-success mb-3">
+                                <i class="fas fa-check-circle"></i> Strengths
+                            </h6>
+                            <ul class="list-unstyled">
+                                {% for strength in report.strengths %}
+                                <li class="mb-2">
+                                    <i class="fas fa-star text-success me-2"></i>
+                                    {{ strength }}
+                                </li>
+                                {% empty %}
+                                <li class="text-muted">Keep practicing to identify strengths</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-warning mb-3">
+                                <i class="fas fa-chart-line"></i> Areas for Improvement
+                            </h6>
+                            <ul class="list-unstyled">
+                                {% for improvement in report.areas_for_improvement %}
+                                <li class="mb-2">
+                                    <i class="fas fa-arrow-up text-warning me-2"></i>
+                                    {{ improvement }}
+                                </li>
+                                {% empty %}
+                                <li class="text-muted">Great job!</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Feedback -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-file-alt"></i> Summary Feedback
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <p class="mb-0">{{ report.summary_feedback }}</p>
+                </div>
+            </div>
+
+            <!-- Question-by-Question Analysis - GROUPED BOXES -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-list-ol"></i> Question-by-Question Analysis
+                    </h5>
+                </div>
+                <div class="card-body">
+                    {% for answer in session.answers.all %}
+                    <div class="mb-4 {% if not forloop.last %}border-bottom pb-4{% endif %}">
+                        <!-- Question Header -->
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-2">
+                                    <span class="badge bg-primary me-2">Q{{ forloop.counter }}</span>
+                                    {{ answer.question.question_text }}
+                                </h6>
+                                <small class="text-muted">
+                                    <i class="fas fa-clock"></i> {{ answer.duration|floatformat:0 }} seconds
+                                    | <i class="fas fa-comment"></i> {{ answer.transcribed_text|wordcount }} words
+                                </small>
+                            </div>
+                            <div class="text-end">
+                                <div class="badge bg-{{ answer.final_content_score|score_color }} fs-5">
+                                    {{ answer.final_content_score|floatformat:0 }}%
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Transcription -->
+                        <div class="bg-light p-3 rounded mb-3">
+                            <small class="text-muted fw-bold d-block mb-2">YOUR ANSWER:</small>
+                            <p class="mb-0">{{ answer.transcribed_text|truncatewords:50 }}</p>
+                        </div>
+
+                        <!-- ROW 1: CONTENT QUALITY + VISUAL & CONFIDENCE -->
+                        <div class="row g-3 mb-3">
+                            
+                            <!-- BOX 1: CONTENT QUALITY -->
+                            <div class="col-md-6">
+                                <div class="card border h-100">
+                                    <div class="card-header py-2 bg-primary bg-opacity-10">
+                                        <small class="fw-bold"><i class="fas fa-comment-alt me-1"></i> Content Quality</small>
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <div class="row text-center">
+                                            <div class="col-4">
+                                                <div class="small text-muted">Semantic</div>
+                                                <div class="h6 mb-0 text-info">{{ answer.semantic_similarity_score|default:0|floatformat:0 }}%</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="small text-muted">Keywords</div>
+                                                <div class="h6 mb-0 text-primary">{{ answer.keyword_relevance_score|default:0|floatformat:0 }}%</div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="small text-muted">Completeness</div>
+                                                <div class="h6 mb-0 text-warning">{{ answer.completeness_score|default:0|floatformat:0 }}%</div>
+                                            </div>
+                                        </div>
+                                        {% with answer.content_analysis as content %}
+                                            {% if content %}
+                                            <hr class="my-2">
+                                            <div class="row text-center">
+                                                <div class="col-4">
+                                                    <div class="small text-muted">Relevance</div>
+                                                    <div class="h6 mb-0 text-primary">{{ content.relevance_score|default:0|floatformat:0 }}%</div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="small text-muted">Clarity</div>
+                                                    <div class="h6 mb-0 text-success">{{ content.clarity_score|default:0|floatformat:0 }}%</div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="small text-muted">Fillers</div>
+                                                    <div class="h6 mb-0 text-danger">{{ content.filler_word_count|default:0 }}</div>
+                                                </div>
+                                            </div>
+                                            {% endif %}
+                                        {% endwith %}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BOX 2: VISUAL & CONFIDENCE -->
+                            <div class="col-md-6">
+                                <div class="card border h-100">
+                                    <div class="card-header py-2 bg-success bg-opacity-10">
+                                        <small class="fw-bold"><i class="fas fa-smile me-1"></i> Visual & Confidence</small>
+                                    </div>
+                                    <div class="card-body py-2">
+                                        {% with answer.facial_analysis as facial %}
+                                            {% if facial %}
+                                            <div class="row text-center">
+                                                <div class="col-4">
+                                                    <div class="small text-muted">Confidence</div>
+                                                    <div class="h6 mb-0 text-primary">{{ facial.confidence_score|default:0|floatformat:0 }}%</div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="small text-muted">Stress</div>
+                                                    <div class="h6 mb-0 text-warning">{{ facial.stress_score|default:0|floatformat:0 }}%</div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="small text-muted">Eye Contact</div>
+                                                    <div class="h6 mb-0 text-info">{{ facial.eye_contact_score|default:0|floatformat:0 }}%</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mt-2">
+                                                <small class="text-muted">Emotion: 
+                                                    <strong>
+                                                        {% if facial.dominant_emotion == 'confident' %}
+                                                            <span class="text-success">Confident</span>
+                                                        {% elif facial.dominant_emotion == 'happy' %}
+                                                            <span class="text-success">Happy</span>
+                                                        {% elif facial.dominant_emotion == 'stressed' %}
+                                                            <span class="text-danger">Stressed</span>
+                                                        {% elif facial.dominant_emotion == 'tired' %}
+                                                            <span class="text-warning">Tired</span>
+                                                        {% else %}
+                                                            <span class="text-secondary">{{ facial.dominant_emotion|default:'Neutral'|title }}</span>
+                                                        {% endif %}
+                                                    </strong>
+                                                </small>
+                                            </div>
+                                            {% else %}
+                                            <div class="text-center text-muted py-2">
+                                                <small>No facial analysis data available</small>
+                                            </div>
+                                            {% endif %}
+                                        {% endwith %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ROW 2: VOICE DELIVERY + KEYWORDS USED -->
+                        <div class="row g-3 mb-3">
+                            
+                           <!-- BOX 3: VOICE DELIVERY -->
+                            <div class="col-md-6">
+                                <div class="card border h-100">
+                                    <div class="card-header py-2 bg-warning bg-opacity-10">
+                                        <small class="fw-bold"><i class="fas fa-microphone me-1"></i> Voice Delivery</small>
+                                    </div>
+                                    <div class="card-body py-2">
+                                        {% with answer.prosody_analysis as prosody %}
+                                            {% if prosody %}
+                                            <div class="row text-center">
+                                                <div class="col-4">
+                                                    <div class="small text-muted">WPM</div>
+                                                    <div class="h6 mb-0 
+                                                        {% if prosody.speaking_pace_wpm >= 120 and prosody.speaking_pace_wpm <= 150 %}text-success
+                                                        {% elif prosody.speaking_pace_wpm >= 100 and prosody.speaking_pace_wpm <= 170 %}text-warning
+                                                        {% else %}text-danger{% endif %}">
+                                                        {{ prosody.speaking_pace_wpm|default:0|floatformat:0 }}
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="small text-muted">Pitch</div>
+                                                    <div class="h6 mb-0 text-secondary">{{ prosody.average_pitch_hz|default:0|floatformat:0 }} Hz</div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="small text-muted">Pitch Var</div>
+                                                    <div class="h6 mb-0 text-secondary">{{ prosody.pitch_variation|default:0|floatformat:1 }}%</div>
+                                                </div>
+                                            </div>
+                                            <div class="row text-center mt-2">
+                                                <div class="col-4">
+                                                    <div class="small text-muted">Volume</div>
+                                                    <div class="small text-success">{{ prosody.volume_consistency|default:0|floatformat:0 }}%</div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="small text-muted">Energy</div>
+                                                    <div class="small text-warning">{{ prosody.energy_stability|default:0|floatformat:0 }}%</div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="small text-muted">Confidence</div>
+                                                    <div class="small text-primary">{{ prosody.vocal_confidence|default:0|floatformat:0 }}%</div>
+                                                </div>
+                                            </div>
+                                            <div class="row text-center mt-2">
+                                                <div class="col-4">
+                                                    <div class="small text-muted">Pauses</div>
+                                                    <div class="small text-secondary">{{ prosody.pause_count|default:0 }}</div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="small text-muted">Hesitation</div>
+                                                    <div class="small text-warning">{{ prosody.hesitation_pauses|default:0 }}</div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="small text-muted">Long Pauses</div>
+                                                    <div class="small text-danger">{{ prosody.long_pauses|default:0 }}</div>
+                                                </div>
+                                            </div>
+                                            {% if prosody.average_pause_duration %}
+                                            <div class="text-center mt-2">
+                                                <small class="text-muted">Avg Pause: {{ prosody.average_pause_duration|floatformat:1 }}s</small>
+                                            </div>
+                                            {% endif %}
+                                            {% else %}
+                                            <div class="text-center text-muted py-2">
+                                                <small>No voice analysis data available</small>
+                                            </div>
+                                            {% endif %}
+                                        {% endwith %}
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- BOX 4: KEYWORDS USED -->
+                            <div class="col-md-6">
+                                <div class="card border h-100">
+                                    <div class="card-header py-2 bg-info bg-opacity-10">
+                                        <small class="fw-bold"><i class="fas fa-tags me-1"></i> Keywords Used</small>
+                                    </div>
+                                    <div class="card-body py-2">
+                                        {% if answer.detected_keywords %}
+                                            <div class="d-flex flex-wrap gap-1">
+                                                {% for keyword in answer.detected_keywords|slice:":8" %}
+                                                    <span class="badge bg-primary-subtle text-primary border border-primary">{{ keyword }}</span>
+                                                {% endfor %}
+                                            </div>
+                                            {% if answer.detected_keywords|length > 8 %}
+                                                <small class="text-muted">+{{ answer.detected_keywords|length|add:"-8" }} more</small>
+                                            {% endif %}
+                                        {% else %}
+                                            <div class="text-center text-muted py-2">
+                                                <small>No keywords detected in this answer</small>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ROW 3: GRAMMAR ISSUES BOX (SEPARATE, FULL WIDTH) -->
+                        {% with answer.content_analysis as content %}
+                            {% if content and content.grammar_issues and content.grammar_issues|length > 0 %}
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <div class="card border-warning">
+                                        <div class="card-header py-2 bg-warning bg-opacity-25">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                                                <strong class="small">Grammar Issues Detected ({{ content.grammar_issues|length }})</strong>
+                                                <span class="badge bg-warning ms-2">AI Analysis</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <div class="row">
+                                                {% for issue in content.grammar_issues|slice:":6" %}
+                                                <div class="col-12 mb-3 pb-2 {% if not forloop.last %}border-bottom{% endif %}">
+                                                    <div class="d-flex align-items-start">
+                                                        <span class="badge 
+                                                            {% if issue.severity == 'high' %}bg-danger
+                                                            {% elif issue.severity == 'medium' %}bg-warning
+                                                            {% else %}bg-secondary{% endif %} 
+                                                            me-2 mt-1" style="font-size: 0.7rem;">
+                                                            {{ issue.type|default:"Issue"|title }}
+                                                        </span>
+                                                        <div class="flex-grow-1">
+                                                            <div class="text-muted small mb-1">
+                                                                <i class="fas fa-quote-left me-1"></i> 
+                                                                <em>"{{ issue.sentence|truncatewords:15 }}"</em>
+                                                            </div>
+                                                            <div class="text-success small">
+                                                                <i class="fas fa-lightbulb me-1"></i>
+                                                                <strong>Suggestion:</strong>
+                                                                {% if issue.type == 'missing_verb' %}
+                                                                    Add a verb (is, are, was, were, have, has, had, will, would, could, should, etc.)
+                                                                {% elif issue.type == 'long_sentence' %}
+                                                                    Break this long sentence into 2-3 shorter, clearer sentences
+                                                                {% elif issue.type == 'fragment' %}
+                                                                    Complete the thought by adding a subject or verb
+                                                                {% elif issue.type == 'run_on' %}
+                                                                    Split into separate sentences or add a conjunction
+                                                                {% else %}
+                                                                    Review this sentence for grammatical correctness
+                                                                {% endif %}
+                                                            </div>
+                                                            {% if issue.suggestion %}
+                                                            <div class="text-info small mt-1">
+                                                                <i class="fas fa-edit me-1"></i>
+                                                                Example: {{ issue.suggestion }}
+                                                            </div>
+                                                            {% endif %}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                {% endfor %}
+                                                {% if content.grammar_issues|length > 6 %}
+                                                <div class="col-12 text-center mt-2">
+                                                    <small class="text-muted">
+                                                        <i class="fas fa-info-circle"></i> 
+                                                        +{{ content.grammar_issues|length|add:"-6" }} more grammar issues not shown
+                                                    </small>
+                                                </div>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                        {% endwith %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Performance Charts -->
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-chart-area"></i> Performance Visualizations
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <i class="fas fa-chart-bar"></i> Detailed Performance by Question
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="questionChart" height="100"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <i class="fas fa-smile"></i> Emotional Journey
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="emotionChart" height="80"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar - Quick Stats -->
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h6 class="mb-0">
+                        <i class="fas fa-chart-pie"></i> Quick Stats
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3 pb-3 border-bottom">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-muted"><i class="fas fa-clock me-1"></i> Duration</span>
+                            <strong>{{ interview_duration|floatformat:1 }} min</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3 pb-3 border-bottom">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-muted"><i class="fas fa-question-circle me-1"></i> Questions</span>
+                            <strong>{{ session.answers.count }}</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3 pb-3 border-bottom">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-muted"><i class="fas fa-comment me-1"></i> Total Words</span>
+                            <strong>{{ session.answers.all|join_word_counts }}</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3 pb-3 border-bottom">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-muted"><i class="fas fa-tachometer-alt me-1"></i> Avg Pace</span>
+                            <strong>{{ avg_speaking_pace|default:"0"|floatformat:0 }} WPM</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3 pb-3 border-bottom">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-muted"><i class="fas fa-spell-check me-1"></i> Avg Clarity</span>
+                            <strong class="text-success">{{ session.answers.all|get_avg_clarity_score|floatformat:0 }}%</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3 pb-3 border-bottom">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-muted"><i class="fas fa-bullseye me-1"></i> Avg Relevance</span>
+                            <strong class="text-info">{{ session.answers.all|get_avg_relevance_score|floatformat:0 }}%</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3 pb-3 border-bottom">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-muted"><i class="fas fa-smile me-1"></i> Avg Confidence</span>
+                            <strong class="text-primary">{{ avg_confidence|default:"0"|floatformat:0 }}%</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3 pb-3 border-bottom">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-muted"><i class="fas fa-heartbeat me-1"></i> Avg Stress</span>
+                            <strong class="text-warning">{{ avg_stress|default:"0"|floatformat:0 }}%</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3 pb-3 border-bottom">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-muted"><i class="fas fa-chart-line me-1"></i> Avg Content</span>
+                            <strong class="text-success">
+                                {% if session.answers.all|get_avg_content_score %}
+                                    {{ session.answers.all|get_avg_content_score|floatformat:0 }}%
+                                {% else %}
+                                    {{ report.content_score|floatformat:0 }}%
+                                {% endif %}
+                            </strong>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-muted"><i class="fas fa-theater-masks me-1"></i> Common Emotion</span>
+                            <strong>
+                                {% if dominant_emotion == 'confident' %}
+                                    <span class="text-success">Confident</span>
+                                {% elif dominant_emotion == 'happy' %}
+                                    <span class="text-success">Happy</span>
+                                {% elif dominant_emotion == 'stressed' %}
+                                    <span class="text-danger">Stressed</span>
+                                {% elif dominant_emotion == 'tired' %}
+                                    <span class="text-warning">Tired</span>
+                                {% else %}
+                                    <span class="text-secondary">{{ dominant_emotion|default:"Neutral"|title }}</span>
+                                {% endif %}
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Recommendations -->
+            <div class="card mb-4">
+                <div class="card-header bg-success text-white">
+                    <h6 class="mb-0">
+                        <i class="fas fa-robot"></i> AI Recommendations
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <small>Practice answering in 2-3 minutes</small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <small>Use STAR method (Situation, Task, Action, Result)</small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <small>Mention specific technical tools and frameworks</small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <small>Reduce filler words by pausing briefly</small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <small>Use shorter, clearer sentences (12-20 words ideal)</small>
+                        </li>
+                        <li class="mb-0">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <small>Research company before interview</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="mb-0">
+                        <i class="fas fa-tasks"></i> Next Steps
+                    </h6>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <a href="{% url 'interview_config' %}" class="btn btn-primary">
+                            <i class="fas fa-redo"></i> Practice Again
+                        </a>
+                        <a href="{% url 'interview_history' %}" class="btn btn-outline-primary">
+                            <i class="fas fa-history"></i> View All Interviews
+                        </a>
+                        <a href="{% url 'dashboard' %}" class="btn btn-outline-secondary">
+                            <i class="fas fa-home"></i> Back to Dashboard
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+// Performance by Question Chart
+document.addEventListener('DOMContentLoaded', function() {
+    const ctx = document.getElementById('questionChart');
+    if (!ctx) return;
+    
+    const answersData = [
+        {% for answer in session.answers.all %}
+        {
+            questionNumber: {{ forloop.counter }},
+            questionText: "{{ answer.question.question_text|truncatewords:8|escapejs }}",
+            semanticScore: {{ answer.semantic_similarity_score|default:0 }},
+            keywordScore: {{ answer.keyword_relevance_score|default:0 }},
+            completenessScore: {{ answer.completeness_score|default:0 }},
+        },
+        {% endfor %}
+    ];
+    
+    const labels = answersData.map(a => `Q${a.questionNumber}`);
+    const semanticScores = answersData.map(a => a.semanticScore);
+    const keywordScores = answersData.map(a => a.keywordScore);
+    const completenessScores = answersData.map(a => a.completenessScore);
+    
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [
+                {
+                    label: 'Semantic Similarity',
+                    data: semanticScores,
+                    backgroundColor: 'rgba(14, 165, 233, 0.7)',
+                    borderColor: 'rgba(14, 165, 233, 1)',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Keyword Relevance',
+                    data: keywordScores,
+                    backgroundColor: 'rgba(79, 70, 229, 0.7)',
+                    borderColor: 'rgba(79, 70, 229, 1)',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Completeness',
+                    data: completenessScores,
+                    backgroundColor: 'rgba(245, 158, 11, 0.7)',
+                    borderColor: 'rgba(245, 158, 11, 1)',
+                    borderWidth: 2
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: { position: 'top' },
+                tooltip: {
+                    callbacks: {
+                        title: function(context) {
+                            return answersData[context[0].dataIndex].questionText;
+                        },
+                        label: function(context) {
+                            return context.dataset.label + ': ' + context.parsed.y.toFixed(1) + '%';
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: { beginAtZero: true, max: 100, ticks: { callback: function(v) { return v + '%'; } } }
+            }
+        }
+    });
+});
+
+// Emotion Timeline Chart
+document.addEventListener('DOMContentLoaded', function() {
+    const ctx = document.getElementById('emotionChart');
+    if (!ctx) return;
+    
+    const emotionData = [];
+    let currentTime = 0;
+    
+    {% for answer in session.answers.all %}
+        {% if answer.facial_analysis and answer.facial_analysis.emotion_timeline %}
+            const answer{{ forloop.counter }}Timeline = {{ answer.facial_analysis.emotion_timeline|safe }};
+            if (Array.isArray(answer{{ forloop.counter }}Timeline)) {
+                answer{{ forloop.counter }}Timeline.forEach(point => {
+                    emotionData.push({
+                        time: currentTime + (point.timestamp || 0),
+                        emotion: point.emotion || 'neutral',
+                        confidence: point.confidence_score || 50,
+                        stress: point.stress_score || 50,
+                        questionNumber: {{ forloop.counter }}
+                    });
+                });
+            }
+            currentTime += {{ answer.duration|default:20 }};
+        {% endif %}
+    {% endfor %}
+    
+    if (emotionData.length > 0) {
+        const timeLabels = emotionData.map(d => Math.floor(d.time) + 's');
+        const confidenceScores = emotionData.map(d => d.confidence);
+        const stressScores = emotionData.map(d => d.stress);
+        
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: timeLabels,
+                datasets: [{
+                    label: 'Confidence',
+                    data: confidenceScores,
+                    borderColor: '#10B981',
+                    backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                    borderWidth: 2,
+                    tension: 0.4,
+                    fill: true
+                }, {
+                    label: 'Stress',
+                    data: stressScores,
+                    borderColor: '#EF4444',
+                    backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                    borderWidth: 2,
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            title: function(context) {
+                                const data = emotionData[context[0].dataIndex];
+                                return `Q${data.questionNumber} - ${Math.floor(data.time)}s`;
+                            },
+                            label: function(context) {
+                                const emotion = emotionData[context.dataIndex].emotion;
+                                return [context.dataset.label + ': ' + context.parsed.y.toFixed(0) + '%', 'Emotion: ' + emotion];
+                            }
+                        }
+                    }
+                },
+                scales: { y: { beginAtZero: true, max: 100 } }
+            }
+        });
+    } else {
+        ctx.style.display = 'none';
+        const emotionCard = document.querySelector('#emotionChart').closest('.card');
+        if (emotionCard && emotionCard.querySelector('.card-header')) {
+            const header = emotionCard.querySelector('.card-header');
+            header.innerHTML = header.innerHTML + ' <small class="text-muted">(No emotion data available)</small>';
+        }
+    }
+});
+</script>
+{% endblock %}

@@ -1,0 +1,224 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome to Vocal View - AI Interview Coach{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Hero Section -->
+    <div class="row align-items-center" style="min-height: 70vh;">
+        <div class="col-lg-6">
+            <h1 class="display-4 fw-bold mb-4">
+                Master Your Interview Skills with 
+                <span style="color: var(--primary-color);">AI</span>
+            </h1>
+            <p class="lead mb-4">
+                Practice real interviews, get instant AI-powered feedback on your performance, 
+                and boost your confidence for that dream job.
+            </p>
+            <div class="d-flex gap-3">
+                <a href="{% url 'register' %}" class="btn btn-primary btn-lg">
+                    <i class="fas fa-rocket"></i> Get Started Free
+                </a>
+                <a href="#features" class="btn btn-outline-primary btn-lg">
+                    <i class="fas fa-play-circle"></i> Learn More
+                </a>
+            </div>
+            
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="text-center">
+                            <h3 class="fw-bold" style="color: var(--primary-color);">100%</h3>
+                            <p class="text-muted small">AI-Powered</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center">
+                            <h3 class="fw-bold" style="color: var(--primary-color);">15min</h3>
+                            <p class="text-muted small">Practice Time</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center">
+                            <h3 class="fw-bold" style="color: var(--primary-color);">24/7</h3>
+                            <p class="text-muted small">Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="text-center">
+                <i class="fas fa-video" style="font-size: 15rem; color: var(--primary-color); opacity: 0.1;"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">Powerful AI Features</h2>
+            <p class="lead text-muted">Everything you need to ace your next interview</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-microphone-alt" style="font-size: 3rem; color: var(--primary-color);"></i>
+                        </div>
+                        <h4 class="card-title">Speech Analysis</h4>
+                        <p class="card-text text-muted">
+                            Real-time transcription and analysis of your verbal responses. 
+                            Get feedback on clarity, pace, and filler words.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-smile-beam" style="font-size: 3rem; color: var(--secondary-color);"></i>
+                        </div>
+                        <h4 class="card-title">Facial Expression</h4>
+                        <p class="card-text text-muted">
+                            AI analyzes your confidence levels, stress indicators, 
+                            and emotional state throughout the interview.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-chart-line" style="font-size: 3rem; color: var(--danger-color);"></i>
+                        </div>
+                        <h4 class="card-title">Detailed Reports</h4>
+                        <p class="card-text text-muted">
+                            Comprehensive feedback with scores, visualizations, 
+                            and actionable improvement suggestions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-brain" style="font-size: 3rem; color: #8B5CF6;"></i>
+                        </div>
+                        <h4 class="card-title">Content Analysis</h4>
+                        <p class="card-text text-muted">
+                            NLP-powered evaluation of answer relevance, keyword usage, 
+                            and technical accuracy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-waveform-path" style="font-size: 3rem; color: #F59E0B;"></i>
+                        </div>
+                        <h4 class="card-title">Voice Metrics</h4>
+                        <p class="card-text text-muted">
+                            Analyze pitch variation, speaking pace, volume consistency, 
+                            and pause patterns.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-file-pdf" style="font-size: 3rem; color: #DC2626;"></i>
+                        </div>
+                        <h4 class="card-title">Export Reports</h4>
+                        <p class="card-text text-muted">
+                            Download your feedback reports in PDF or JSON format 
+                            for future reference.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-5">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">How It Works</h2>
+            <p class="lead text-muted">Start practicing in 4 simple steps</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="text-center">
+                    <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3" 
+                         style="width: 80px; height: 80px; font-size: 2rem; font-weight: bold;">
+                        1
+                    </div>
+                    <h5>Sign Up</h5>
+                    <p class="text-muted">Create your free account in seconds</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="text-center">
+                    <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3" 
+                         style="width: 80px; height: 80px; font-size: 2rem; font-weight: bold;">
+                        2
+                    </div>
+                    <h5>Choose Role</h5>
+                    <p class="text-muted">Select the job position you're targeting</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="text-center">
+                    <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3" 
+                         style="width: 80px; height: 80px; font-size: 2rem; font-weight: bold;">
+                        3
+                    </div>
+                    <h5>Practice Interview</h5>
+                    <p class="text-muted">Answer AI-generated questions via webcam</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="text-center">
+                    <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3" 
+                         style="width: 80px; height: 80px; font-size: 2rem; font-weight: bold;">
+                        4
+                    </div>
+                    <h5>Get Feedback</h5>
+                    <p class="text-muted">Review detailed AI analysis and improve</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 my-5">
+        <div class="card border-0" style="background: linear-gradient(135deg, var(--primary-color) 0%, #7C3AED 100%);">
+            <div class="card-body text-center text-white py-5">
+                <h2 class="display-5 fw-bold mb-4">Ready to Ace Your Next Interview?</h2>
+                <p class="lead mb-4">Join thousands of candidates improving their interview skills with AI</p>
+                <a href="{% url 'register' %}" class="btn btn-light btn-lg">
+                    <i class="fas fa-rocket"></i> Start Practicing Now
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

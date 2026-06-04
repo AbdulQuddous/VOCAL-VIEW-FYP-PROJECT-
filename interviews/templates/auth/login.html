@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% block title %}Login - Vocal View{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center align-items-center" style="min-height: 70vh;">
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow-lg">
+                <div class="card-header text-center py-4">
+                    <h3 class="mb-0">
+                        <i class="fas fa-sign-in-alt"></i> Login to Vocal View
+                    </h3>
+                </div>
+                <div class="card-body p-5">
+                    <form method="post" action="{% url 'login' %}">
+                        {% csrf_token %}
+                        
+                        <div class="mb-4">
+                            <label for="username" class="form-label fw-bold">
+                                <i class="fas fa-user"></i> Username
+                            </label>
+                            <input type="text" 
+                                   class="form-control form-control-lg" 
+                                   id="username" 
+                                   name="username" 
+                                   placeholder="Enter your username"
+                                   required
+                                   autofocus>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="password" class="form-label fw-bold">
+                                <i class="fas fa-lock"></i> Password
+                            </label>
+                            <input type="password" 
+                                   class="form-control form-control-lg" 
+                                   id="password" 
+                                   name="password" 
+                                   placeholder="Enter your password"
+                                   required>
+                        </div>
+
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">
+                                Remember me
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg w-100 mb-3">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </button>
+
+                        <div class="text-center">
+                            <a href="{% url 'forgot_password' %}" class="text-decoration-none small">Forgot password?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center bg-light py-3">
+                    <p class="mb-0 text-muted">
+                        Don't have an account? 
+                        <a href="{% url 'register' %}" class="text-decoration-none fw-bold">
+                            Register here
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Features Preview -->
+            <div class="mt-4 text-center">
+                <div class="row g-3">
+                    <div class="col-4">
+                        <div class="p-3 bg-white rounded shadow-sm">
+                            <i class="fas fa-microphone-alt text-primary" style="font-size: 2rem;"></i>
+                            <p class="small text-muted mb-0 mt-2">Speech Analysis</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="p-3 bg-white rounded shadow-sm">
+                            <i class="fas fa-smile-beam text-success" style="font-size: 2rem;"></i>
+                            <p class="small text-muted mb-0 mt-2">Face Detection</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="p-3 bg-white rounded shadow-sm">
+                            <i class="fas fa-chart-line text-danger" style="font-size: 2rem;"></i>
+                            <p class="small text-muted mb-0 mt-2">AI Reports</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .card {
+        border: none;
+        border-radius: 16px;
+    }
+    
+    .form-control:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.25);
+    }
+    
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 16px rgba(79, 70, 229, 0.3);
+    }
+</style>
+{% endblock %}

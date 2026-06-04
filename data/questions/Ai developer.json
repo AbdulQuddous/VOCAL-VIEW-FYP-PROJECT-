@@ -1,0 +1,4192 @@
+[
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is artificial intelligence?",
+    "expected_answer": "Artificial intelligence is the simulation of human intelligence processes by machines, including learning, reasoning, and self-correction.",
+    "keywords": [
+      "artificial intelligence",
+      "AI",
+      "simulation",
+      "learning",
+      "reasoning"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is machine learning?",
+    "expected_answer": "Machine learning is a subset of AI where algorithms learn patterns from data to make predictions or decisions without being explicitly programmed.",
+    "keywords": [
+      "machine learning",
+      "algorithms",
+      "patterns",
+      "predictions",
+      "data"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is deep learning?",
+    "expected_answer": "Deep learning is a subset of machine learning that uses neural networks with many layers to learn hierarchical representations from large amounts of data.",
+    "keywords": [
+      "deep learning",
+      "neural networks",
+      "layers",
+      "representation",
+      "hierarchical"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the difference between supervised and unsupervised learning?",
+    "expected_answer": "Supervised learning trains on labeled data to predict outputs; unsupervised learning finds hidden patterns in unlabeled data.",
+    "keywords": [
+      "supervised",
+      "unsupervised",
+      "labeled",
+      "unlabeled",
+      "patterns"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is reinforcement learning?",
+    "expected_answer": "Reinforcement learning trains an agent to make decisions by rewarding correct actions and penalizing wrong ones in an environment.",
+    "keywords": [
+      "reinforcement learning",
+      "agent",
+      "reward",
+      "environment",
+      "policy"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a neural network?",
+    "expected_answer": "A neural network is a computational model inspired by the human brain, consisting of layers of interconnected nodes (neurons) that process and transform data.",
+    "keywords": [
+      "neural network",
+      "neurons",
+      "layers",
+      "weights",
+      "activation"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a training dataset?",
+    "expected_answer": "A training dataset is the labeled data used to train a machine learning model by adjusting its parameters.",
+    "keywords": [
+      "training dataset",
+      "labeled",
+      "parameters",
+      "model",
+      "learning"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is overfitting?",
+    "expected_answer": "Overfitting occurs when a model learns the training data too well including noise, resulting in poor performance on unseen data.",
+    "keywords": [
+      "overfitting",
+      "noise",
+      "training",
+      "generalization",
+      "variance"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is underfitting?",
+    "expected_answer": "Underfitting occurs when a model is too simple to capture patterns in the data, resulting in poor performance on both training and test sets.",
+    "keywords": [
+      "underfitting",
+      "bias",
+      "simple",
+      "training",
+      "performance"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a loss function?",
+    "expected_answer": "A loss function measures the difference between the model's predictions and the actual values, guiding the optimization process.",
+    "keywords": [
+      "loss function",
+      "error",
+      "predictions",
+      "optimization",
+      "MSE"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is gradient descent?",
+    "expected_answer": "Gradient descent is an optimization algorithm that minimizes the loss function by iteratively updating model parameters in the direction of the steepest descent.",
+    "keywords": [
+      "gradient descent",
+      "optimization",
+      "loss",
+      "parameters",
+      "learning rate"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is backpropagation?",
+    "expected_answer": "Backpropagation is the algorithm used to compute gradients of the loss with respect to each weight by applying the chain rule backwards through the network.",
+    "keywords": [
+      "backpropagation",
+      "chain rule",
+      "gradients",
+      "weights",
+      "training"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is an activation function?",
+    "expected_answer": "An activation function introduces non-linearity into a neural network, enabling it to learn complex patterns. Examples include ReLU, sigmoid, and tanh.",
+    "keywords": [
+      "activation function",
+      "non-linearity",
+      "ReLU",
+      "sigmoid",
+      "tanh"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is ReLU?",
+    "expected_answer": "ReLU (Rectified Linear Unit) is an activation function defined as f(x) = max(0, x), outputting 0 for negative inputs and x for positive inputs.",
+    "keywords": [
+      "ReLU",
+      "activation",
+      "max(0,x)",
+      "non-linear",
+      "neural network"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the sigmoid activation function?",
+    "expected_answer": "The sigmoid function maps any input to a value between 0 and 1 using f(x) = 1/(1+e^-x), commonly used for binary classification output layers.",
+    "keywords": [
+      "sigmoid",
+      "binary",
+      "probability",
+      "0 to 1",
+      "activation"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the softmax function?",
+    "expected_answer": "Softmax converts a vector of raw scores into probabilities that sum to 1, used in multi-class classification output layers.",
+    "keywords": [
+      "softmax",
+      "probabilities",
+      "multi-class",
+      "output layer",
+      "classification"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a learning rate?",
+    "expected_answer": "The learning rate controls the size of steps taken during gradient descent when updating model weights.",
+    "keywords": [
+      "learning rate",
+      "gradient descent",
+      "step size",
+      "optimization",
+      "hyperparameter"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is an epoch?",
+    "expected_answer": "An epoch is one complete pass through the entire training dataset during model training.",
+    "keywords": [
+      "epoch",
+      "training",
+      "dataset",
+      "iteration",
+      "pass"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a batch size?",
+    "expected_answer": "Batch size is the number of training samples used in one forward and backward pass before updating model weights.",
+    "keywords": [
+      "batch size",
+      "mini-batch",
+      "forward pass",
+      "backward pass",
+      "training"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is dropout in neural networks?",
+    "expected_answer": "Dropout is a regularization technique that randomly deactivates a fraction of neurons during each training step to prevent overfitting.",
+    "keywords": [
+      "dropout",
+      "regularization",
+      "overfitting",
+      "neurons",
+      "training"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is batch normalization?",
+    "expected_answer": "Batch normalization normalizes the inputs of each layer per mini-batch, stabilizing training and allowing higher learning rates.",
+    "keywords": [
+      "batch normalization",
+      "normalization",
+      "mini-batch",
+      "training",
+      "stability"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a convolutional neural network (CNN)?",
+    "expected_answer": "A CNN uses convolutional layers to automatically detect spatial features like edges and patterns in image data, followed by pooling and fully connected layers.",
+    "keywords": [
+      "CNN",
+      "convolutional",
+      "image",
+      "features",
+      "pooling"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a recurrent neural network (RNN)?",
+    "expected_answer": "An RNN processes sequential data by maintaining a hidden state that captures information from previous time steps.",
+    "keywords": [
+      "RNN",
+      "sequential",
+      "hidden state",
+      "time steps",
+      "recurrent"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is LSTM?",
+    "expected_answer": "LSTM (Long Short-Term Memory) is an RNN variant with gates (forget, input, output) that selectively retain or discard information, solving the vanishing gradient problem.",
+    "keywords": [
+      "LSTM",
+      "gates",
+      "vanishing gradient",
+      "sequence",
+      "memory"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is transfer learning?",
+    "expected_answer": "Transfer learning reuses a model trained on one task as the starting point for a model on a different but related task, reducing training time and data requirements.",
+    "keywords": [
+      "transfer learning",
+      "pretrained",
+      "fine-tuning",
+      "reuse",
+      "domain"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a pretrained model?",
+    "expected_answer": "A pretrained model has been previously trained on a large dataset and can be fine-tuned on a smaller domain-specific dataset.",
+    "keywords": [
+      "pretrained",
+      "model",
+      "fine-tuning",
+      "large dataset",
+      "reuse"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is feature extraction in machine learning?",
+    "expected_answer": "Feature extraction selects or computes relevant attributes from raw data to serve as inputs to a machine learning model.",
+    "keywords": [
+      "feature extraction",
+      "attributes",
+      "raw data",
+      "input",
+      "representation"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is data augmentation?",
+    "expected_answer": "Data augmentation artificially increases training data by applying transformations like rotation, flipping, and cropping to reduce overfitting.",
+    "keywords": [
+      "data augmentation",
+      "transformation",
+      "rotation",
+      "flipping",
+      "training"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a hyperparameter?",
+    "expected_answer": "A hyperparameter is a configuration value set before training, such as learning rate, batch size, or number of layers, that controls the training process.",
+    "keywords": [
+      "hyperparameter",
+      "learning rate",
+      "batch size",
+      "configuration",
+      "training"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is cross-validation?",
+    "expected_answer": "Cross-validation evaluates a model by splitting data into k folds, training on k-1 folds and testing on the remaining fold, repeated k times.",
+    "keywords": [
+      "cross-validation",
+      "k-fold",
+      "evaluation",
+      "generalization",
+      "splits"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is regularization?",
+    "expected_answer": "Regularization adds a penalty term to the loss function to reduce model complexity and prevent overfitting. Common types are L1 (Lasso) and L2 (Ridge).",
+    "keywords": [
+      "regularization",
+      "L1",
+      "L2",
+      "overfitting",
+      "penalty"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is L1 regularization?",
+    "expected_answer": "L1 regularization adds the sum of absolute values of weights as a penalty, encouraging sparsity by driving some weights to zero.",
+    "keywords": [
+      "L1",
+      "Lasso",
+      "sparsity",
+      "regularization",
+      "weights"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is L2 regularization?",
+    "expected_answer": "L2 regularization adds the sum of squared weights as a penalty, discouraging large weights without making them zero.",
+    "keywords": [
+      "L2",
+      "Ridge",
+      "weights",
+      "penalty",
+      "regularization"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a confusion matrix?",
+    "expected_answer": "A confusion matrix is a table showing counts of true positives, false positives, true negatives, and false negatives for a classification model.",
+    "keywords": [
+      "confusion matrix",
+      "TP",
+      "FP",
+      "TN",
+      "FN",
+      "classification"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is accuracy in classification?",
+    "expected_answer": "Accuracy is the ratio of correct predictions to total predictions: (TP + TN) / (TP + TN + FP + FN).",
+    "keywords": [
+      "accuracy",
+      "correct",
+      "predictions",
+      "classification",
+      "metric"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is precision?",
+    "expected_answer": "Precision is the ratio of true positives to all predicted positives: TP / (TP + FP), measuring how many predicted positives are actually correct.",
+    "keywords": [
+      "precision",
+      "TP",
+      "FP",
+      "classification",
+      "metric"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is recall?",
+    "expected_answer": "Recall (sensitivity) is the ratio of true positives to all actual positives: TP / (TP + FN), measuring how many actual positives are correctly identified.",
+    "keywords": [
+      "recall",
+      "sensitivity",
+      "TP",
+      "FN",
+      "metric"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the F1 score?",
+    "expected_answer": "The F1 score is the harmonic mean of precision and recall: 2 * (precision * recall) / (precision + recall), balancing both metrics.",
+    "keywords": [
+      "F1 score",
+      "harmonic mean",
+      "precision",
+      "recall",
+      "classification"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the ROC-AUC metric?",
+    "expected_answer": "ROC-AUC measures the area under the ROC curve, which plots TPR vs FPR at all thresholds. A value of 1.0 indicates perfect classification.",
+    "keywords": [
+      "ROC-AUC",
+      "TPR",
+      "FPR",
+      "classifier",
+      "threshold"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is mean squared error (MSE)?",
+    "expected_answer": "MSE measures the average squared difference between predicted and actual values, penalizing large errors more heavily.",
+    "keywords": [
+      "MSE",
+      "mean squared error",
+      "regression",
+      "loss",
+      "evaluation"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is TensorFlow?",
+    "expected_answer": "TensorFlow is an open-source deep learning framework developed by Google for building and training neural networks at scale.",
+    "keywords": [
+      "TensorFlow",
+      "Google",
+      "deep learning",
+      "framework",
+      "neural network"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is PyTorch?",
+    "expected_answer": "PyTorch is an open-source deep learning framework developed by Facebook that uses dynamic computation graphs and is popular in research.",
+    "keywords": [
+      "PyTorch",
+      "Facebook",
+      "dynamic graph",
+      "deep learning",
+      "research"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is Keras?",
+    "expected_answer": "Keras is a high-level neural network API written in Python, running on top of TensorFlow, designed for fast prototyping.",
+    "keywords": [
+      "Keras",
+      "high-level",
+      "TensorFlow",
+      "API",
+      "prototyping"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is scikit-learn?",
+    "expected_answer": "Scikit-learn is a Python machine learning library providing tools for classification, regression, clustering, and model evaluation.",
+    "keywords": [
+      "scikit-learn",
+      "sklearn",
+      "machine learning",
+      "Python",
+      "library"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is NumPy?",
+    "expected_answer": "NumPy is a Python library for numerical computing providing multi-dimensional arrays and mathematical operations used widely in ML.",
+    "keywords": [
+      "NumPy",
+      "array",
+      "numerical",
+      "Python",
+      "matrix"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is Pandas?",
+    "expected_answer": "Pandas is a Python library for data manipulation and analysis, providing DataFrame and Series data structures.",
+    "keywords": [
+      "pandas",
+      "DataFrame",
+      "Python",
+      "data manipulation",
+      "analysis"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a random forest?",
+    "expected_answer": "Random forest is an ensemble method that trains multiple decision trees on random data and feature subsets, combining predictions by majority vote or averaging.",
+    "keywords": [
+      "random forest",
+      "ensemble",
+      "decision tree",
+      "bagging",
+      "voting"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a decision tree?",
+    "expected_answer": "A decision tree is a flowchart-like model that makes predictions by splitting data based on feature values at each node.",
+    "keywords": [
+      "decision tree",
+      "splitting",
+      "node",
+      "leaf",
+      "classification"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is k-means clustering?",
+    "expected_answer": "K-means partitions data into k clusters by minimizing within-cluster variance, iteratively assigning points to the nearest centroid.",
+    "keywords": [
+      "k-means",
+      "clustering",
+      "centroid",
+      "unsupervised",
+      "variance"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is dimensionality reduction?",
+    "expected_answer": "Dimensionality reduction reduces the number of features while retaining important information, using techniques like PCA and t-SNE.",
+    "keywords": [
+      "dimensionality reduction",
+      "PCA",
+      "t-SNE",
+      "features",
+      "compression"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is PCA?",
+    "expected_answer": "PCA (Principal Component Analysis) projects data onto orthogonal axes of maximum variance, reducing dimensionality while preserving information.",
+    "keywords": [
+      "PCA",
+      "principal component",
+      "variance",
+      "projection",
+      "dimensionality"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a GAN?",
+    "expected_answer": "A GAN (Generative Adversarial Network) consists of a generator that creates fake data and a discriminator that distinguishes real from fake, trained adversarially.",
+    "keywords": [
+      "GAN",
+      "generator",
+      "discriminator",
+      "adversarial",
+      "generative"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is an autoencoder?",
+    "expected_answer": "An autoencoder is a neural network that compresses input into a latent representation and reconstructs it, used for dimensionality reduction and anomaly detection.",
+    "keywords": [
+      "autoencoder",
+      "encoder",
+      "decoder",
+      "latent",
+      "reconstruction"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is word embedding?",
+    "expected_answer": "Word embeddings represent words as dense vectors capturing semantic meaning, enabling NLP models to understand word relationships.",
+    "keywords": [
+      "word embedding",
+      "Word2Vec",
+      "GloVe",
+      "NLP",
+      "vector"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is natural language processing (NLP)?",
+    "expected_answer": "NLP is a branch of AI that enables computers to understand, interpret, and generate human language.",
+    "keywords": [
+      "NLP",
+      "natural language",
+      "text",
+      "understanding",
+      "generation"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is tokenization in NLP?",
+    "expected_answer": "Tokenization splits text into individual tokens (words or subwords) as the first step in text preprocessing for NLP models.",
+    "keywords": [
+      "tokenization",
+      "tokens",
+      "NLP",
+      "preprocessing",
+      "subwords"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a transformer model?",
+    "expected_answer": "A transformer model uses self-attention to process sequences in parallel, enabling learning of long-range dependencies without recurrence.",
+    "keywords": [
+      "transformer",
+      "self-attention",
+      "parallel",
+      "sequence",
+      "BERT"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is BERT?",
+    "expected_answer": "BERT (Bidirectional Encoder Representations from Transformers) is a pretrained NLP model that reads context from both left and right, excelling in many NLP tasks.",
+    "keywords": [
+      "BERT",
+      "bidirectional",
+      "transformer",
+      "pretrained",
+      "NLP"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is GPT?",
+    "expected_answer": "GPT (Generative Pretrained Transformer) is an autoregressive language model that generates text by predicting the next token, trained on large text corpora.",
+    "keywords": [
+      "GPT",
+      "generative",
+      "autoregressive",
+      "language model",
+      "OpenAI"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is fine-tuning in deep learning?",
+    "expected_answer": "Fine-tuning adapts a pretrained model to a specific task by continuing training on task-specific data with a low learning rate.",
+    "keywords": [
+      "fine-tuning",
+      "pretrained",
+      "task-specific",
+      "transfer learning",
+      "low learning rate"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the vanishing gradient problem?",
+    "expected_answer": "The vanishing gradient problem occurs in deep networks when gradients shrink exponentially during backpropagation, making early layers train very slowly.",
+    "keywords": [
+      "vanishing gradient",
+      "backpropagation",
+      "deep network",
+      "RNN",
+      "sigmoid"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the exploding gradient problem?",
+    "expected_answer": "Exploding gradients occur when gradients grow exponentially during backpropagation, causing unstable training. Mitigated with gradient clipping.",
+    "keywords": [
+      "exploding gradient",
+      "clipping",
+      "backpropagation",
+      "instability",
+      "RNN"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is gradient clipping?",
+    "expected_answer": "Gradient clipping limits the gradient norm during backpropagation to a maximum value, preventing exploding gradients in RNNs and transformers.",
+    "keywords": [
+      "gradient clipping",
+      "exploding gradient",
+      "norm",
+      "RNN",
+      "stability"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is early stopping?",
+    "expected_answer": "Early stopping halts training when validation loss stops improving, preventing overfitting without relying on a fixed number of epochs.",
+    "keywords": [
+      "early stopping",
+      "validation loss",
+      "overfitting",
+      "epochs",
+      "regularization"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is model evaluation?",
+    "expected_answer": "Model evaluation measures a model's performance on unseen data using metrics such as accuracy, F1, MSE, or AUC.",
+    "keywords": [
+      "model evaluation",
+      "metrics",
+      "test set",
+      "performance",
+      "generalization"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a validation set?",
+    "expected_answer": "A validation set is a separate portion of data used to tune hyperparameters and monitor performance during training without contaminating the test set.",
+    "keywords": [
+      "validation set",
+      "hyperparameter",
+      "tuning",
+      "monitoring",
+      "training"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a test set?",
+    "expected_answer": "A test set is a held-out portion of data used only for final evaluation of a trained model to estimate real-world performance.",
+    "keywords": [
+      "test set",
+      "evaluation",
+      "held-out",
+      "generalization",
+      "final"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the bias-variance tradeoff?",
+    "expected_answer": "The bias-variance tradeoff balances a model's error from wrong assumptions (bias) and sensitivity to training data fluctuations (variance) to minimize total error.",
+    "keywords": [
+      "bias",
+      "variance",
+      "tradeoff",
+      "generalization",
+      "error"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is pooling in CNNs?",
+    "expected_answer": "Pooling reduces the spatial dimensions of feature maps in CNNs. Max pooling takes the maximum value; average pooling takes the mean in each region.",
+    "keywords": [
+      "pooling",
+      "max pooling",
+      "average pooling",
+      "CNN",
+      "spatial"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a fully connected layer?",
+    "expected_answer": "A fully connected (dense) layer connects every neuron to every neuron in the next layer, used for final classification or regression in neural networks.",
+    "keywords": [
+      "fully connected",
+      "dense",
+      "layer",
+      "neurons",
+      "classification"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a convolutional filter (kernel)?",
+    "expected_answer": "A convolutional filter is a small matrix that slides across the input, computing dot products to detect features like edges, textures, or patterns.",
+    "keywords": [
+      "filter",
+      "kernel",
+      "convolution",
+      "feature detection",
+      "dot product"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is feature map in a CNN?",
+    "expected_answer": "A feature map is the output of applying a convolutional filter to an input, representing the activation of a specific feature across spatial positions.",
+    "keywords": [
+      "feature map",
+      "CNN",
+      "convolution",
+      "activation",
+      "spatial"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is stride in a CNN?",
+    "expected_answer": "Stride is the number of pixels a convolutional filter moves at each step. Larger strides produce smaller feature maps.",
+    "keywords": [
+      "stride",
+      "CNN",
+      "filter",
+      "step",
+      "feature map"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is padding in CNNs?",
+    "expected_answer": "Padding adds zeros around the input borders so the convolutional filter can be applied to edge pixels, controlling the output size.",
+    "keywords": [
+      "padding",
+      "zero padding",
+      "CNN",
+      "border",
+      "output size"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the difference between a shallow and deep neural network?",
+    "expected_answer": "A shallow network has one or few hidden layers; a deep network has many hidden layers, enabling learning of more complex hierarchical features.",
+    "keywords": [
+      "shallow",
+      "deep",
+      "hidden layers",
+      "complexity",
+      "features"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is one-hot encoding?",
+    "expected_answer": "One-hot encoding converts categorical variables into binary vectors where only one element is 1, used to represent class labels in neural networks.",
+    "keywords": [
+      "one-hot encoding",
+      "categorical",
+      "binary",
+      "class labels",
+      "vector"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is normalization in deep learning?",
+    "expected_answer": "Normalization scales input features to a standard range (e.g., 0-1 or zero mean, unit variance) to speed up training and improve convergence.",
+    "keywords": [
+      "normalization",
+      "scaling",
+      "standardization",
+      "convergence",
+      "training"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a GRU?",
+    "expected_answer": "GRU (Gated Recurrent Unit) is a simplified LSTM variant with reset and update gates, requiring fewer parameters while handling sequential data effectively.",
+    "keywords": [
+      "GRU",
+      "Gated Recurrent Unit",
+      "reset gate",
+      "update gate",
+      "sequence"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is object detection?",
+    "expected_answer": "Object detection identifies and localizes multiple objects in an image using bounding boxes, using models like YOLO, SSD, and Faster R-CNN.",
+    "keywords": [
+      "object detection",
+      "bounding box",
+      "YOLO",
+      "Faster R-CNN",
+      "image"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is image segmentation?",
+    "expected_answer": "Image segmentation assigns a class label to every pixel in an image. Semantic segmentation labels each pixel; instance segmentation distinguishes object instances.",
+    "keywords": [
+      "image segmentation",
+      "semantic",
+      "instance",
+      "pixel",
+      "U-Net"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a regression problem in ML?",
+    "expected_answer": "Regression predicts a continuous numerical output, such as house prices or temperature, using models like linear regression or neural networks.",
+    "keywords": [
+      "regression",
+      "continuous",
+      "numerical",
+      "prediction",
+      "output"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a classification problem in ML?",
+    "expected_answer": "Classification predicts a discrete categorical label, such as spam/not spam or cat/dog, using models like logistic regression or CNNs.",
+    "keywords": [
+      "classification",
+      "categorical",
+      "label",
+      "discrete",
+      "CNN"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the Adam optimizer?",
+    "expected_answer": "Adam (Adaptive Moment Estimation) combines momentum and RMSProp, adapting learning rates per parameter using first and second moment estimates.",
+    "keywords": [
+      "Adam",
+      "optimizer",
+      "momentum",
+      "RMSProp",
+      "adaptive"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is stochastic gradient descent (SGD)?",
+    "expected_answer": "SGD updates model weights using the gradient from one random training sample at a time, making it faster but noisier than batch gradient descent.",
+    "keywords": [
+      "SGD",
+      "stochastic",
+      "gradient",
+      "one sample",
+      "optimization"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is weight initialization?",
+    "expected_answer": "Weight initialization sets initial values of neural network weights before training. Good initialization (Xavier, He) prevents vanishing/exploding gradients.",
+    "keywords": [
+      "weight initialization",
+      "Xavier",
+      "He",
+      "vanishing gradient",
+      "training"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a model checkpoint?",
+    "expected_answer": "A model checkpoint saves the model's weights at a specific point during training, allowing recovery of the best model if later performance degrades.",
+    "keywords": [
+      "checkpoint",
+      "save",
+      "weights",
+      "training",
+      "best model"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is model inference?",
+    "expected_answer": "Model inference is the process of using a trained model to make predictions on new, unseen data.",
+    "keywords": [
+      "inference",
+      "prediction",
+      "trained model",
+      "deployment",
+      "serving"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is CUDA?",
+    "expected_answer": "CUDA (Compute Unified Device Architecture) is NVIDIA's parallel computing platform that enables GPU-accelerated deep learning training.",
+    "keywords": [
+      "CUDA",
+      "GPU",
+      "NVIDIA",
+      "parallel",
+      "deep learning"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a GPU and why is it important for deep learning?",
+    "expected_answer": "A GPU has thousands of parallel cores that can perform matrix multiplications simultaneously, drastically speeding up neural network training compared to CPUs.",
+    "keywords": [
+      "GPU",
+      "parallel",
+      "matrix multiplication",
+      "training",
+      "deep learning"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "Explain the attention mechanism in transformers.",
+    "expected_answer": "Attention computes a weighted sum of values based on the similarity (dot product) between queries and keys: Attention(Q,K,V) = softmax(QK^T/sqrt(d_k))V, allowing the model to focus on relevant tokens.",
+    "keywords": [
+      "attention",
+      "Q K V",
+      "dot product",
+      "softmax",
+      "transformer"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is multi-head attention?",
+    "expected_answer": "Multi-head attention runs the attention mechanism h times in parallel with different learned projections, concatenating results to capture diverse relationships.",
+    "keywords": [
+      "multi-head attention",
+      "parallel",
+      "projection",
+      "transformer",
+      "heads"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is positional encoding in transformers?",
+    "expected_answer": "Positional encoding adds sinusoidal or learned position information to token embeddings, allowing transformers to understand the order of tokens in a sequence.",
+    "keywords": [
+      "positional encoding",
+      "sinusoidal",
+      "order",
+      "sequence",
+      "transformer"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "How does BERT differ from GPT architecturally?",
+    "expected_answer": "BERT uses a bidirectional encoder that reads context from both sides; GPT uses a unidirectional decoder that predicts the next token left-to-right.",
+    "keywords": [
+      "BERT",
+      "GPT",
+      "bidirectional",
+      "unidirectional",
+      "encoder",
+      "decoder"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the difference between seq2seq and transformer architectures?",
+    "expected_answer": "Seq2seq uses encoder-decoder RNNs with attention; transformers replace recurrence entirely with self-attention, enabling parallelization and better long-range dependencies.",
+    "keywords": [
+      "seq2seq",
+      "transformer",
+      "RNN",
+      "parallelization",
+      "long-range"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is cross-entropy loss and when is it used?",
+    "expected_answer": "Cross-entropy loss measures dissimilarity between predicted probability distribution and true labels, used in classification tasks. For binary: -[y log(p) + (1-y)log(1-p)].",
+    "keywords": [
+      "cross-entropy",
+      "classification",
+      "probability",
+      "binary",
+      "multi-class"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the vanishing gradient problem in RNNs and how does LSTM solve it?",
+    "expected_answer": "In RNNs gradients shrink through long sequences. LSTM gates (forget, input, output) create direct paths for gradient flow via the cell state, preventing exponential decay.",
+    "keywords": [
+      "vanishing gradient",
+      "LSTM",
+      "cell state",
+      "gates",
+      "RNN"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a residual connection (skip connection)?",
+    "expected_answer": "A residual connection adds the input of a layer directly to its output (x + F(x)), allowing gradients to flow unchanged through the network, enabling very deep networks.",
+    "keywords": [
+      "residual connection",
+      "skip connection",
+      "ResNet",
+      "gradient flow",
+      "deep"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is ResNet and why is it significant?",
+    "expected_answer": "ResNet (Residual Network) introduced skip connections allowing training of very deep networks (152+ layers) without vanishing gradients, winning ImageNet 2015.",
+    "keywords": [
+      "ResNet",
+      "skip connection",
+      "deep",
+      "ImageNet",
+      "residual"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is VGG and what was its contribution?",
+    "expected_answer": "VGG showed that depth (16-19 layers) with small 3x3 filters is key for image recognition performance, providing a clean and reusable architecture.",
+    "keywords": [
+      "VGG",
+      "3x3 filters",
+      "depth",
+      "ImageNet",
+      "architecture"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the Inception module?",
+    "expected_answer": "The Inception module applies multiple filter sizes (1x1, 3x3, 5x5) in parallel on the same input, concatenating feature maps to capture multi-scale features.",
+    "keywords": [
+      "Inception",
+      "GoogLeNet",
+      "parallel",
+      "multi-scale",
+      "filters"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is depthwise separable convolution?",
+    "expected_answer": "Depthwise separable convolution splits standard convolution into depthwise (per channel) and pointwise (1x1) steps, drastically reducing computation used in MobileNet.",
+    "keywords": [
+      "depthwise separable",
+      "MobileNet",
+      "efficient",
+      "convolution",
+      "channel"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is MobileNet?",
+    "expected_answer": "MobileNet is a lightweight CNN architecture using depthwise separable convolutions for efficient image classification on mobile and edge devices.",
+    "keywords": [
+      "MobileNet",
+      "lightweight",
+      "depthwise separable",
+      "mobile",
+      "efficient"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is EfficientNet?",
+    "expected_answer": "EfficientNet scales CNN width, depth, and resolution with a compound coefficient, achieving state-of-the-art accuracy with fewer parameters.",
+    "keywords": [
+      "EfficientNet",
+      "compound scaling",
+      "width",
+      "depth",
+      "resolution"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the YOLO object detection algorithm?",
+    "expected_answer": "YOLO (You Only Look Once) performs object detection in a single forward pass, dividing the image into grids and predicting bounding boxes and classes simultaneously.",
+    "keywords": [
+      "YOLO",
+      "object detection",
+      "single pass",
+      "bounding box",
+      "real-time"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is Faster R-CNN?",
+    "expected_answer": "Faster R-CNN uses a Region Proposal Network (RPN) to propose candidate regions, then classifies and refines them, enabling end-to-end training for object detection.",
+    "keywords": [
+      "Faster R-CNN",
+      "RPN",
+      "region proposal",
+      "object detection",
+      "end-to-end"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is anchor box in object detection?",
+    "expected_answer": "Anchor boxes are predefined bounding boxes of different scales and aspect ratios used as references for predicting object locations in models like YOLO and Faster R-CNN.",
+    "keywords": [
+      "anchor box",
+      "bounding box",
+      "scale",
+      "aspect ratio",
+      "object detection"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is non-maximum suppression (NMS)?",
+    "expected_answer": "NMS removes redundant overlapping bounding box predictions by keeping only the highest-confidence box when IoU exceeds a threshold.",
+    "keywords": [
+      "NMS",
+      "non-maximum suppression",
+      "bounding box",
+      "IoU",
+      "confidence"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is IoU (Intersection over Union)?",
+    "expected_answer": "IoU measures the overlap between a predicted bounding box and ground truth: IoU = Area of Intersection / Area of Union. Used to evaluate object detection.",
+    "keywords": [
+      "IoU",
+      "Intersection over Union",
+      "bounding box",
+      "overlap",
+      "detection"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is semantic segmentation?",
+    "expected_answer": "Semantic segmentation classifies each pixel in an image into a category, without distinguishing individual instances. Models like FCN and DeepLab are used.",
+    "keywords": [
+      "semantic segmentation",
+      "pixel",
+      "FCN",
+      "DeepLab",
+      "classification"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is U-Net and where is it used?",
+    "expected_answer": "U-Net is an encoder-decoder CNN with skip connections between encoder and decoder stages, widely used in biomedical image segmentation.",
+    "keywords": [
+      "U-Net",
+      "encoder-decoder",
+      "skip connections",
+      "biomedical",
+      "segmentation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the difference between GANs and VAEs?",
+    "expected_answer": "GANs learn to generate data by adversarial training (generator vs discriminator) without explicit density estimation; VAEs learn a probabilistic latent space with explicit KL divergence.",
+    "keywords": [
+      "GAN",
+      "VAE",
+      "generative",
+      "latent space",
+      "KL divergence"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is mode collapse in GANs?",
+    "expected_answer": "Mode collapse occurs when the GAN generator produces limited variety of outputs, focusing on a subset of modes in the data distribution.",
+    "keywords": [
+      "mode collapse",
+      "GAN",
+      "generator",
+      "diversity",
+      "distribution"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the Wasserstein GAN (WGAN)?",
+    "expected_answer": "WGAN replaces the discriminator with a critic using Wasserstein distance, providing more stable training and meaningful gradients even when distributions don't overlap.",
+    "keywords": [
+      "WGAN",
+      "Wasserstein",
+      "critic",
+      "stable training",
+      "earth mover distance"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a variational autoencoder (VAE)?",
+    "expected_answer": "A VAE encodes input into a distribution (mean and variance), samples a latent code, and decodes it. The ELBO loss combines reconstruction and KL divergence terms.",
+    "keywords": [
+      "VAE",
+      "latent space",
+      "ELBO",
+      "KL divergence",
+      "generative"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is self-supervised learning?",
+    "expected_answer": "Self-supervised learning generates labels from the data itself (e.g., predicting masked tokens, image rotations), enabling learning from unlabeled data.",
+    "keywords": [
+      "self-supervised",
+      "contrastive",
+      "masked",
+      "SimCLR",
+      "unlabeled"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is contrastive learning?",
+    "expected_answer": "Contrastive learning pulls representations of similar (positive) samples together and pushes dissimilar (negative) samples apart, used in SimCLR and MoCo.",
+    "keywords": [
+      "contrastive learning",
+      "SimCLR",
+      "MoCo",
+      "positive",
+      "negative pairs"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is SimCLR?",
+    "expected_answer": "SimCLR is a self-supervised contrastive learning framework that augments images, encodes them with a backbone, and uses NT-Xent loss to learn representations.",
+    "keywords": [
+      "SimCLR",
+      "contrastive",
+      "augmentation",
+      "NT-Xent",
+      "self-supervised"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is knowledge distillation?",
+    "expected_answer": "Knowledge distillation trains a smaller student model to mimic the soft output probabilities of a larger teacher model, compressing knowledge into a lightweight model.",
+    "keywords": [
+      "knowledge distillation",
+      "student",
+      "teacher",
+      "soft labels",
+      "compression"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is model pruning?",
+    "expected_answer": "Model pruning removes redundant or low-importance weights from a neural network, reducing model size and inference latency with minimal accuracy loss.",
+    "keywords": [
+      "pruning",
+      "weights",
+      "compression",
+      "efficiency",
+      "sparse"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is model quantization?",
+    "expected_answer": "Quantization reduces the precision of model weights (e.g., float32 to int8), decreasing model size and speeding up inference on hardware.",
+    "keywords": [
+      "quantization",
+      "int8",
+      "float32",
+      "inference",
+      "compression"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the difference between model compression techniques?",
+    "expected_answer": "Pruning removes weights, quantization reduces precision, distillation trains smaller models from larger ones, and low-rank factorization decomposes weight matrices.",
+    "keywords": [
+      "pruning",
+      "quantization",
+      "distillation",
+      "low-rank",
+      "compression"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is hyperparameter tuning and common methods?",
+    "expected_answer": "Hyperparameter tuning finds optimal model settings using grid search (exhaustive), random search (sampling), or Bayesian optimization (probabilistic surrogate model).",
+    "keywords": [
+      "hyperparameter tuning",
+      "grid search",
+      "random search",
+      "Bayesian",
+      "optimization"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is Bayesian optimization for hyperparameter search?",
+    "expected_answer": "Bayesian optimization uses a probabilistic surrogate model (Gaussian Process) and acquisition function (EI, UCB) to select hyperparameters, balancing exploration and exploitation.",
+    "keywords": [
+      "Bayesian optimization",
+      "Gaussian Process",
+      "acquisition function",
+      "EI",
+      "surrogate"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the learning rate scheduler?",
+    "expected_answer": "A learning rate scheduler adjusts the learning rate during training, e.g., step decay, cosine annealing, or warm restarts, for better convergence.",
+    "keywords": [
+      "learning rate scheduler",
+      "cosine annealing",
+      "step decay",
+      "warm restart",
+      "convergence"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is cosine annealing?",
+    "expected_answer": "Cosine annealing gradually reduces the learning rate following a cosine curve, optionally with warm restarts for escaping local minima.",
+    "keywords": [
+      "cosine annealing",
+      "learning rate",
+      "warm restart",
+      "decay",
+      "schedule"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is warmup in training transformers?",
+    "expected_answer": "Warmup linearly increases the learning rate from 0 to the target value in early training steps, stabilizing transformer training before full-rate optimization.",
+    "keywords": [
+      "warmup",
+      "learning rate",
+      "transformer",
+      "stability",
+      "training"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is layer normalization vs batch normalization?",
+    "expected_answer": "Batch normalization normalizes across the batch dimension per feature; layer normalization normalizes across features per sample, preferred in transformers.",
+    "keywords": [
+      "layer normalization",
+      "batch normalization",
+      "transformer",
+      "per sample",
+      "per batch"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is weight decay?",
+    "expected_answer": "Weight decay is equivalent to L2 regularization applied directly to the optimizer, penalizing large weights to reduce overfitting.",
+    "keywords": [
+      "weight decay",
+      "L2",
+      "regularization",
+      "optimizer",
+      "overfitting"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the difference between Adam and SGD with momentum?",
+    "expected_answer": "SGD with momentum accumulates a velocity vector; Adam adapts per-parameter learning rates using first and second moment estimates, generally converging faster.",
+    "keywords": [
+      "Adam",
+      "SGD",
+      "momentum",
+      "adaptive",
+      "convergence"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is AdamW optimizer?",
+    "expected_answer": "AdamW decouples weight decay from the adaptive learning rate update in Adam, leading to better generalization especially in transformer training.",
+    "keywords": [
+      "AdamW",
+      "weight decay",
+      "decoupled",
+      "transformer",
+      "optimizer"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is gradient accumulation?",
+    "expected_answer": "Gradient accumulation sums gradients over multiple mini-batches before updating weights, simulating a larger batch size when GPU memory is limited.",
+    "keywords": [
+      "gradient accumulation",
+      "batch size",
+      "GPU memory",
+      "mini-batch",
+      "training"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is mixed precision training?",
+    "expected_answer": "Mixed precision training uses FP16 for forward and backward passes and FP32 for weight updates, reducing memory usage and speeding up training on modern GPUs.",
+    "keywords": [
+      "mixed precision",
+      "FP16",
+      "FP32",
+      "AMP",
+      "training speed"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is data parallelism in distributed training?",
+    "expected_answer": "Data parallelism replicates the model on multiple GPUs, each processing a different data shard, and synchronizes gradients after each step.",
+    "keywords": [
+      "data parallelism",
+      "distributed training",
+      "GPU",
+      "gradient sync",
+      "DDP"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is model parallelism in distributed training?",
+    "expected_answer": "Model parallelism splits the model across multiple GPUs when it is too large to fit on one, with activations passed between devices.",
+    "keywords": [
+      "model parallelism",
+      "split",
+      "GPU",
+      "large model",
+      "pipeline"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is pipeline parallelism?",
+    "expected_answer": "Pipeline parallelism splits model layers into stages across GPUs, processing different micro-batches simultaneously to reduce idle GPU time.",
+    "keywords": [
+      "pipeline parallelism",
+      "stages",
+      "micro-batch",
+      "GPU",
+      "efficiency"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is Hugging Face Transformers library?",
+    "expected_answer": "Hugging Face Transformers is an open-source library providing thousands of pretrained transformer models (BERT, GPT, T5) with APIs for NLP, vision, and audio.",
+    "keywords": [
+      "Hugging Face",
+      "transformers",
+      "pretrained",
+      "BERT",
+      "GPT"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is tokenization with Byte Pair Encoding (BPE)?",
+    "expected_answer": "BPE iteratively merges the most frequent character pairs to build a vocabulary of subword units, balancing vocabulary size and coverage of rare words.",
+    "keywords": [
+      "BPE",
+      "Byte Pair Encoding",
+      "subword",
+      "vocabulary",
+      "tokenization"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is SentencePiece?",
+    "expected_answer": "SentencePiece is a language-independent subword tokenizer that treats text as raw unicode characters, used in T5 and multilingual models.",
+    "keywords": [
+      "SentencePiece",
+      "subword",
+      "tokenizer",
+      "language-independent",
+      "multilingual"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the T5 model?",
+    "expected_answer": "T5 (Text-to-Text Transfer Transformer) frames all NLP tasks as text-to-text problems, using a single encoder-decoder model pretrained with span masking.",
+    "keywords": [
+      "T5",
+      "text-to-text",
+      "encoder-decoder",
+      "span masking",
+      "multitask"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is RLHF (Reinforcement Learning from Human Feedback)?",
+    "expected_answer": "RLHF trains language models to follow human preferences by collecting human feedback on model outputs, training a reward model, and using PPO to optimize the LLM.",
+    "keywords": [
+      "RLHF",
+      "human feedback",
+      "reward model",
+      "PPO",
+      "LLM alignment"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is prompt engineering?",
+    "expected_answer": "Prompt engineering designs input prompts to guide large language model outputs, using techniques like few-shot examples, chain-of-thought, and instructions.",
+    "keywords": [
+      "prompt engineering",
+      "few-shot",
+      "chain-of-thought",
+      "LLM",
+      "instructions"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is few-shot learning?",
+    "expected_answer": "Few-shot learning enables models to generalize from very few labeled examples by leveraging pretrained representations or meta-learning.",
+    "keywords": [
+      "few-shot",
+      "meta-learning",
+      "prototypical network",
+      "MAML",
+      "generalization"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is zero-shot learning?",
+    "expected_answer": "Zero-shot learning enables a model to classify unseen classes by using semantic descriptions or embeddings without any labeled training examples for those classes.",
+    "keywords": [
+      "zero-shot",
+      "unseen classes",
+      "semantic",
+      "embeddings",
+      "generalization"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is in-context learning in LLMs?",
+    "expected_answer": "In-context learning allows LLMs to perform tasks by conditioning on a few examples provided in the prompt, without updating model weights.",
+    "keywords": [
+      "in-context learning",
+      "LLM",
+      "few-shot",
+      "prompt",
+      "GPT"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is RAG (Retrieval-Augmented Generation)?",
+    "expected_answer": "RAG combines a retrieval system with a language model: relevant documents are retrieved and provided as context, improving factual accuracy without retraining.",
+    "keywords": [
+      "RAG",
+      "retrieval",
+      "augmented generation",
+      "LLM",
+      "knowledge base"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is an embedding in deep learning?",
+    "expected_answer": "An embedding is a dense low-dimensional vector representation of discrete objects (words, items) that captures semantic relationships.",
+    "keywords": [
+      "embedding",
+      "dense",
+      "vector",
+      "semantic",
+      "representation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is semantic search?",
+    "expected_answer": "Semantic search retrieves documents based on meaning similarity using embeddings and vector similarity measures, unlike keyword-based search.",
+    "keywords": [
+      "semantic search",
+      "embedding",
+      "vector similarity",
+      "retrieval",
+      "cosine similarity"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is cosine similarity?",
+    "expected_answer": "Cosine similarity measures the angle between two vectors: cos(\u03b8) = (A\u00b7B) / (|A||B|), used to compare embedding vectors for semantic similarity.",
+    "keywords": [
+      "cosine similarity",
+      "dot product",
+      "embedding",
+      "angle",
+      "similarity"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a vector database?",
+    "expected_answer": "A vector database stores and indexes high-dimensional embedding vectors, enabling fast approximate nearest neighbor search for semantic retrieval.",
+    "keywords": [
+      "vector database",
+      "Pinecone",
+      "Weaviate",
+      "FAISS",
+      "ANN"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is FAISS?",
+    "expected_answer": "FAISS (Facebook AI Similarity Search) is an open-source library for efficient similarity search and clustering of dense vectors.",
+    "keywords": [
+      "FAISS",
+      "similarity search",
+      "vector",
+      "ANN",
+      "Facebook"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is LangChain?",
+    "expected_answer": "LangChain is a framework for building LLM-powered applications, providing tools for chains, agents, memory, and retrieval-augmented generation.",
+    "keywords": [
+      "LangChain",
+      "LLM",
+      "chains",
+      "agents",
+      "RAG"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is an agent in AI?",
+    "expected_answer": "An AI agent autonomously perceives its environment, makes decisions, and takes actions using tools (search, code execution) to complete tasks.",
+    "keywords": [
+      "agent",
+      "autonomous",
+      "tools",
+      "planning",
+      "reasoning"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the ReAct framework for LLM agents?",
+    "expected_answer": "ReAct interleaves reasoning (Thought) and action steps in LLM prompts, allowing the agent to plan, use tools, and observe results iteratively.",
+    "keywords": [
+      "ReAct",
+      "reasoning",
+      "action",
+      "tool use",
+      "LLM agent"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is model drift?",
+    "expected_answer": "Model drift is the degradation of model performance over time as the real-world data distribution shifts away from the training distribution.",
+    "keywords": [
+      "model drift",
+      "data drift",
+      "distribution shift",
+      "monitoring",
+      "retraining"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is MLflow?",
+    "expected_answer": "MLflow is an open-source platform for managing the ML lifecycle including experiment tracking, model registry, packaging, and deployment.",
+    "keywords": [
+      "MLflow",
+      "experiment tracking",
+      "model registry",
+      "lifecycle",
+      "deployment"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is Weights & Biases (W&B)?",
+    "expected_answer": "W&B is an MLOps platform for experiment tracking, visualization, hyperparameter sweeps, and model management.",
+    "keywords": [
+      "Weights and Biases",
+      "W&B",
+      "experiment tracking",
+      "hyperparameter sweep",
+      "MLOps"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is MLOps?",
+    "expected_answer": "MLOps is the practice of streamlining ML model development, deployment, monitoring, and retraining using DevOps principles and automation.",
+    "keywords": [
+      "MLOps",
+      "deployment",
+      "monitoring",
+      "CI/CD",
+      "model management"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is model serving?",
+    "expected_answer": "Model serving deploys a trained model as a real-time API endpoint, returning predictions in response to client requests using tools like TorchServe, TF Serving, or FastAPI.",
+    "keywords": [
+      "model serving",
+      "API",
+      "deployment",
+      "TorchServe",
+      "TF Serving"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is ONNX?",
+    "expected_answer": "ONNX (Open Neural Network Exchange) is an open format for representing ML models, enabling interoperability between frameworks like PyTorch and TensorFlow.",
+    "keywords": [
+      "ONNX",
+      "interoperability",
+      "PyTorch",
+      "TensorFlow",
+      "format"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is TensorRT?",
+    "expected_answer": "TensorRT is NVIDIA's deep learning inference optimizer that compiles and optimizes models for fast inference on NVIDIA GPUs.",
+    "keywords": [
+      "TensorRT",
+      "NVIDIA",
+      "inference",
+      "optimization",
+      "GPU"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the difference between inference and training in terms of computation?",
+    "expected_answer": "Training requires forward + backward passes and weight updates, consuming more memory and compute; inference only needs a forward pass, optimized for low latency.",
+    "keywords": [
+      "training",
+      "inference",
+      "forward pass",
+      "backward pass",
+      "optimization"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the transformer encoder?",
+    "expected_answer": "The transformer encoder processes input tokens with multi-head self-attention and feed-forward sublayers with residual connections and layer normalization.",
+    "keywords": [
+      "transformer encoder",
+      "self-attention",
+      "feed-forward",
+      "residual",
+      "layer norm"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the transformer decoder?",
+    "expected_answer": "The transformer decoder adds cross-attention over encoder outputs in addition to masked self-attention, used in seq2seq tasks for autoregressive generation.",
+    "keywords": [
+      "transformer decoder",
+      "cross-attention",
+      "masked self-attention",
+      "autoregressive",
+      "generation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is masked language modeling (MLM)?",
+    "expected_answer": "MLM randomly masks tokens in a sentence and trains the model to predict them, used as the pretraining objective in BERT.",
+    "keywords": [
+      "MLM",
+      "masked language modeling",
+      "BERT",
+      "pretraining",
+      "predict"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is causal language modeling (CLM)?",
+    "expected_answer": "CLM trains the model to predict the next token given all previous tokens, used as the pretraining objective in GPT models.",
+    "keywords": [
+      "CLM",
+      "causal language modeling",
+      "GPT",
+      "autoregressive",
+      "next token"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is LoRA (Low-Rank Adaptation)?",
+    "expected_answer": "LoRA injects trainable low-rank matrices into pretrained model layers, enabling efficient fine-tuning of large language models with far fewer trainable parameters.",
+    "keywords": [
+      "LoRA",
+      "low-rank",
+      "fine-tuning",
+      "LLM",
+      "efficient"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is PEFT (Parameter-Efficient Fine-Tuning)?",
+    "expected_answer": "PEFT methods (LoRA, Prefix Tuning, Adapters) fine-tune large pretrained models by updating only a small fraction of parameters, reducing compute cost.",
+    "keywords": [
+      "PEFT",
+      "LoRA",
+      "adapters",
+      "prefix tuning",
+      "efficient fine-tuning"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is instruction tuning?",
+    "expected_answer": "Instruction tuning fine-tunes LLMs on datasets of instruction-response pairs, improving their ability to follow natural language instructions.",
+    "keywords": [
+      "instruction tuning",
+      "fine-tuning",
+      "LLM",
+      "instruction following",
+      "FLAN"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the difference between LLM and SLM?",
+    "expected_answer": "LLMs (Large Language Models) have billions of parameters; SLMs (Small Language Models) are compact with fewer parameters, optimized for edge and efficiency.",
+    "keywords": [
+      "LLM",
+      "SLM",
+      "parameters",
+      "efficiency",
+      "large",
+      "small"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is hallucination in LLMs?",
+    "expected_answer": "Hallucination is when an LLM generates confident but factually incorrect information, caused by pattern completion from training data rather than factual retrieval.",
+    "keywords": [
+      "hallucination",
+      "LLM",
+      "factual",
+      "incorrect",
+      "confidence"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is chain-of-thought prompting?",
+    "expected_answer": "Chain-of-thought prompting encourages LLMs to generate intermediate reasoning steps before the final answer, improving performance on complex reasoning tasks.",
+    "keywords": [
+      "chain-of-thought",
+      "reasoning",
+      "prompting",
+      "LLM",
+      "step-by-step"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is model explainability?",
+    "expected_answer": "Model explainability refers to the ability to understand and interpret why a model makes specific predictions, using techniques like SHAP, LIME, and attention visualization.",
+    "keywords": [
+      "explainability",
+      "SHAP",
+      "LIME",
+      "interpretability",
+      "transparency"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is SHAP?",
+    "expected_answer": "SHAP (SHapley Additive exPlanations) uses game theory to compute feature contributions to model predictions by averaging over all possible feature subsets.",
+    "keywords": [
+      "SHAP",
+      "Shapley",
+      "feature importance",
+      "explanation",
+      "game theory"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is LIME?",
+    "expected_answer": "LIME explains individual predictions by approximating the model locally with a simpler interpretable model (e.g., linear regression) around the input.",
+    "keywords": [
+      "LIME",
+      "local",
+      "interpretable",
+      "model-agnostic",
+      "explanation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is algorithmic fairness in AI?",
+    "expected_answer": "Algorithmic fairness ensures ML models don't discriminate based on protected attributes. Metrics include demographic parity, equalized odds, and calibration by group.",
+    "keywords": [
+      "fairness",
+      "bias",
+      "demographic parity",
+      "equalized odds",
+      "discrimination"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is responsible AI?",
+    "expected_answer": "Responsible AI encompasses fairness, transparency, accountability, privacy, safety, and inclusivity in the design and deployment of AI systems.",
+    "keywords": [
+      "responsible AI",
+      "fairness",
+      "transparency",
+      "accountability",
+      "ethics"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a diffusion model?",
+    "expected_answer": "Diffusion models learn to reverse a noise-adding process: forward process gradually adds Gaussian noise; the model learns to denoise step by step to generate data.",
+    "keywords": [
+      "diffusion model",
+      "denoising",
+      "DDPM",
+      "Stable Diffusion",
+      "generative"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is Stable Diffusion?",
+    "expected_answer": "Stable Diffusion is a latent diffusion model that performs the diffusion process in the latent space of a VAE, enabling efficient high-quality image generation.",
+    "keywords": [
+      "Stable Diffusion",
+      "latent diffusion",
+      "VAE",
+      "image generation",
+      "text-to-image"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the CLIP model?",
+    "expected_answer": "CLIP (Contrastive Language-Image Pretraining) trains image and text encoders jointly using contrastive loss on paired image-text data, enabling zero-shot image classification.",
+    "keywords": [
+      "CLIP",
+      "contrastive",
+      "image",
+      "text",
+      "zero-shot"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a vision transformer (ViT)?",
+    "expected_answer": "ViT splits an image into patches, treats them as tokens, and processes them with a standard transformer encoder, achieving competitive results with CNNs.",
+    "keywords": [
+      "ViT",
+      "vision transformer",
+      "patches",
+      "tokens",
+      "image classification"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is graph neural network (GNN)?",
+    "expected_answer": "GNNs process graph-structured data by aggregating and transforming node and edge features from neighborhoods, used in molecular property prediction and social networks.",
+    "keywords": [
+      "GNN",
+      "graph",
+      "node",
+      "edge",
+      "aggregation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is graph convolutional network (GCN)?",
+    "expected_answer": "GCN applies spectral convolution on graphs, updating each node's representation by aggregating its neighbors' features with learned weights.",
+    "keywords": [
+      "GCN",
+      "graph convolution",
+      "node",
+      "aggregation",
+      "spectral"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is message passing in GNNs?",
+    "expected_answer": "Message passing is the mechanism in GNNs where each node collects, aggregates, and updates its representation based on messages from neighboring nodes.",
+    "keywords": [
+      "message passing",
+      "GNN",
+      "neighbor",
+      "aggregation",
+      "update"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is anomaly detection in deep learning?",
+    "expected_answer": "Deep anomaly detection identifies unusual patterns using autoencoders (high reconstruction error), GANs, or one-class classification models.",
+    "keywords": [
+      "anomaly detection",
+      "autoencoder",
+      "reconstruction error",
+      "one-class",
+      "unsupervised"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is time series forecasting with deep learning?",
+    "expected_answer": "Deep learning forecasting uses LSTMs, GRUs, temporal CNNs, or transformers (Temporal Fusion Transformer) to predict future values from sequential historical data.",
+    "keywords": [
+      "time series",
+      "LSTM",
+      "TCN",
+      "Temporal Fusion Transformer",
+      "forecasting"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the Temporal Fusion Transformer (TFT)?",
+    "expected_answer": "TFT is a transformer-based architecture for multi-horizon time series forecasting with interpretable attention on variable importance and temporal patterns.",
+    "keywords": [
+      "TFT",
+      "Temporal Fusion Transformer",
+      "forecasting",
+      "attention",
+      "interpretable"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is neural architecture search (NAS)?",
+    "expected_answer": "NAS automates the design of neural network architectures using search methods like reinforcement learning, evolutionary algorithms, or differentiable search.",
+    "keywords": [
+      "NAS",
+      "neural architecture search",
+      "AutoML",
+      "differentiable",
+      "reinforcement learning"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is AutoML?",
+    "expected_answer": "AutoML automates the end-to-end process of applying machine learning, including feature engineering, model selection, and hyperparameter tuning.",
+    "keywords": [
+      "AutoML",
+      "automation",
+      "hyperparameter",
+      "model selection",
+      "feature engineering"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is federated learning?",
+    "expected_answer": "Federated learning trains models collaboratively across decentralized devices without sharing raw data, aggregating local gradients on a central server (FedAvg).",
+    "keywords": [
+      "federated learning",
+      "decentralized",
+      "privacy",
+      "FedAvg",
+      "aggregation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is differential privacy in ML?",
+    "expected_answer": "Differential privacy adds calibrated noise to model updates or training data, providing a mathematical guarantee that individual records cannot be inferred.",
+    "keywords": [
+      "differential privacy",
+      "noise",
+      "privacy",
+      "guarantee",
+      "DP-SGD"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is multi-task learning?",
+    "expected_answer": "Multi-task learning trains a single model on multiple related tasks simultaneously, sharing representations to improve generalization on each task.",
+    "keywords": [
+      "multi-task learning",
+      "shared",
+      "representation",
+      "generalization",
+      "tasks"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is meta-learning (learning to learn)?",
+    "expected_answer": "Meta-learning trains a model to quickly adapt to new tasks with few examples by optimizing across a distribution of tasks, as in MAML.",
+    "keywords": [
+      "meta-learning",
+      "MAML",
+      "few-shot",
+      "task distribution",
+      "adaptation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is MAML (Model-Agnostic Meta-Learning)?",
+    "expected_answer": "MAML finds model initializations that can quickly adapt to new tasks with a few gradient steps, without modifying the model architecture.",
+    "keywords": [
+      "MAML",
+      "meta-learning",
+      "initialization",
+      "gradient steps",
+      "few-shot"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is domain adaptation?",
+    "expected_answer": "Domain adaptation transfers a model trained on a source domain to perform well on a related but different target domain, minimizing distribution gap.",
+    "keywords": [
+      "domain adaptation",
+      "source domain",
+      "target domain",
+      "transfer",
+      "distribution shift"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is curriculum learning?",
+    "expected_answer": "Curriculum learning presents training examples from easy to hard in a structured order, mimicking human education to improve model convergence.",
+    "keywords": [
+      "curriculum learning",
+      "easy to hard",
+      "training order",
+      "convergence",
+      "deep learning"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is active learning?",
+    "expected_answer": "Active learning selects the most informative unlabeled examples for annotation, reducing labeling cost while maximizing model improvement.",
+    "keywords": [
+      "active learning",
+      "annotation",
+      "informative",
+      "uncertainty",
+      "labeling"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is semi-supervised learning?",
+    "expected_answer": "Semi-supervised learning uses a small amount of labeled data and a large amount of unlabeled data, combining supervised and unsupervised techniques.",
+    "keywords": [
+      "semi-supervised",
+      "labeled",
+      "unlabeled",
+      "pseudo-labels",
+      "consistency"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is pseudo-labeling?",
+    "expected_answer": "Pseudo-labeling generates labels for unlabeled data using a model's confident predictions, then retrains on both labeled and pseudo-labeled data.",
+    "keywords": [
+      "pseudo-labeling",
+      "semi-supervised",
+      "confident",
+      "unlabeled",
+      "self-training"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is consistency regularization?",
+    "expected_answer": "Consistency regularization enforces that model predictions remain consistent under different perturbations or augmentations of the same unlabeled input.",
+    "keywords": [
+      "consistency regularization",
+      "semi-supervised",
+      "perturbation",
+      "MixMatch",
+      "UDA"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the Attention Is All You Need paper?",
+    "expected_answer": "This 2017 paper by Vaswani et al. introduced the transformer architecture based entirely on attention mechanisms, replacing RNNs for sequence modeling.",
+    "keywords": [
+      "Attention Is All You Need",
+      "transformer",
+      "Vaswani",
+      "attention",
+      "sequence"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is teacher forcing in RNN training?",
+    "expected_answer": "Teacher forcing uses ground truth tokens as input to each decoder step during training, rather than the model's own predictions, stabilizing training.",
+    "keywords": [
+      "teacher forcing",
+      "RNN",
+      "decoder",
+      "ground truth",
+      "training"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is beam search in text generation?",
+    "expected_answer": "Beam search keeps the top-k most likely partial sequences at each decoding step, producing more coherent outputs than greedy decoding.",
+    "keywords": [
+      "beam search",
+      "text generation",
+      "top-k",
+      "decoding",
+      "NLP"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is nucleus sampling (top-p sampling)?",
+    "expected_answer": "Nucleus sampling samples from the smallest set of tokens whose cumulative probability exceeds p, balancing diversity and coherence in text generation.",
+    "keywords": [
+      "nucleus sampling",
+      "top-p",
+      "text generation",
+      "diversity",
+      "LLM"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is temperature in LLM text generation?",
+    "expected_answer": "Temperature scales the logits before softmax: higher temperature increases randomness and diversity; lower temperature makes outputs more focused and deterministic.",
+    "keywords": [
+      "temperature",
+      "logits",
+      "sampling",
+      "diversity",
+      "text generation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is perplexity in language models?",
+    "expected_answer": "Perplexity measures how well a language model predicts a text sample: lower perplexity means better predictions. Perplexity = exp(cross-entropy loss).",
+    "keywords": [
+      "perplexity",
+      "language model",
+      "cross-entropy",
+      "evaluation",
+      "NLP"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is BLEU score?",
+    "expected_answer": "BLEU (Bilingual Evaluation Understudy) measures the overlap of n-grams between machine translation output and reference translations.",
+    "keywords": [
+      "BLEU",
+      "n-gram",
+      "machine translation",
+      "evaluation",
+      "NLP"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is ROUGE score?",
+    "expected_answer": "ROUGE (Recall-Oriented Understudy for Gisting Evaluation) measures recall-based n-gram overlap between generated and reference summaries.",
+    "keywords": [
+      "ROUGE",
+      "summarization",
+      "n-gram",
+      "recall",
+      "evaluation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is mean Average Precision (mAP) in object detection?",
+    "expected_answer": "mAP computes the average precision (area under precision-recall curve) per class at various IoU thresholds, then averages across all classes.",
+    "keywords": [
+      "mAP",
+      "Average Precision",
+      "precision-recall",
+      "IoU",
+      "object detection"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is FID score for generative models?",
+    "expected_answer": "FID (Fr\u00e9chet Inception Distance) measures the distance between feature distributions of real and generated images using an Inception network, lower is better.",
+    "keywords": [
+      "FID",
+      "Fr\u00e9chet Inception Distance",
+      "generative",
+      "image quality",
+      "distribution"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is EfficientDet?",
+    "expected_answer": "EfficientDet is a scalable object detection model combining EfficientNet backbone with a BiFPN feature network and compound scaling.",
+    "keywords": [
+      "EfficientDet",
+      "BiFPN",
+      "EfficientNet",
+      "object detection",
+      "compound scaling"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the difference between instance segmentation and semantic segmentation?",
+    "expected_answer": "Semantic segmentation labels each pixel with a class; instance segmentation also distinguishes between individual instances of the same class.",
+    "keywords": [
+      "instance segmentation",
+      "semantic segmentation",
+      "Mask R-CNN",
+      "pixel",
+      "instance"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is Mask R-CNN?",
+    "expected_answer": "Mask R-CNN extends Faster R-CNN by adding a branch for predicting segmentation masks in parallel with bounding box regression and classification.",
+    "keywords": [
+      "Mask R-CNN",
+      "instance segmentation",
+      "mask",
+      "Faster R-CNN",
+      "object detection"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the role of the discriminator in a GAN?",
+    "expected_answer": "The discriminator is a binary classifier that distinguishes real data from fake data generated by the generator, providing adversarial training signal.",
+    "keywords": [
+      "discriminator",
+      "GAN",
+      "real vs fake",
+      "binary classifier",
+      "adversarial"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is conditional GAN (cGAN)?",
+    "expected_answer": "Conditional GAN conditions both generator and discriminator on additional information (class labels) enabling generation of specific target outputs.",
+    "keywords": [
+      "conditional GAN",
+      "cGAN",
+      "class label",
+      "conditioned",
+      "generation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is CycleGAN?",
+    "expected_answer": "CycleGAN performs unpaired image-to-image translation using cycle consistency loss, learning mappings between two domains without paired examples.",
+    "keywords": [
+      "CycleGAN",
+      "unpaired",
+      "image translation",
+      "cycle consistency",
+      "domain"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is neural style transfer?",
+    "expected_answer": "Neural style transfer combines the content of one image with the artistic style of another by optimizing pixel values to match content features and style gram matrices.",
+    "keywords": [
+      "neural style transfer",
+      "content",
+      "style",
+      "gram matrix",
+      "CNN"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the gradient tape in TensorFlow?",
+    "expected_answer": "GradientTape records operations for automatic differentiation, allowing manual computation of gradients with respect to variables.",
+    "keywords": [
+      "GradientTape",
+      "TensorFlow",
+      "automatic differentiation",
+      "gradients",
+      "custom training"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a custom training loop in PyTorch?",
+    "expected_answer": "A custom training loop manually handles forward pass, loss computation, backward pass (loss.backward()), and optimizer step, giving full control over training.",
+    "keywords": [
+      "PyTorch",
+      "training loop",
+      "loss.backward()",
+      "optimizer.step()",
+      "custom"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is torch.no_grad() in PyTorch?",
+    "expected_answer": "torch.no_grad() disables gradient computation during inference, reducing memory usage and speeding up forward passes.",
+    "keywords": [
+      "torch.no_grad",
+      "inference",
+      "gradient",
+      "memory",
+      "PyTorch"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the DataLoader in PyTorch?",
+    "expected_answer": "DataLoader wraps a dataset and provides batching, shuffling, and multi-process data loading for efficient training.",
+    "keywords": [
+      "DataLoader",
+      "PyTorch",
+      "batching",
+      "shuffling",
+      "dataset"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a Dataset class in PyTorch?",
+    "expected_answer": "A PyTorch Dataset class requires implementing __len__() and __getitem__() methods to define how samples are loaded and preprocessed.",
+    "keywords": [
+      "Dataset",
+      "PyTorch",
+      "__getitem__",
+      "__len__",
+      "custom dataset"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is data leakage in ML pipelines?",
+    "expected_answer": "Data leakage occurs when information from the test set or future data influences training, leading to overly optimistic evaluation results.",
+    "keywords": [
+      "data leakage",
+      "pipeline",
+      "test set",
+      "preprocessing",
+      "overfitting"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is class imbalance and how do you handle it in deep learning?",
+    "expected_answer": "Class imbalance causes models to favor majority classes. Handle with class weights in loss function, oversampling (SMOTE), focal loss, or threshold tuning.",
+    "keywords": [
+      "class imbalance",
+      "focal loss",
+      "class weights",
+      "SMOTE",
+      "oversampling"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is focal loss?",
+    "expected_answer": "Focal loss modifies cross-entropy to down-weight easy examples and focus training on hard, misclassified samples, used in RetinaNet for object detection.",
+    "keywords": [
+      "focal loss",
+      "RetinaNet",
+      "class imbalance",
+      "hard examples",
+      "down-weight"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the difference between fine-tuning and feature extraction in transfer learning?",
+    "expected_answer": "Feature extraction freezes pretrained layers and trains only the new head; fine-tuning unfreezes some or all layers and trains with a small learning rate.",
+    "keywords": [
+      "fine-tuning",
+      "feature extraction",
+      "frozen",
+      "transfer learning",
+      "pretrained"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is Grad-CAM?",
+    "expected_answer": "Grad-CAM (Gradient-weighted Class Activation Mapping) visualizes which regions of an image a CNN focuses on by using gradients of the target class flowing into the last conv layer.",
+    "keywords": [
+      "Grad-CAM",
+      "visualization",
+      "CNN",
+      "gradients",
+      "explainability"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is a deformable convolutional network?",
+    "expected_answer": "Deformable convolutions learn spatially adaptive receptive fields by adding learnable offsets to sampling locations, improving detection of deformed objects.",
+    "keywords": [
+      "deformable convolution",
+      "learnable offsets",
+      "receptive field",
+      "detection",
+      "adaptation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the concept of weight sharing in CNNs?",
+    "expected_answer": "Weight sharing means the same filter is applied at every spatial position in an image, drastically reducing parameters and enabling translation invariance.",
+    "keywords": [
+      "weight sharing",
+      "CNN",
+      "filter",
+      "translation invariance",
+      "parameters"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the receptive field in a CNN?",
+    "expected_answer": "The receptive field is the region of the input image that influences a particular neuron's activation, growing larger with depth through stacked convolutions.",
+    "keywords": [
+      "receptive field",
+      "CNN",
+      "input region",
+      "depth",
+      "activation"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is global average pooling (GAP)?",
+    "expected_answer": "GAP averages each feature map to a single value, replacing fully connected layers and reducing parameters while providing spatial regularization.",
+    "keywords": [
+      "global average pooling",
+      "GAP",
+      "feature map",
+      "parameters",
+      "regularization"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the difference between max pooling and average pooling?",
+    "expected_answer": "Max pooling takes the maximum value in each region, preserving dominant features; average pooling takes the mean, preserving smoother representations.",
+    "keywords": [
+      "max pooling",
+      "average pooling",
+      "dominant features",
+      "smooth",
+      "CNN"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is GroupNorm?",
+    "expected_answer": "Group Normalization divides channels into groups and normalizes within each group, performing well with small batch sizes unlike batch normalization.",
+    "keywords": [
+      "GroupNorm",
+      "group normalization",
+      "channels",
+      "small batch",
+      "normalization"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is instance normalization?",
+    "expected_answer": "Instance normalization normalizes each sample independently per channel, used in style transfer to remove style information while preserving content.",
+    "keywords": [
+      "instance normalization",
+      "sample",
+      "channel",
+      "style transfer",
+      "normalization"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is spectral normalization?",
+    "expected_answer": "Spectral normalization constrains the weight matrix's spectral norm (largest singular value) to 1, stabilizing GAN discriminator training.",
+    "keywords": [
+      "spectral normalization",
+      "GAN",
+      "discriminator",
+      "singular value",
+      "Lipschitz"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is gradient checkpointing?",
+    "expected_answer": "Gradient checkpointing trades compute for memory by recomputing activations during the backward pass instead of storing all intermediate activations.",
+    "keywords": [
+      "gradient checkpointing",
+      "memory",
+      "activations",
+      "recompute",
+      "training"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is FlashAttention?",
+    "expected_answer": "FlashAttention is an IO-aware exact attention algorithm that tiles attention computation to minimize HBM reads/writes, enabling faster and memory-efficient training.",
+    "keywords": [
+      "FlashAttention",
+      "IO-aware",
+      "tiling",
+      "attention",
+      "efficient"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the KV cache in LLM inference?",
+    "expected_answer": "The KV cache stores the key and value matrices from past tokens during autoregressive generation, avoiding redundant recomputation and speeding up inference.",
+    "keywords": [
+      "KV cache",
+      "key",
+      "value",
+      "autoregressive",
+      "inference speed"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is speculative decoding in LLMs?",
+    "expected_answer": "Speculative decoding uses a smaller draft model to generate candidate tokens quickly, then a large model verifies them in parallel, speeding up inference.",
+    "keywords": [
+      "speculative decoding",
+      "draft model",
+      "verification",
+      "inference",
+      "LLM"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is model distillation in NLP?",
+    "expected_answer": "Model distillation trains a compact student model on the soft probability outputs (dark knowledge) of a large teacher model, used in DistilBERT.",
+    "keywords": [
+      "distillation",
+      "DistilBERT",
+      "student",
+      "teacher",
+      "NLP"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "Explain the mathematics of self-attention in transformers.",
+    "expected_answer": "Self-attention computes: Attention(Q,K,V) = softmax(QK^T / sqrt(d_k))V. Queries, keys, and values are linear projections of the input. The scaling factor sqrt(d_k) prevents vanishing gradients in softmax.",
+    "keywords": [
+      "self-attention",
+      "Q K V",
+      "softmax",
+      "scaling",
+      "transformer"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the mathematical formulation of backpropagation through time (BPTT)?",
+    "expected_answer": "BPTT unrolls the RNN through time and applies standard backpropagation. Gradient: dL/dW = sum_t (dL_t/dW). Gradients vanish/explode because they are products of many Jacobians.",
+    "keywords": [
+      "BPTT",
+      "backpropagation through time",
+      "RNN",
+      "gradient",
+      "Jacobian"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "How do you train a large language model from scratch and what infrastructure is required?",
+    "expected_answer": "Training LLMs requires thousands of GPUs/TPUs with high-bandwidth interconnects (NVLink, InfiniBand), 3D parallelism (data+model+pipeline), mixed precision, gradient checkpointing, and petabytes of curated data.",
+    "keywords": [
+      "LLM training",
+      "3D parallelism",
+      "NVLink",
+      "InfiniBand",
+      "infrastructure"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "Explain how RLHF works mathematically for aligning LLMs.",
+    "expected_answer": "RLHF: (1) SFT on demonstrations, (2) train reward model r(x,y) from human preferences, (3) optimize LLM policy with PPO: maximize E[r(x,y)] - beta*KL(pi||pi_ref).",
+    "keywords": [
+      "RLHF",
+      "PPO",
+      "reward model",
+      "KL divergence",
+      "alignment"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the ELBO loss in variational autoencoders mathematically?",
+    "expected_answer": "ELBO = E_q[log p(x|z)] - KL(q(z|x) || p(z)). First term is reconstruction loss; second is KL divergence between approximate posterior q and prior p(z)=N(0,I).",
+    "keywords": [
+      "ELBO",
+      "VAE",
+      "KL divergence",
+      "reconstruction",
+      "variational"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "How does the diffusion model forward and reverse process work mathematically?",
+    "expected_answer": "Forward: q(x_t|x_{t-1}) = N(sqrt(1-beta_t)*x_{t-1}, beta_t*I). Reverse: model learns p_theta(x_{t-1}|x_t) by predicting noise epsilon_theta(x_t,t) and denoising.",
+    "keywords": [
+      "diffusion",
+      "forward process",
+      "reverse process",
+      "DDPM",
+      "noise prediction"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the Transformer's time and space complexity?",
+    "expected_answer": "Standard attention is O(n^2 d) in time and O(n^2) in space due to the n\u00d7n attention matrix. FlashAttention reduces space to O(n) by tiling.",
+    "keywords": [
+      "transformer complexity",
+      "O(n^2)",
+      "attention",
+      "FlashAttention",
+      "space"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "How would you implement a custom CUDA kernel for a neural network operation?",
+    "expected_answer": "Write a CUDA kernel with thread/block indexing, compile with nvcc, and expose via PyTorch's C++ extension using pybind11. Use shared memory for reduction ops.",
+    "keywords": [
+      "CUDA kernel",
+      "nvcc",
+      "pybind11",
+      "C++ extension",
+      "PyTorch"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "Explain how ZeRO (Zero Redundancy Optimizer) works.",
+    "expected_answer": "ZeRO (used in DeepSpeed) partitions optimizer states (Stage 1), gradients (Stage 2), and model parameters (Stage 3) across GPUs, eliminating memory redundancy.",
+    "keywords": [
+      "ZeRO",
+      "DeepSpeed",
+      "optimizer states",
+      "gradient partitioning",
+      "distributed training"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the Mixture of Experts (MoE) architecture in LLMs?",
+    "expected_answer": "MoE routes each token to a subset of expert FFN layers via a learned gating network, increasing model capacity without proportionally increasing compute.",
+    "keywords": [
+      "Mixture of Experts",
+      "MoE",
+      "gating",
+      "expert",
+      "sparse activation"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "Explain the difference between encoder-only, decoder-only, and encoder-decoder transformer architectures.",
+    "expected_answer": "Encoder-only (BERT) builds bidirectional representations for understanding; decoder-only (GPT) generates text autoregressively; encoder-decoder (T5) combines both for seq2seq tasks.",
+    "keywords": [
+      "encoder-only",
+      "decoder-only",
+      "encoder-decoder",
+      "BERT",
+      "GPT",
+      "T5"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is rotary positional embedding (RoPE) and why is it used in modern LLMs?",
+    "expected_answer": "RoPE encodes position by rotating query and key vectors with a position-dependent rotation matrix, enabling relative positional information without absolute position bias, used in LLaMA.",
+    "keywords": [
+      "RoPE",
+      "rotary embedding",
+      "LLaMA",
+      "relative position",
+      "attention"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is grouped query attention (GQA)?",
+    "expected_answer": "GQA uses fewer key-value heads than query heads (shared across query groups), reducing the KV cache size and improving inference throughput with minimal quality loss.",
+    "keywords": [
+      "grouped query attention",
+      "GQA",
+      "KV cache",
+      "inference",
+      "LLaMA 2"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "How would you design a production ML pipeline for real-time fraud detection?",
+    "expected_answer": "Use real-time feature store (Feast/Redis), online inference with low-latency serving (<10ms), model trained on imbalanced data with focal loss, monitor with drift detection and shadow deployment.",
+    "keywords": [
+      "fraud detection",
+      "real-time",
+      "feature store",
+      "low-latency",
+      "drift"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the VC dimension and how does it relate to deep learning generalization?",
+    "expected_answer": "VC dimension measures hypothesis class capacity. Deep networks have high VC dimension but generalize via implicit regularization from SGD, overparameterization, and data-dependent bounds.",
+    "keywords": [
+      "VC dimension",
+      "generalization",
+      "implicit regularization",
+      "overparameterization",
+      "PAC learning"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "Explain Neural Tangent Kernel (NTK) theory.",
+    "expected_answer": "NTK theory shows that infinitely wide networks at initialization converge to a kernel method (NTK). In the NTK regime, training is equivalent to kernel regression, providing insights into convergence.",
+    "keywords": [
+      "NTK",
+      "Neural Tangent Kernel",
+      "infinite width",
+      "kernel",
+      "convergence"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the lottery ticket hypothesis?",
+    "expected_answer": "The lottery ticket hypothesis states that large networks contain sparse subnetworks (winning tickets) that can be trained from scratch to match full network performance.",
+    "keywords": [
+      "lottery ticket",
+      "sparse",
+      "subnetwork",
+      "pruning",
+      "initialization"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "Explain how Proximal Policy Optimization (PPO) works.",
+    "expected_answer": "PPO optimizes policy gradient with a clipped surrogate objective: L_CLIP = E[min(r_t*A_t, clip(r_t, 1-eps, 1+eps)*A_t)], preventing excessively large policy updates.",
+    "keywords": [
+      "PPO",
+      "clipped objective",
+      "policy gradient",
+      "advantage",
+      "RL"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is Q-learning and deep Q-network (DQN)?",
+    "expected_answer": "Q-learning estimates action values via: Q(s,a) <- Q(s,a) + alpha[r + gamma*max_a'Q(s',a') - Q(s,a)]. DQN uses a neural network to approximate Q and experience replay + target network for stability.",
+    "keywords": [
+      "Q-learning",
+      "DQN",
+      "Bellman",
+      "experience replay",
+      "target network"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the actor-critic algorithm?",
+    "expected_answer": "Actor-critic combines a policy network (actor) that selects actions and a value network (critic) that estimates state values, reducing variance of policy gradient with the advantage function.",
+    "keywords": [
+      "actor-critic",
+      "policy",
+      "value function",
+      "advantage",
+      "A3C"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is AlphaGo and how did it work?",
+    "expected_answer": "AlphaGo combined Monte Carlo Tree Search with deep CNN policy networks (for move probability) and value networks (for position evaluation), trained via self-play.",
+    "keywords": [
+      "AlphaGo",
+      "MCTS",
+      "policy network",
+      "value network",
+      "self-play"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is GNN oversmoothing and how is it addressed?",
+    "expected_answer": "Oversmoothing in deep GNNs causes node features to converge to similar values as depth grows. Addressed with residual connections, normalization, jumping knowledge networks.",
+    "keywords": [
+      "oversmoothing",
+      "GNN",
+      "depth",
+      "residual",
+      "jumping knowledge"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is optimal transport in deep learning?",
+    "expected_answer": "Optimal transport (Wasserstein distance) measures the minimum cost of transforming one probability distribution into another. Used in WGAN and domain adaptation for distribution matching.",
+    "keywords": [
+      "optimal transport",
+      "Wasserstein",
+      "distribution",
+      "WGAN",
+      "domain adaptation"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "Explain the information bottleneck principle in deep learning.",
+    "expected_answer": "The information bottleneck compresses representation Z of input X to retain maximum information about target Y: min I(X;Z) - beta*I(Z;Y). Explains why deep networks discard irrelevant input information.",
+    "keywords": [
+      "information bottleneck",
+      "mutual information",
+      "compression",
+      "representation",
+      "deep learning"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is sharpness-aware minimization (SAM)?",
+    "expected_answer": "SAM seeks parameters that lie in flat minima of the loss landscape by simultaneously minimizing loss and its sharpness, improving generalization.",
+    "keywords": [
+      "SAM",
+      "sharpness",
+      "flat minima",
+      "generalization",
+      "optimizer"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the grokking phenomenon in neural networks?",
+    "expected_answer": "Grokking is when a model first overfits (memorizes) training data, then after continued training suddenly generalizes (understands), occurring with weight decay.",
+    "keywords": [
+      "grokking",
+      "generalization",
+      "memorization",
+      "weight decay",
+      "phase transition"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is catastrophic forgetting in continual learning?",
+    "expected_answer": "Catastrophic forgetting is when a neural network loses performance on previously learned tasks after training on new tasks. Mitigated with EWC, replay buffers, or progressive networks.",
+    "keywords": [
+      "catastrophic forgetting",
+      "continual learning",
+      "EWC",
+      "replay",
+      "progressive"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is Elastic Weight Consolidation (EWC)?",
+    "expected_answer": "EWC adds a regularization term penalizing changes to weights important for previous tasks (measured by Fisher information), reducing catastrophic forgetting.",
+    "keywords": [
+      "EWC",
+      "Elastic Weight Consolidation",
+      "Fisher information",
+      "catastrophic forgetting",
+      "continual learning"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is normalizing flow and how does it differ from VAE?",
+    "expected_answer": "Normalizing flows learn exact invertible transformations between data and a simple distribution, enabling exact log-likelihood computation unlike VAEs which use a variational lower bound.",
+    "keywords": [
+      "normalizing flow",
+      "invertible",
+      "exact likelihood",
+      "VAE",
+      "generative"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "How would you debug a training run where validation loss diverges but training loss decreases?",
+    "expected_answer": "Check for overfitting: reduce model capacity, add dropout/L2, increase data, use data augmentation. Check data leakage, training/validation split consistency, and learning rate schedule.",
+    "keywords": [
+      "debugging",
+      "validation loss",
+      "overfitting",
+      "divergence",
+      "training"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the double descent phenomenon?",
+    "expected_answer": "Double descent shows that as model complexity increases beyond interpolation threshold, test error can decrease again. Overparameterized models can generalize better than classical bias-variance theory predicts.",
+    "keywords": [
+      "double descent",
+      "overparameterization",
+      "bias-variance",
+      "interpolation",
+      "generalization"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "How do you implement custom loss functions in PyTorch?",
+    "expected_answer": "Subclass nn.Module and implement forward(). Ensure operations use differentiable PyTorch tensors. For numerical stability use log-sum-exp tricks.",
+    "keywords": [
+      "custom loss",
+      "PyTorch",
+      "nn.Module",
+      "forward",
+      "differentiable"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the difference between batch gradient descent, mini-batch, and online learning convergence properties?",
+    "expected_answer": "Batch GD converges to global/local minimum with stable updates; mini-batch balances noise and speed; online (SGD) has inherent noise enabling escaping saddle points but needs learning rate decay.",
+    "keywords": [
+      "batch GD",
+      "mini-batch",
+      "online learning",
+      "convergence",
+      "saddle point"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is second-order optimization and why is it rarely used in deep learning?",
+    "expected_answer": "Second-order methods (Newton's method, K-FAC) use the Hessian for better curvature estimation but scale as O(n^2) in parameters making them impractical for large networks.",
+    "keywords": [
+      "second-order",
+      "Hessian",
+      "K-FAC",
+      "Newton",
+      "scalability"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "Explain how to implement distributed training with PyTorch DDP.",
+    "expected_answer": "Initialize process group (dist.init_process_group), wrap model with DistributedDataParallel, use DistributedSampler for data, call barrier() at checkpoints. Gradients are all-reduced automatically.",
+    "keywords": [
+      "DDP",
+      "DistributedDataParallel",
+      "all-reduce",
+      "process group",
+      "PyTorch"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is tensor parallelism in LLM training?",
+    "expected_answer": "Tensor parallelism splits individual model tensors (weight matrices) across GPUs, enabling parallel computation of matrix multiplications within a single layer.",
+    "keywords": [
+      "tensor parallelism",
+      "Megatron-LM",
+      "weight matrix",
+      "layer splitting",
+      "LLM"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is FSDP (Fully Sharded Data Parallel)?",
+    "expected_answer": "FSDP shards model parameters, gradients, and optimizer states across all GPUs, reducing per-GPU memory to 1/N of total model size while maintaining data parallelism.",
+    "keywords": [
+      "FSDP",
+      "fully sharded",
+      "parameters",
+      "optimizer states",
+      "memory"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is activation checkpointing and when should you use it?",
+    "expected_answer": "Activation checkpointing recomputes activations during backprop instead of storing them, reducing memory by sqrt(n) layers at the cost of extra forward passes.",
+    "keywords": [
+      "activation checkpointing",
+      "memory",
+      "backpropagation",
+      "recompute",
+      "trade-off"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "How does the Perceiver IO architecture work?",
+    "expected_answer": "Perceiver IO uses cross-attention between inputs and a small fixed-size latent array, enabling processing of arbitrary inputs/outputs without the O(n^2) cost of full self-attention.",
+    "keywords": [
+      "Perceiver IO",
+      "cross-attention",
+      "latent array",
+      "arbitrary input",
+      "O(n^2)"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is sparse attention and its variants?",
+    "expected_answer": "Sparse attention computes attention for only a subset of token pairs (local windows, global tokens, random), reducing complexity from O(n^2) to O(n sqrt(n)) or O(n log n).",
+    "keywords": [
+      "sparse attention",
+      "Longformer",
+      "BigBird",
+      "local window",
+      "O(n sqrt n)"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is Longformer and how does it handle long sequences?",
+    "expected_answer": "Longformer uses sliding window local attention combined with global attention on select tokens, scaling linearly with sequence length instead of quadratically.",
+    "keywords": [
+      "Longformer",
+      "sliding window",
+      "global attention",
+      "long sequence",
+      "linear"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the GPT-4 architecture and what innovations does it likely include?",
+    "expected_answer": "GPT-4 likely uses a large transformer with MoE layers, RLHF alignment, vision capability (multimodal), longer context window, and sparse attention techniques, though architecture details remain proprietary.",
+    "keywords": [
+      "GPT-4",
+      "MoE",
+      "RLHF",
+      "multimodal",
+      "long context"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is LLaMA and what made it significant?",
+    "expected_answer": "LLaMA is an open-source LLM using RoPE, SwiGLU activations, grouped query attention, and pre-normalization (RMSNorm), matching GPT-3 performance with better efficiency.",
+    "keywords": [
+      "LLaMA",
+      "RoPE",
+      "SwiGLU",
+      "GQA",
+      "RMSNorm"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is QLoRA?",
+    "expected_answer": "QLoRA quantizes the base LLM to 4-bit precision and trains only LoRA adapters in 16-bit, enabling fine-tuning of 65B parameter models on a single GPU.",
+    "keywords": [
+      "QLoRA",
+      "4-bit",
+      "LoRA",
+      "quantization",
+      "fine-tuning"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is Retrieval-Augmented Generation (RAG) and how would you implement it?",
+    "expected_answer": "RAG retrieves relevant documents from a vector store (FAISS/Pinecone) using dense embedding similarity, prepends them as context to the LLM prompt, then generates grounded answers.",
+    "keywords": [
+      "RAG",
+      "vector store",
+      "dense retrieval",
+      "context",
+      "grounding"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "How would you evaluate an LLM for a production use case?",
+    "expected_answer": "Use task-specific benchmarks (MMLU, HellaSwag), human evaluation, automated LLM judges, faithfulness and groundedness metrics for RAG, latency profiling, and safety red-teaming.",
+    "keywords": [
+      "LLM evaluation",
+      "MMLU",
+      "human eval",
+      "red-teaming",
+      "benchmarks"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is Constitutional AI (CAI)?",
+    "expected_answer": "CAI by Anthropic trains AI to be helpful, harmless, and honest by using a set of principles (constitution) and RLAIF (AI feedback) to critique and revise its own outputs.",
+    "keywords": [
+      "Constitutional AI",
+      "CAI",
+      "RLAIF",
+      "Anthropic",
+      "alignment"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is direct preference optimization (DPO)?",
+    "expected_answer": "DPO optimizes LLM alignment directly from preference data without training a separate reward model, by reframing RLHF as a classification problem on chosen vs rejected pairs.",
+    "keywords": [
+      "DPO",
+      "direct preference optimization",
+      "alignment",
+      "RLHF",
+      "preference data"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is scalable oversight in AI alignment?",
+    "expected_answer": "Scalable oversight addresses how humans can supervise AI systems that are smarter than them, using techniques like debate, amplification, and recursive reward modeling.",
+    "keywords": [
+      "scalable oversight",
+      "alignment",
+      "debate",
+      "amplification",
+      "reward modeling"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is mechanistic interpretability in AI?",
+    "expected_answer": "Mechanistic interpretability reverse-engineers the algorithms implemented by neural network weights, identifying circuits (attention heads, MLPs) responsible for specific behaviors.",
+    "keywords": [
+      "mechanistic interpretability",
+      "circuits",
+      "attention heads",
+      "reverse engineering",
+      "behavior"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What are activation steering and representation engineering?",
+    "expected_answer": "Activation steering modifies model behavior at inference time by adding direction vectors in activation space; representation engineering identifies and manipulates high-level concept directions.",
+    "keywords": [
+      "activation steering",
+      "representation engineering",
+      "inference",
+      "concept vectors",
+      "behavior"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "How does model watermarking work for LLMs?",
+    "expected_answer": "LLM watermarking embeds statistical patterns in token selection during generation (e.g., biasing toward 'green list' tokens) detectable with a key, without affecting output quality.",
+    "keywords": [
+      "watermarking",
+      "LLM",
+      "token selection",
+      "detection",
+      "statistical"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the multimodal LLM architecture (e.g., GPT-4V, LLaVA)?",
+    "expected_answer": "Multimodal LLMs project image features from a vision encoder (CLIP/ViT) into the LLM embedding space using an alignment module (MLP or Q-Former), enabling joint vision-language reasoning.",
+    "keywords": [
+      "multimodal LLM",
+      "LLaVA",
+      "CLIP",
+      "vision encoder",
+      "alignment module"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is neural radiance field (NeRF)?",
+    "expected_answer": "NeRF represents a 3D scene as a continuous function mapping (x,y,z,direction) to color and density via an MLP, trained with volume rendering from 2D posed images.",
+    "keywords": [
+      "NeRF",
+      "3D",
+      "volume rendering",
+      "MLP",
+      "implicit representation"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is 3D Gaussian Splatting?",
+    "expected_answer": "3D Gaussian Splatting represents scenes as collections of 3D Gaussians with position, covariance, opacity, and color, enabling real-time rendering of neural radiance scenes.",
+    "keywords": [
+      "3D Gaussian Splatting",
+      "3DGS",
+      "rendering",
+      "scene representation",
+      "real-time"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "How do you handle catastrophic forgetting in large language model fine-tuning?",
+    "expected_answer": "Use PEFT methods (LoRA) to avoid modifying base weights, combine task-specific data with original data replay, apply EWC regularization, or use adapter modules.",
+    "keywords": [
+      "catastrophic forgetting",
+      "LoRA",
+      "PEFT",
+      "replay",
+      "fine-tuning"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "Explain how to implement a production-grade RAG system with reranking.",
+    "expected_answer": "Retrieve top-k candidates with dense embeddings (FAISS), rerank with a cross-encoder (ColBERT/BGE Reranker) for precision, then pass top-m results as context to the LLM generator.",
+    "keywords": [
+      "RAG",
+      "reranking",
+      "cross-encoder",
+      "ColBERT",
+      "dense retrieval"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is structured state space models (S4/Mamba) and how do they challenge transformers?",
+    "expected_answer": "S4/Mamba use linear recurrence with structured state space matrices to process sequences in O(n log n) time with constant memory, efficient for very long sequences unlike O(n^2) transformers.",
+    "keywords": [
+      "S4",
+      "Mamba",
+      "state space model",
+      "linear recurrence",
+      "long sequence"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "What is the mixture of depths architecture?",
+    "expected_answer": "Mixture of Depths routes tokens to skip some transformer layers using a router, allowing some tokens to bypass computation and reducing total FLOPs without significant quality loss.",
+    "keywords": [
+      "mixture of depths",
+      "routing",
+      "skip layers",
+      "FLOPs",
+      "efficiency"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "role_id": 7,
+    "role_name": "AI developer",
+    "question_text": "How do you design an AI system with safety constraints?",
+    "expected_answer": "Combine RLHF/DPO for alignment, red-teaming for adversarial testing, constitutional AI principles, output filtering with classifiers, and monitoring for unexpected behaviors in production.",
+    "keywords": [
+      "AI safety",
+      "RLHF",
+      "red-teaming",
+      "constitutional AI",
+      "monitoring"
+    ],
+    "difficulty": "hard"
+  }
+]

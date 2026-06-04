@@ -1,0 +1,465 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard - Vocal View{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Welcome Header -->
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h1 class="mb-2">
+                    <i class="fas fa-tachometer-alt"></i> Welcome back, {{ user.username }}!
+                </h1>
+                <p class="mb-0 opacity-75">
+                    Ready to practice your interview skills today?
+                </p>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <a href="{% url 'interview_config' %}" class="btn btn-light btn-lg">
+                    <i class="fas fa-plus-circle"></i> Start New Interview
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Cards -->
+    <div class="row g-4 mb-5">
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <div class="stat-value">{{ profile.total_interviews }}</div>
+                <div class="stat-label">Total Interviews</div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="stat-value">{{ profile.average_score|floatformat:1 }}%</div>
+                <div class="stat-label">Average Score</div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="stat-value">{{ profile.experience_level|title }}</div>
+                <div class="stat-label">Experience Level</div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <div class="stat-value">
+                    {% if profile.target_role %}
+                        <small style="font-size: 1rem;">{{ profile.target_role.role_name|truncatewords:2 }}</small>
+                    {% else %}
+                        -
+                    {% endif %}
+                </div>
+                <div class="stat-label">Target Role</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Recent Interviews -->
+        <div class="col-lg-8 mb-4">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                        <i class="fas fa-history"></i> Recent Interviews
+                    </h5>
+                    <a href="{% url 'interview_history' %}" class="btn btn-sm btn-light">
+                        View All
+                    </a>
+                </div>
+                <div class="card-body">
+                    {% if recent_sessions %}
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Job Role</th>
+                                        <th>Duration</th>
+                                        <th>Status</th>
+                                        <th>Score</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for session in recent_sessions %}
+                                    <tr>
+                                        <td>
+                                            <small>{{ session.created_at|date:"M d, Y" }}</small>
+                                        </td>
+                                        <td>
+                                            <strong>{{ session.job_role.role_name }}</strong>
+                                        </td>
+                                        <td>
+                                            <small>{{ session.duration_minutes|floatformat:0 }} min</small>
+                                        </td>
+                                        <td>
+                                            {% if session.status == 'completed' %}
+                                                <span class="badge bg-success">
+                                                    <i class="fas fa-check"></i> Completed
+                                                </span>
+                                            {% elif session.status == 'in_progress' %}
+                                                <span class="badge bg-warning">
+                                                    <i class="fas fa-spinner"></i> In Progress
+                                                </span>
+                                            {% else %}
+                                                <span class="badge bg-secondary">
+                                                    <i class="fas fa-clock"></i> Pending
+                                                </span>
+                                            {% endif %}
+                                        </td>
+                                        <td>
+                                            {% if session.status == 'completed' %}
+                                                {% with session.feedback_report as report %}
+                                                    {% if report %}
+                                                        <strong class="text-primary">
+                                                            {{ report.overall_score|floatformat:0 }}%
+                                                        </strong>
+                                                    {% else %}
+                                                        <span class="text-muted">-</span>
+                                                    {% endif %}
+                                                {% endwith %}
+                                            {% else %}
+                                                <span class="text-muted">-</span>
+                                            {% endif %}
+                                        </td>
+                                        <td>
+                                            {% if session.status == 'completed' %}
+                                                <a href="{% url 'feedback_report' session.session_id %}" 
+                                                   class="btn btn-sm btn-outline-primary">
+                                                    <i class="fas fa-eye"></i> View Report
+                                                </a>
+                                            {% elif session.status == 'in_progress' %}
+                                                <a href="{% url 'interview_conduct' session.session_id %}" 
+                                                   class="btn btn-sm btn-outline-success">
+                                                    <i class="fas fa-play"></i> Continue
+                                                </a>
+                                            {% else %}
+                                                <a href="{% url 'interview_conduct' session.session_id %}" 
+                                                   class="btn btn-sm btn-outline-secondary">
+                                                    <i class="fas fa-play"></i> Start
+                                                </a>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <div class="text-center py-5">
+                            <i class="fas fa-inbox" style="font-size: 4rem; color: #E5E7EB;"></i>
+                            <h5 class="mt-3 text-muted">No interviews yet</h5>
+                            <p class="text-muted">Start your first mock interview to get AI-powered feedback</p>
+                            <a href="{% url 'interview_config' %}" class="btn btn-primary mt-2">
+                                <i class="fas fa-plus-circle"></i> Start Your First Interview
+                            </a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions & Tips -->
+        <div class="col-lg-4">
+            <!-- Quick Actions -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-bolt"></i> Quick Actions
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <a href="{% url 'interview_config' %}" class="btn btn-primary">
+                            <i class="fas fa-video"></i> New Interview
+                        </a>
+                        <a href="{% url 'interview_history' %}" class="btn btn-outline-primary">
+                            <i class="fas fa-history"></i> View History
+                        </a>
+                        <a href="{% url 'user_profile' %}" class="btn btn-outline-secondary">
+                            <i class="fas fa-user"></i> Edit Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tips Card -->
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-lightbulb"></i> Interview Tips
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <small>Maintain eye contact with the camera</small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <small>Speak clearly and at a moderate pace</small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <small>Use the STAR method for behavioral questions</small>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <small>Practice in a quiet, well-lit environment</small>
+                        </li>
+                        <li class="mb-0">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <small>Review your feedback reports regularly</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress Chart (Placeholder) -->
+   <!-- Performance Chart - REAL DATA -->
+{% if profile.total_interviews > 0 %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-chart-line"></i> Performance Trend
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if recent_sessions|length > 1 %}
+                    <!-- Real Chart -->
+                    <canvas id="performanceChart" height="80"></canvas>
+                {% else %}
+                    <!-- Need more data message -->
+                    <div class="text-center py-4">
+                        <i class="fas fa-chart-line" style="font-size: 3rem; color: var(--primary-color); opacity: 0.3;"></i>
+                        <p class="text-muted mt-3">Complete at least 2 interviews to see your performance trend</p>
+                        <a href="{% url 'interview_config' %}" class="btn btn-primary mt-2">
+                            <i class="fas fa-plus-circle"></i> Start Another Interview
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .table-hover tbody tr:hover {
+        background-color: rgba(79, 70, 229, 0.05);
+        cursor: pointer;
+    }
+</style>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+{% if recent_sessions|length > 1 %}
+// Performance Trend Chart
+document.addEventListener('DOMContentLoaded', function() {
+    const ctx = document.getElementById('performanceChart');
+    
+    if (!ctx) return;
+    
+    // Prepare data from Django template
+    const sessions = [
+        {% for session in recent_sessions reversed %}
+        {
+            date: "{{ session.created_at|date:'M d' }}",
+            fullDate: "{{ session.created_at|date:'Y-m-d' }}",
+            jobRole: "{{ session.job_role.role_name|truncatewords:3 }}",
+            {% if session.status == 'completed' %}
+                {% with session.feedback_report as report %}
+                    {% if report %}
+                    overallScore: {{ report.overall_score|floatformat:1 }},
+                    contentScore: {{ report.content_score|floatformat:1 }},
+                    deliveryScore: {{ report.delivery_score|floatformat:1 }},
+                    confidenceScore: {{ report.confidence_score|floatformat:1 }},
+                    {% else %}
+                    overallScore: null,
+                    contentScore: null,
+                    deliveryScore: null,
+                    confidenceScore: null,
+                    {% endif %}
+                {% endwith %}
+            {% else %}
+            overallScore: null,
+            contentScore: null,
+            deliveryScore: null,
+            confidenceScore: null,
+            {% endif %}
+        },
+        {% endfor %}
+    ];
+    
+    // Filter only completed sessions with reports
+    const completedSessions = sessions.filter(s => s.overallScore !== null);
+    
+    if (completedSessions.length < 2) {
+        return; // Not enough data
+    }
+    
+    // Extract data for chart
+    const labels = completedSessions.map(s => s.date);
+    const overallScores = completedSessions.map(s => s.overallScore);
+    const contentScores = completedSessions.map(s => s.contentScore);
+    const deliveryScores = completedSessions.map(s => s.deliveryScore);
+    const confidenceScores = completedSessions.map(s => s.confidenceScore);
+    
+    // Create chart
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [
+                {
+                    label: 'Overall Score',
+                    data: overallScores,
+                    borderColor: '#4F46E5',
+                    backgroundColor: 'rgba(79, 70, 229, 0.1)',
+                    borderWidth: 3,
+                    tension: 0.4,
+                    fill: true,
+                    pointRadius: 6,
+                    pointHoverRadius: 8,
+                    pointBackgroundColor: '#4F46E5',
+                    pointBorderColor: '#fff',
+                    pointBorderWidth: 2,
+                },
+                {
+                    label: 'Content',
+                    data: contentScores,
+                    borderColor: '#10B981',
+                    backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                    borderWidth: 2,
+                    tension: 0.4,
+                    pointRadius: 4,
+                    pointHoverRadius: 6,
+                    borderDash: [5, 5],
+                },
+                {
+                    label: 'Delivery',
+                    data: deliveryScores,
+                    borderColor: '#F59E0B',
+                    backgroundColor: 'rgba(245, 158, 11, 0.1)',
+                    borderWidth: 2,
+                    tension: 0.4,
+                    pointRadius: 4,
+                    pointHoverRadius: 6,
+                    borderDash: [5, 5],
+                },
+                {
+                    label: 'Confidence',
+                    data: confidenceScores,
+                    borderColor: '#EF4444',
+                    backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                    borderWidth: 2,
+                    tension: 0.4,
+                    pointRadius: 4,
+                    pointHoverRadius: 6,
+                    borderDash: [5, 5],
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            interaction: {
+                mode: 'index',
+                intersect: false,
+            },
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'top',
+                    labels: {
+                        usePointStyle: true,
+                        padding: 15,
+                        font: {
+                            size: 12,
+                            weight: '500'
+                        }
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                    padding: 12,
+                    titleFont: {
+                        size: 14,
+                        weight: 'bold'
+                    },
+                    bodyFont: {
+                        size: 13
+                    },
+                    callbacks: {
+                        title: function(context) {
+                            const index = context[0].dataIndex;
+                            return completedSessions[index].jobRole + ' - ' + labels[index];
+                        },
+                        label: function(context) {
+                            return context.dataset.label + ': ' + context.parsed.y.toFixed(1) + '%';
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100,
+                    ticks: {
+                        callback: function(value) {
+                            return value + '%';
+                        },
+                        font: {
+                            size: 11
+                        }
+                    },
+                    grid: {
+                        color: 'rgba(0, 0, 0, 0.05)'
+                    }
+                },
+                x: {
+                    grid: {
+                        display: false
+                    },
+                    ticks: {
+                        font: {
+                            size: 11
+                        }
+                    }
+                }
+            }
+        }
+    });
+});
+{% endif %}
+</script>
+{% endblock %}

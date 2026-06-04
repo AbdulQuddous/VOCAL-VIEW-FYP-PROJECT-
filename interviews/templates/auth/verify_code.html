@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title %}Verify Code - Vocal View{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center align-items-center" style="min-height: 70vh;">
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow-lg">
+                <div class="card-header text-center py-4 bg-primary text-white">
+                    <h3 class="mb-0">
+                        <i class="fas fa-shield-alt"></i> Verify Code
+                    </h3>
+                    <p class="mb-0 mt-2 small">Enter the 6-digit code sent to your email</p>
+                </div>
+                <div class="card-body p-5">
+                    <form method="post" action="{% url 'verify_reset_code' %}">
+                        {% csrf_token %}
+                        
+                        <div class="alert alert-success">
+                            <i class="fas fa-envelope"></i> 
+                            Code sent to <strong>{{ email }}</strong>
+                            <br>
+                            <small>Check your inbox and spam folder</small>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="code" class="form-label fw-bold text-center d-block">
+                                <i class="fas fa-lock"></i> Verification Code
+                            </label>
+                            <input type="text" 
+                                   class="form-control form-control-lg text-center" 
+                                   id="code" 
+                                   name="code" 
+                                   placeholder="000000"
+                                   maxlength="6"
+                                   pattern="[0-9]{6}"
+                                   style="font-size: 2rem; letter-spacing: 0.5rem;"
+                                   required
+                                   autofocus>
+                            <small class="text-muted d-block text-center mt-2">Code expires in 10 minutes</small>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg w-100 mb-3">
+                            <i class="fas fa-check-circle"></i> Verify Code
+                        </button>
+                        
+                        <div class="text-center">
+                            <a href="{% url 'forgot_password' %}" class="text-decoration-none small">
+                                <i class="fas fa-redo"></i> Didn't receive code? Resend
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center bg-light py-3">
+                    <p class="mb-0 text-muted">
+                        <a href="{% url 'login' %}" class="text-decoration-none">
+                            <i class="fas fa-arrow-left"></i> Back to Login
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Auto-format code input
+document.getElementById('code').addEventListener('input', function(e) {
+    this.value = this.value.replace(/[^0-9]/g, '');
+});
+</script>
+{% endblock %}
