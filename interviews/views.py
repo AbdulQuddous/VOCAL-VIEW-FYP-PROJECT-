@@ -579,9 +579,7 @@ def process_answer_with_enhanced_scoring(answer, question):
     """
     logger.info("=== Enhanced AI Analysis START ===")
 
-    # ------------------------------------------------------------------
     # STEP 1: TRANSCRIPTION
-    # ------------------------------------------------------------------
     try:
         logger.info("Step 1: Transcribing audio...")
 
@@ -609,19 +607,14 @@ def process_answer_with_enhanced_scoring(answer, question):
         logger.error(f"Step 1 failed: {e}", exc_info=True)
         raise
 
-    # ------------------------------------------------------------------
+
     # STEP 2: KEYWORD ANALYSIS
-    # ------------------------------------------------------------------
     process_answer_step_2_keyword_analysis(answer=answer, question=question)
 
-    # ------------------------------------------------------------------
-    # STEP 3: SPACY CONTENT ANALYSIS  ← SpaCy is used HERE
-    # ------------------------------------------------------------------
+    # STEP 3: SPACY CONTENT ANALYSIS  
     process_answer_step_3_spacy_analysis(answer=answer, question=question)
 
-    # ------------------------------------------------------------------
     # STEP 4: SEMANTIC SIMILARITY
-    # ------------------------------------------------------------------
     try:
         logger.info("Step 4: Semantic similarity...")
 
@@ -641,9 +634,7 @@ def process_answer_with_enhanced_scoring(answer, question):
         logger.error(f"Step 4 failed: {e}", exc_info=True)
         answer.semantic_similarity_score = 0
 
-    # ------------------------------------------------------------------
     # STEP 5: WEIGHTED SCORING
-    # ------------------------------------------------------------------
     try:
         logger.info("Step 5: Weighted scoring...")
 
@@ -673,9 +664,7 @@ def process_answer_with_enhanced_scoring(answer, question):
         ) / 2
         answer.completeness_score = 50
 
-    # ------------------------------------------------------------------
-    # STEP 6: FACIAL ANALYSIS  (optional — only if video present)
-    # ------------------------------------------------------------------
+    # STEP 6: FACIAL ANALYSIS 
     try:
         if answer.video_file:
             logger.info("Step 6: Facial analysis...")
@@ -702,9 +691,8 @@ def process_answer_with_enhanced_scoring(answer, question):
     except Exception as e:
         logger.error(f"Step 6 failed: {e}", exc_info=True)
 
-    # ------------------------------------------------------------------
-    # STEP 7: PROSODY ANALYSIS  (optional — only if audio present)
-    # ------------------------------------------------------------------
+
+    # STEP 7: PROSODY ANALYSIS 
     try:
         if answer.audio_file:
             logger.info("Step 7: Prosody analysis...")
