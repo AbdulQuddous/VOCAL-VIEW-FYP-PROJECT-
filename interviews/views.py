@@ -311,31 +311,12 @@ def save_answer(request, session_id):
         return JsonResponse({'error': str(e)}, status=500)
 
 
-"""
-process_answer — UPDATED to use SpaCy service properly
-=======================================================
 
-PIPELINE ORDER:
-  Step 1  Whisper         → transcribed_text
-  Step 2  KeywordService  → keyword_relevance_score, detected_keywords
-  Step 3  SpaCyService    → content_analysis (filler, clarity, grammar, relevance)
-  Step 4  SemanticAnalyzer→ semantic_similarity_score
-  Step 5  WeightedScorer  → final_content_score
-  Step 6  MediaPipe       → FacialAnalysis (if video)
-  Step 7  Librosa         → ProsodyAnalysis (if audio)
-"""
-
-import logging
 import numpy as np
 from django.conf import settings
 
-logger = logging.getLogger(__name__)
 
-
-# ======================================================================
 # STEP 2 — KEYWORD ANALYSIS  (KeywordService)
-# ======================================================================
-
 def process_answer_step_2_keyword_analysis(answer, question):
     """
     Keyword matching via clean KeywordService.
@@ -379,54 +360,8 @@ def process_answer_step_2_keyword_analysis(answer, question):
         answer.detected_keywords       = []
 
 
-# ======================================================================
-# STEP 3 — CONTENT ANALYSIS  (SpaCyService)  ← NEW STEP
-# ======================================================================
-
-"""
-FIXED: process_answer_step_3_spacy_analysis
-============================================
-
-ROOT CAUSE OF ERROR:
-  Code tried to save these fields that DO NOT EXIST in ContentAnalysis model:
-    - key_entities        ✗
-    - keyword_score       ✗
-    - main_topics         ✗
-    - missing_keywords    ✗
-    - sentence_count      ✗
-    - sentiment           ✗
-    - unique_words        ✗  (model uses 'unique_word_count')
-
-ACTUAL ContentAnalysis model fields:
-    - relevance_score       ✓  DecimalField
-    - clarity_score         ✓  DecimalField
-    - filler_word_count     ✓  IntegerField
-    - keyword_matches       ✓  JSONField  (list of matched keywords)
-    - grammar_issues        ✓  JSONField  (list of grammar issues)
-    - improvement_tips      ✓  TextField
-    - word_count            ✓  IntegerField
-    - unique_word_count     ✓  IntegerField  ← note: NOT 'unique_words'
-
-FIX: Map SpaCy output keys → correct model field names.
-     Drop fields that don't exist in the model.
-"""
-
-import logging
-logger = logging.getLogger(__name__)
-
-
-# ======================================================================
-# STEP 3  (FIXED)
-# ======================================================================
-
 def process_answer_step_3_spacy_analysis(answer, question):
-    """
-    Run SpaCy linguistic analysis and save to ContentAnalysis model.
 
-    Only saves fields that actually exist in ContentAnalysis.
-    Extra SpaCy output (entities, topics, sentiment) is logged but not persisted
-    — the model doesn't have columns for them.
-    """
     try:
         logger.info("Step 3: SpaCy content analysis...")
 
@@ -435,7 +370,6 @@ def process_answer_step_3_spacy_analysis(answer, question):
 
         spacy_service = get_spacy_service()
 
-        # ── run SpaCy analysis ──────────────────────────────────────────
         analysis = spacy_service.analyze_content(
             text=answer.transcribed_text,
             expected_keywords=question.expected_keywords,
@@ -447,17 +381,10 @@ def process_answer_step_3_spacy_analysis(answer, question):
             ),
             session_id=str(answer.session.session_id),
         )
-
-        # ── build improvement tips text ─────────────────────────────────
-        # ContentAnalysis.improvement_tips is a TextField (plain string).
-        # We generate tips here from the analysis dict.
         tips_list = _build_improvement_tips(analysis)
         improvement_tips_text = "\n".join(f"• {t}" for t in tips_list)
 
-        # ── map SpaCy output → ACTUAL model fields ──────────────────────
-        # Only keys that exist as columns in ContentAnalysis are included.
         model_defaults = {
-            # ✓ exists in model
             'relevance_score':   analysis.get('relevance_score',   0.0),
             'clarity_score':     analysis.get('clarity_score',     0.0),
             'filler_word_count': analysis.get('filler_word_count', 0),
@@ -494,11 +421,6 @@ def process_answer_step_3_spacy_analysis(answer, question):
     except Exception as e:
         logger.error(f"Step 3 failed: {e}", exc_info=True)
         # Non-fatal: pipeline continues without ContentAnalysis record
-
-
-# ======================================================================
-# IMPROVEMENT TIPS  (produces the TextField value)
-# ======================================================================
 
 def _build_improvement_tips(analysis: dict) -> list:
     """
@@ -559,24 +481,7 @@ def _build_improvement_tips(analysis: dict) -> list:
 
     return tips[:5]
 
-
-# ======================================================================
-# MAIN PIPELINE
-# ======================================================================
-
 def process_answer_with_enhanced_scoring(answer, question):
-    """
-    Full AI analysis pipeline for a single interview answer.
-
-    Steps:
-      1  Whisper transcription
-      2  Keyword analysis        (KeywordService)
-      3  SpaCy content analysis  (SpaCyNLPService)  ← uses SpaCy
-      4  Semantic similarity     (SemanticAnalyzer)
-      5  Weighted scoring        (WeightedScorer)
-      6  Facial analysis         (MediaPipe, if video)
-      7  Prosody analysis        (Librosa, if audio)
-    """
     logger.info("=== Enhanced AI Analysis START ===")
 
     # STEP 1: TRANSCRIPTION
