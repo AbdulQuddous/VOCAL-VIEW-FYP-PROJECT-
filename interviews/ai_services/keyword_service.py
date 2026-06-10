@@ -6,10 +6,6 @@ from typing import List, Dict, Optional
 logger = logging.getLogger(__name__)
 
 
-# =====================================================
-# MATCHER (SAFE - NO INDEX ERRORS)
-# =====================================================
-
 class KeywordMatcher:
     def __init__(self, nlp):
         self.nlp = nlp
@@ -62,11 +58,6 @@ class KeywordMatcher:
             "missing": missing
         }
 
-
-# =====================================================
-# EXTRACTOR (FALLBACK ONLY)
-# =====================================================
-
 class KeywordExtractor:
     def __init__(self, nlp):
         self.nlp = nlp
@@ -82,10 +73,6 @@ class KeywordExtractor:
         return list(set(keywords))[:max_keywords]
 
 
-# =====================================================
-# SCORER (FIXED - SIMPLE + SAFE)
-# =====================================================
-
 class KeywordScorer:
     def score(self, matched: List[str], total: int) -> float:
         if total == 0:
@@ -100,9 +87,6 @@ class KeywordScorer:
         return round(min(score, 100), 2)
 
 
-# =====================================================
-# MAIN SERVICE (ONLY ENTRY POINT)
-# =====================================================
 
 class KeywordService:
     """
@@ -118,9 +102,6 @@ class KeywordService:
 
         logger.info("KeywordService initialized (FINAL CLEAN VERSION)")
 
-    # ---------------------------
-    # MAIN FUNCTION
-    # ---------------------------
     def analyze_answer(
         self,
         answer_text: str,
@@ -172,10 +153,6 @@ class KeywordService:
             "extraction_used": False
         }
 
-
-# =====================================================
-# SINGLETON
-# =====================================================
 
 _service = None
 

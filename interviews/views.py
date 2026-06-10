@@ -683,50 +683,6 @@ def process_answer_with_enhanced_scoring(answer, question):
         f"keywords={answer.keyword_relevance_score:.1f}%"
     )
  
-# =====================================================
-# COMPARISON/TESTING FUNCTION
-# =====================================================
- 
-def compare_old_vs_new_keyword_scoring(answer, question):
-    logger.info("\n" + "="*80)
-    logger.info("OLD vs NEW KEYWORD SCORING COMPARISON")
-    logger.info("="*80)
-    
-    # Test OLD system
-    process_answer_step_2_keyword_analysis(
-        answer=answer,
-        question=question,
-        use_new_pipeline=False
-    )
-    old_score = float(answer.keyword_relevance_score)
-    old_keywords = list(answer.detected_keywords)
-    
-    logger.info(f"OLD System: {old_score:.1f}% | Matched: {old_keywords}")
-    
-    # Test NEW system
-    process_answer_step_2_keyword_analysis(
-        answer=answer,
-        question=question,
-        use_new_pipeline=True
-    )
-    new_score = float(answer.keyword_relevance_score)
-    new_keywords = list(answer.detected_keywords)
-    
-    logger.info(f"NEW System: {new_score:.1f}% | Matched: {new_keywords}")
-    
-    # Calculate difference
-    diff = new_score - old_score
-    logger.info(f"Difference: {diff:+.1f}%")
-    
-    logger.info("="*80 + "\n")
-    
-    return {
-        'old_score': old_score,
-        'old_keywords': old_keywords,
-        'new_score': new_score,
-        'new_keywords': new_keywords,
-        'difference': diff
-    }
 
 @login_required
 def complete_interview(request, session_id):
@@ -747,42 +703,9 @@ def complete_interview(request, session_id):
     return redirect('feedback_report', session_id=session.session_id)
 
 
-"""
-generate_feedback_report — UPDATED to read SpaCy ContentAnalysis
-=================================================================
 
-WHAT CHANGED:
-  - Reads content_analysis.filler_word_count  (set by SpaCy in step 3)
-  - Reads content_analysis.clarity_score      (set by SpaCy in step 3)
-  - Reads content_analysis.sentiment          (set by SpaCy in step 3)
-  - Reads content_analysis.grammar_issues     (set by SpaCy in step 3)
-  - Generates improvement tips from SpaCy data (was in SpaCy service before)
-  - generate_improvement_tips() moved HERE from SpaCy service (correct place)
-"""
-
-import logging
-from django.conf import settings
-
-logger = logging.getLogger(__name__)
-
-
-# ======================================================================
-# IMPROVEMENT TIPS  (moved from SpaCyNLPService — this is where it belongs)
-# ======================================================================
 
 def generate_improvement_tips_from_analysis(content_analysis) -> list:
-    """
-    Generate human-readable tips from a ContentAnalysis DB object.
-
-    Previously lived in SpaCyNLPService.generate_improvement_tips().
-    Moved here because this is the only place it was ever needed.
-
-    Args:
-        content_analysis: ContentAnalysis model instance (or None)
-
-    Returns:
-        list of tip strings (max 5)
-    """
     if content_analysis is None:
         return ["Continue practicing regularly to improve your interview skills."]
 
@@ -846,18 +769,9 @@ def generate_improvement_tips_from_analysis(content_analysis) -> list:
 
     return tips[:5]
 
-
-# ======================================================================
 # MAIN REPORT FUNCTION
-# ======================================================================
 
 def generate_feedback_report(session):
-    """
-    Generate comprehensive feedback report.
-
-    Reads all analysis results stored by the 7-step pipeline and
-    compiles them into a FeedbackReport saved to the database.
-    """
     from interviews.models import FeedbackReport
 
     try:
@@ -884,9 +798,7 @@ def generate_feedback_report(session):
 
         for answer in processed_answers:
             try:
-                # ------------------------------------------------------
                 # CONTENT SCORE  (from weighted_scorer, step 5)
-                # ------------------------------------------------------
                 if getattr(answer, 'final_content_score', None):
                     content_score = float(answer.final_content_score)
                     content_scores.append(content_score)
@@ -910,9 +822,8 @@ def generate_feedback_report(session):
                     elif content_score < 70:
                         improvements.append("Enhance answer depth with specific examples")
 
-                # ------------------------------------------------------
                 # SPACY CONTENT ANALYSIS  (from step 3)  ← reads SpaCy data
-                # ------------------------------------------------------
+
                 content_analysis = None
                 if hasattr(answer, 'content_analysis'):
                     try:
@@ -945,12 +856,8 @@ def generate_feedback_report(session):
                     spacy_tips = generate_improvement_tips_from_analysis(content_analysis)
                     improvements.extend(spacy_tips)
 
-                # ------------------------------------------------------
                 # DELIVERY SCORE  (from prosody analysis, step 7)
-                # ------------------------------------------------------
-                # ------------------------------------------------------
-# DELIVERY SCORE  (from prosody analysis, step 7)
-# ------------------------------------------------------
+             
                 if hasattr(answer, 'prosody_analysis'):
                     try:
                         prosody = answer.prosody_analysis
@@ -1029,9 +936,9 @@ def generate_feedback_report(session):
                     except Exception as e:
                         logger.warning(f"Prosody read error for answer {answer.pk}: {e}")
 
-                # ------------------------------------------------------
+
                 # CONFIDENCE SCORE  (from facial analysis, step 6)
-                # ------------------------------------------------------
+
                 if hasattr(answer, 'facial_analysis'):
                     try:
                         facial = answer.facial_analysis
@@ -1064,9 +971,9 @@ def generate_feedback_report(session):
                 logger.error(f"Error processing answer {getattr(answer, 'pk', '?')}: {e}", exc_info=True)
                 continue
 
-        # ------------------------------------------------------------------
+
         # AGGREGATE SCORES
-        # ------------------------------------------------------------------
+
         content_score    = sum(content_scores)    / len(content_scores)    if content_scores    else 50.0
         delivery_score   = sum(delivery_scores)   / len(delivery_scores)   if delivery_scores   else 70.0
         confidence_score = sum(confidence_scores) / len(confidence_scores) if confidence_scores else 70.0
@@ -1092,9 +999,9 @@ def generate_feedback_report(session):
                 "Record more practice interviews for better feedback",
             ]
 
-        # ------------------------------------------------------------------
+        
         # SUMMARY
-        # ------------------------------------------------------------------
+        
         processed_count = processed_answers.count()
         total_count     = all_answers.count()
 
@@ -1127,9 +1034,7 @@ def generate_feedback_report(session):
         if processed_count < total_count:
             summary += f" Note: {processed_count} of {total_count} answers were analysed."
 
-        # ------------------------------------------------------------------
         # DETAILED AVERAGES  (for report metadata)
-        # ------------------------------------------------------------------
         avg_filler = avg_pace = avg_word_count = 0.0
         try:
             ca_list = [
@@ -1155,9 +1060,8 @@ def generate_feedback_report(session):
         except Exception as e:
             logger.warning(f"Average calculation error: {e}")
 
-        # ------------------------------------------------------------------
         # SAVE REPORT
-        # ------------------------------------------------------------------
+
         report = FeedbackReport.objects.create(
             session=session,
             overall_score    = round(overall_score,    2),
@@ -1193,9 +1097,7 @@ def generate_feedback_report(session):
         raise
 
 
-# ======================================================================
 # DEFAULT REPORT (incomplete session)
-# ======================================================================
 
 def _create_default_report(session):
     from interviews.models import FeedbackReport

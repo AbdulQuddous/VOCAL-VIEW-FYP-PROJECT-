@@ -7,15 +7,6 @@ logger = logging.getLogger(__name__)
 
 
 class EmbeddingCache:
-    """
-    Pre-compute and cache embeddings for dataset questions
-    
-    Benefits:
-    - 2-3x faster similarity calculation
-    - Reduces model inference calls
-    - One-time computation cost
-    """
-    
     def __init__(self):
         self.cache_dir = Path(settings.BASE_DIR) / 'cache' / 'embeddings'
         self.cache_dir.mkdir(parents=True, exist_ok=True)
