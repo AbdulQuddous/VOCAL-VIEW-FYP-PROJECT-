@@ -374,10 +374,6 @@ class LibrosaProsodyService:
         sr,
         transcription_text
     ):
-        """
-        Generate pace timeline.
-        FIXED: Now uses word count per segment instead of random values.
-        """
         timeline = {}
         
         if not transcription_text:
@@ -409,7 +405,6 @@ class LibrosaProsodyService:
     def _generate_pitch_timeline(self, y, sr):
         """
         Generate pitch timeline using actual pitch detection.
-        FIXED: Now uses real pitch values instead of random.
         """
         timeline = {}
         
@@ -446,7 +441,6 @@ class LibrosaProsodyService:
     def _generate_energy_timeline(self, y):
         """
         Generate energy timeline.
-        FIXED: Now includes timestamp keys.
         """
         rms = librosa.feature.rms(
             y=y,
