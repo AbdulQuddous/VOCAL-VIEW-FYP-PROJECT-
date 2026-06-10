@@ -1,20 +1,3 @@
-"""
-SpaCy NLP Service - CLEAN PRODUCTION VERSION
-=============================================
-
-REMOVED (not saved to DB, not used anywhere):
-  - _extract_entities()     — nobody calls it / no DB column
-  - _extract_main_topics()  — nobody calls it / no DB column
-  - _analyze_sentiment()    — nobody calls it / no DB column
-
-KEPT (all used by analyze_content → saved to ContentAnalysis DB):
-  - _analyze_keywords()          → keyword_matches, keyword_score
-  - _count_filler_words()        → filler_word_count
-  - _check_grammar()             → grammar_issues (used by clarity + relevance)
-  - _calculate_clarity_score()   → clarity_score
-  - _calculate_overall_relevance() → relevance_score
-"""
-
 import spacy
 import logging
 from django.conf import settings
@@ -24,17 +7,6 @@ logger = logging.getLogger(__name__)
 
 
 class SpacyNLPService:
-    """
-    Linguistic quality analysis for interview answers.
-
-    Called by: process_answer_step_3_spacy_analysis() in views.py
-    Saves to:  ContentAnalysis model
-
-    Fields produced → saved to DB:
-      filler_word_count, word_count, unique_word_count,
-      clarity_score, relevance_score, grammar_issues,
-      keyword_matches, improvement_tips
-    """
 
     FILLER_WORDS = {
         'um', 'uh', 'like', 'you know', 'so', 'actually', 'basically',
@@ -49,9 +21,7 @@ class SpacyNLPService:
         self._keyword_service = None
         logger.info("SpaCyNLPService initialized")
 
-    # ------------------------------------------------------------------
     # LAZY LOADERS
-    # ------------------------------------------------------------------
 
     def _load_model(self):
         if self.nlp is None:
@@ -65,9 +35,7 @@ class SpacyNLPService:
             self._keyword_service = get_keyword_service()
         return self._keyword_service
 
-    # ------------------------------------------------------------------
     # MAIN ENTRY POINT
-    # ------------------------------------------------------------------
 
     def analyze_content(
         self,
@@ -77,12 +45,7 @@ class SpacyNLPService:
         job_role: Optional[str] = None,
         session_id: Optional[str] = None,
     ) -> Dict:
-        """
-        Run full linguistic analysis on a transcribed answer.
-
-        Returns a dict whose keys map directly to ContentAnalysis model fields.
-        Called by process_answer_step_3_spacy_analysis() in views.py.
-        """
+       
         self._load_model()
 
         if not text or len(text.strip()) < 5:
@@ -144,10 +107,6 @@ class SpacyNLPService:
             logger.error(f"analyze_content failed: {e}", exc_info=True)
             return self._empty_analysis()
 
-    # ------------------------------------------------------------------
-    # KEYWORD DELEGATION  → KeywordService
-    # ------------------------------------------------------------------
-
     def _analyze_keywords(
         self,
         text: str,
@@ -156,7 +115,7 @@ class SpacyNLPService:
         job_role: Optional[str],
         session_id: Optional[str],
     ) -> Dict:
-        """Delegate to KeywordService (safe, no crash, no index errors)."""
+        
         try:
             result = self._get_keyword_service().analyze_answer(
                 answer_text=text,
@@ -180,9 +139,7 @@ class SpacyNLPService:
                 'keyword_density':  0.0,
             }
 
-    # ------------------------------------------------------------------
     # FILLER WORDS  → filler_word_count
-    # ------------------------------------------------------------------
 
     def _count_filler_words(self, text: str) -> int:
         text_lower = text.lower()
@@ -193,18 +150,9 @@ class SpacyNLPService:
             count += text_lower.count(f" {filler}")   # end of text
         return count
 
-    # ------------------------------------------------------------------
     # GRAMMAR CHECK  → grammar_issues (JSONField)
-    # ------------------------------------------------------------------
 
     def _check_grammar(self, doc) -> List[Dict]:
-        """
-        Detects 3 issue types:
-          missing_verb  — sentence with >4 tokens but no verb
-          long_sentence — sentence longer than 40 tokens
-          fragment      — sentence shorter than 3 tokens
-        Returns max 5 issues.
-        """
         issues = []
         for sent in doc.sents:
             tokens = list(sent)
@@ -234,9 +182,7 @@ class SpacyNLPService:
 
         return issues[:5]
 
-    # ------------------------------------------------------------------
     # CLARITY SCORE  → clarity_score
-    # ------------------------------------------------------------------
 
     def _calculate_clarity_score(self, doc, filler_count: int) -> float:
         """
@@ -273,9 +219,7 @@ class SpacyNLPService:
         score = length_score + diversity + 30 - grammar_penalty - filler_penalty
         return round(max(0.0, min(100.0, score)), 2)
 
-    # ------------------------------------------------------------------
     # OVERALL RELEVANCE  → relevance_score
-    # ------------------------------------------------------------------
 
     def _calculate_overall_relevance(
         self,
@@ -315,9 +259,7 @@ class SpacyNLPService:
         score = kw_component + depth + vocab + 10 - filler_penalty - grammar_penalty
         return round(max(0.0, min(100.0, score)), 2)
 
-    # ------------------------------------------------------------------
     # EMPTY FALLBACK
-    # ------------------------------------------------------------------
 
     def _empty_analysis(self) -> Dict:
         return {
@@ -334,9 +276,7 @@ class SpacyNLPService:
         }
 
 
-# ------------------------------------------------------------------
 # SINGLETON
-# ------------------------------------------------------------------
 
 _spacy_service = None
 
