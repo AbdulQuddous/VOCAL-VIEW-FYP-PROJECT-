@@ -7,8 +7,6 @@ from .models import UserProfile, JobRole
 
 
 class UserRegistrationForm(UserCreationForm):
-    """Extended user registration form"""
-    
     username = forms.CharField(
         min_length=2,
         max_length=100

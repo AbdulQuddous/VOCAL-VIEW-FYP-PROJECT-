@@ -187,7 +187,6 @@ class MediaPipeFacialService:
             # Calculate deviation from center (0.5 = perfect center)
             center_deviation = abs(avg_iris_position - 0.5)
             
-            # ===== SCORE CALCULATION =====
             # Perfect center (deviation < 0.05): 95-100 points
             # Good center (deviation < 0.10): 80-95 points
             # Slightly off (deviation < 0.15): 65-80 points
@@ -205,7 +204,7 @@ class MediaPipeFacialService:
             else:
                 score = max(20, 45 - (center_deviation - 0.20) * 50)  # 20-45
             
-            # ===== EDGE CASE: BLINKING DETECTION =====
+            #EDGE CASE: BLINKING DETECTION
             # Check if eyes are closed (avoid penalizing blinks)
             left_eye_top = face_landmarks.landmark[159].y
             left_eye_bottom = face_landmarks.landmark[145].y
@@ -219,7 +218,7 @@ class MediaPipeFacialService:
                 else:
                     return 70.0  # Neutral default during blink
             
-            # ===== HEAD TILT COMPENSATION =====
+            # HEAD TILT COMPENSATION 
             # If head is significantly tilted, slightly reduce confidence
             # (iris detection is less accurate at extreme angles)
             nose_tip = face_landmarks.landmark[1].x
@@ -236,11 +235,8 @@ class MediaPipeFacialService:
             return self._calculate_eye_contact_fallback(face_landmarks)
     
     def _calculate_eye_contact_fallback(self, face_landmarks):
-        """
-        Fallback method if iris detection fails
+        #Fallback method if iris detection fails use nose position
         
-        Uses nose position as proxy (original method)
-        """
         try:
             nose_x = face_landmarks.landmark[1].x
             deviation = abs(nose_x - 0.5)
@@ -257,7 +253,7 @@ class MediaPipeFacialService:
             return 50.0
     
     def _calculate_confidence_from_landmarks(self, face_landmarks, w, h):
-        """Calculate confidence score from facial landmarks - FIXED VERSION (allows 100)"""
+        """Calculate confidence score from facial landmarks"""
         try:
             score = 50.0  # Base score
             
@@ -400,7 +396,7 @@ class MediaPipeFacialService:
             return 25.0  # Default to low stress on error
     
     def _classify_emotion_from_scores(self, confidence, stress):
-        """Classify emotion based on scores - FIXED VERSION"""
+        """Classify emotion based on scores """
         
         # FIXED: Lower stress threshold for confident classification
         if confidence > 70 and stress < 45:      # Was stress < 40

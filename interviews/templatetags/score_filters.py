@@ -75,19 +75,9 @@ def weight_percentage(weight):
     except (ValueError, TypeError):
         return "0%"
 
-
-# =========================
 # FIX FOR TOTAL WORDS
-# =========================
-
 @register.filter
 def wordcount(text):
-    """
-    Count words in text
-
-    Usage:
-    {{ answer.transcribed_text|wordcount }}
-    """
     if not text:
         return 0
     return len(str(text).split())
@@ -95,12 +85,7 @@ def wordcount(text):
 
 @register.filter
 def join_word_counts(answers):
-    """
-    Sum all words from all answers
-
-    Usage:
-    {{ session.answers.all|join_word_counts }}
-    """
+    # Sum all words from all answers
     total = 0
 
     try:
@@ -112,10 +97,7 @@ def join_word_counts(answers):
 
     return total
 
-
-# =========================
 # FIX FOR AVG SPEAKING PACE
-# =========================
 
 @register.filter
 def get_avg_pace(answers):
@@ -137,9 +119,8 @@ def get_avg_pace(answers):
     return total / count if count else 0
 
 
-# =========================
 # FIX FOR AVG CONFIDENCE
-# =========================
+
 
 @register.filter
 def get_avg_confidence(answers):
@@ -161,15 +142,10 @@ def get_avg_confidence(answers):
     return total / count if count else 0
 
 
-# =========================
 # FIX FOR CONTENT SCORE
-# =========================
 
 @register.filter
 def get_avg_content_score(answers):
-    """
-    Uses final_content_score instead of fixed 70
-    """
     total = 0
     count = 0
 
@@ -182,8 +158,6 @@ def get_avg_content_score(answers):
         return 0
 
     return total / count if count else 0
-
-# Add to your existing score_filters.py
 
 @register.filter
 def get_avg_clarity_score(answers):
