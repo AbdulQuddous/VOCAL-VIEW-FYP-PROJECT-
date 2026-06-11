@@ -1,17 +1,10 @@
-# scripts/validate_dataset.py
-
 import json
 from pathlib import Path
 
-# Required fields for each question
 REQUIRED_FIELDS = ['question_text', 'keywords', 'difficulty']
 
 
 def validate_dataset():
-    """
-    Validate all JSON question datasets in data/questions/
-    Ensures all required fields exist and JSON is readable.
-    """
 
     data_dir = Path('data/questions')
     errors = []
@@ -19,7 +12,7 @@ def validate_dataset():
     total_questions = 0
 
     if not data_dir.exists():
-        print(f"❌ Dataset directory not found: {data_dir}")
+        print(f"Dataset directory not found: {data_dir}")
         return
 
     # Loop through all JSON files
@@ -27,7 +20,6 @@ def validate_dataset():
         total_files += 1
 
         try:
-            # ✅ FIX: UTF-8 encoding for Windows + special characters
             with open(json_file, 'r', encoding='utf-8') as f:
                 questions = json.load(f)
 
@@ -71,19 +63,19 @@ def validate_dataset():
 
     # ===================== RESULT =====================
 
-    print("\n================ VALIDATION REPORT ================\n")
-    print(f"📁 Files checked: {total_files}")
-    print(f"❓ Questions checked: {total_questions}\n")
+    print("\nVALIDATION REPORT ")
+    print(f"Files checked: {total_files}")
+    print(f"Questions checked: {total_questions}\n")
 
     if errors:
-        print("❌ VALIDATION FAILED:\n")
+        print("VALIDATION FAILED:\n")
         for err in errors:
             print(f"  - {err}")
-        print("\n==================================================")
+        print("\n")
     else:
         print("✅ ALL DATASETS VALID")
-        print("🚀 Your interview system is safe to run")
-        print("==================================================")
+        print("Your interview system is safe to run")
+        print("")
 
 
 
