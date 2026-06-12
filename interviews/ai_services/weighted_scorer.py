@@ -12,7 +12,7 @@ class WeightedScorer:
     COMPLETENESS_WEIGHT = 0.10
 
     def __init__(self):
-        """Initialize scorer"""
+        
         logger.info("Weighted scorer initialized (FINAL CLEAN VERSION)")
 
     def _calculate_completeness_score(
